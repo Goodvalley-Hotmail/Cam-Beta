@@ -1,0 +1,17 @@
+#overview-bottom-right {
+
+    margin-top: 10px;
+
+    @include media( $screen--1220 ) {
+        margin-left: 0.833333%;
+    }
+
+    @include media( $screen--1080 ) {
+        margin-top: 5px;
+    }
+
+    @include media( $screen--960 ) {
+        margin: 0;
+    }
+
+}

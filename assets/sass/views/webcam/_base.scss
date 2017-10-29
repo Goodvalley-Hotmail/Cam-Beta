@@ -1,0 +1,72 @@
+#entry-webcams {
+
+    @include media( $screen--1220 ) {
+        padding: 10px 5px;
+    }
+}
+
+.webcams-one-fourth {
+
+    max-width: 24.19%;
+
+    @include media( $screen--1360 ) {
+        max-width: 24.18%;
+    }
+
+    @include media( $screen--1220 ) {
+        max-width: 24.15%;
+    }
+
+    @include media( $screen--1152 ) {
+        max-width: 24.05%;
+    }
+
+    @include media( $screen--1080 ) {
+        max-width: 23.95%;
+    }
+
+    @include media( $screen--1024 ) {
+        max-width: 23.9%;
+    }
+
+    @include media( $screen--960 ) {
+        max-width: 23.85%;
+    }
+
+    @include media( $screen--800 ) {
+        max-width: 48.6%;
+    }
+
+    @include media( $screen--768 ) {
+        max-width: 48.4%;
+    }
+
+    @include media( $screen--680-max ) {
+        max-width: 48.1%;
+    }
+
+    @include media( $screen--568 ) {
+        max-width: 47.9%;
+    }
+
+    @include media( $screen--520 ) {
+        max-width: 47.8%;
+    }
+
+    @include media( $screen--481-max ) {
+        max-width: 47.6%;
+    }
+
+    @include media( $screen--430 ) {
+        max-width: 47.4%;
+    }
+
+    @include media( $screen--415 ) {
+        max-width: 46.8%;
+    }
+
+    @include media( $screen--340 ) {
+        max-width: 100%;
+    }
+
+}

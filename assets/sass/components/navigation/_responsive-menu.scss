@@ -1,0 +1,28 @@
+// Responsive Menu
+.responsive-menu-icon {
+
+    cursor: pointer;
+    display: none;
+    text-align: center;
+
+    &::before {
+        content: "\f333";
+        display: inline-block;
+        font: normal 20px/1 'dashicons';
+        margin: 0 auto;
+        padding: 16px 7px 16px 16px;
+    }
+
+}
+
+.nav-primary .responsive-menu-icon::before {
+    color: $menu-primary__responsive-menu-icon--text-color;
+}
+
+.menu-text {
+    color: $responsive-menu--text-color;
+    line-height: 1;
+    vertical-align: top;
+    margin-top: 16px;
+    display: inline-block;
+}

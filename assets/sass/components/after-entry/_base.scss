@@ -1,0 +1,13 @@
+.after-entry {
+
+    background-color: $after-entry--background-color;
+    @include rem( font-size, $after-entry--font-size );
+    margin: 10px 0; // CAMERASKI -> Original: 40px
+    padding: 10px 10px 10px 20px; // CAMERASKI -> Original: 60px
+
+    @include media( $screen--860 ) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+}

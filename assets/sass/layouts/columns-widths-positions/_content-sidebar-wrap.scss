@@ -1,0 +1,30 @@
+/* ### Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-wrap {
+
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+
+        width: $content-sidebar-wrap--width;
+
+        @include media( $screen--1340 ) {
+            width: $content-sidebar-wrap--width--1340;
+        }
+
+        @include media( $screen--1200 ) {
+            width: $content-sidebar-wrap--width--1200;
+        }
+
+    }
+
+    .content-sidebar-sidebar & {
+        float: left;
+    }
+
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+        float: right;
+    }
+
+}

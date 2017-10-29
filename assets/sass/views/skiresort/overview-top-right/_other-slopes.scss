@@ -1,0 +1,45 @@
+#overview-right-tabs-1 ul.overview-other-slopes {
+
+    @include media( $screen--415 ) {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+}
+
+.entry-content ul.ul-overview-other-slopes {
+
+    float: right;
+    line-height: $other-slopes--line-height;
+    margin: 0 10px 0 0;
+    width: 45%;
+
+    @include media( $screen--1220 ) {
+        margin: 0 5px 0 0;
+    }
+
+    @include media( $screen--835 ) {
+        // width: 100%;
+    }
+
+    @include media( $screen--800 ) {
+        margin: 0 15px 0 0;
+        width: 50%;
+    }
+
+    @include media( $screen--568 ) {
+        margin: 0 5px 0 0;
+        width: 55%;
+    }
+
+    @include media( $screen--415 ) {
+        margin: 10px 20px 0 10px;
+        text-align: right;
+        width: 100%;
+    }
+
+    @include media( $screen--340 ) {
+        margin: 10px 10px 0 10px;
+    }
+
+}

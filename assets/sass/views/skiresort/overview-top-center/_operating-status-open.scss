@@ -1,0 +1,9 @@
+.operating-status-open {
+    background-color: $operating-status-open--background-color;
+    border: solid 0 10px $operating-status-open--border-color;
+    border-radius: 2px;
+    color: $operating-status-open--text-color;
+    display: inline-block;
+    margin: 5px 2px 5px 2px;
+    padding: 0 5px;
+}

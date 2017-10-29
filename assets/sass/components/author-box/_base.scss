@@ -1,0 +1,22 @@
+.author-box {
+
+    background-color: $author-box--background-color;
+    @include rem( font-size, $author-box--font-size );
+    margin: 10px 0;
+    padding: 10px 10px 10px 20px;
+
+    @include media( $screen--860 ) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.author-box-title {
+    @include rem( font-size, $author-box__title--font-size );
+    font-weight: bold;
+}

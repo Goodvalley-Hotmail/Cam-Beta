@@ -1,0 +1,12 @@
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes {
+    background-color: $slopes-total--background-color;
+    border: solid 0 10px $slopes-total--border-color;
+    border-radius: 2px;
+    clear: both;
+    color: $slopes-total--text-color;
+    display: inline-block;
+    //margin: 0 10px 0 0;
+    float: right;
+    padding: 0 3px;
+    text-align: center;
+}

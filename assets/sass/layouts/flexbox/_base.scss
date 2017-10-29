@@ -1,0 +1,76 @@
+.flexbox-top,
+.flexbox-bottom,
+.flexbox-webcam,
+.flexbox-meteo-weather {
+    display: flex;
+    overflow: hidden;
+}
+
+.flexbox-top {
+
+    @include media( $screen--1220 ) {
+        flex-wrap: wrap;
+    }
+
+}
+
+.flexbox-bottom {
+
+    @include media( $screen--960 ) {
+        flex-wrap: wrap;
+    }
+
+}
+
+.flexbox-webcam {
+
+    @include media( $screen--800 ) {
+        flex-wrap: wrap;
+    }
+
+}
+
+@include media( $screen--800 ) {
+
+    //.flexbox-top .two-fifths {
+	//	-webkit-flex-basis: 100%;
+	//	-ms-flex-basis: 100%;
+	//	flex-basis: 100%;
+	//	-webkit-order: 0;
+	//	-ms-flex-order: 0;
+	//	order: 0;
+	//}
+    //
+	//.flexbox-top .one-fifth {
+	//	-webkit-flex-basis: 100%;
+	//	-ms-flex-basis: 100%;
+	//	flex-basis: 100%;
+	//	-webkit-order: 1;
+	//	-ms-flex-order: 1;
+	//	order: 1;
+	//}
+    //
+	//.three-fifths .four-fifths,
+	//.three-fifths .five-fifths {
+	//	flex: 1;
+	//}
+    //
+	//.three-fifths .four-fifths {
+	//	-webkit-flex-basis: 100%;
+	//	-ms-flex-basis: 100%;
+	//	flex-basis: 100%;
+	//	-webkit-order: 0;
+	//	-ms-flex-order: 0;
+	//	order: 0;
+	//}
+    //
+	//.three-fifths .five-fifths {
+	//	-webkit-flex-basis: 100%;
+	//	-ms-flex-basis: 100%;
+	//	flex-basis: 100%;
+	//	-webkit-order: 1;
+	//	-ms-flex-order: 1;
+	//	order: 1;
+	//}
+
+}

@@ -1,0 +1,35 @@
+//
+// Title Area Base Styles
+//==========================================
+
+.title-area {
+
+    float: left;
+    padding: 10px 0;
+    // CAMERASKI width: 360px;
+    width: $title-area--width;
+
+    @include media( $screen--1023 ) {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .header-full-width & {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+@include media( $screen--1023 ) {
+
+    .site-description,
+    .site-header .title-area,
+    .site-header .widget-area,
+    .site-title {
+        text-align: center;
+    }
+
+}

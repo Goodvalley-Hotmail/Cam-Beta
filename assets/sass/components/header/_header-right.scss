@@ -1,0 +1,21 @@
+/* ## Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+    float: right;
+    text-align: right;
+    width: $header-right--width;
+
+    @include media( $screen--1200 ) {
+
+        width: $header-right--width--1200;
+
+    }
+
+    @include media( $screen--1023 ) {
+
+        width: 100%;
+
+    }
+
+}

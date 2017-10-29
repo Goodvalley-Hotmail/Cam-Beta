@@ -1,0 +1,36 @@
+html {
+    font-size: $html--font-size; /* 10px browser default */
+}
+
+body {
+
+    background-color: $body--background-color;
+    color: $base--text-color;
+    font-family: $base--font-family;
+    @include rem( font-size, $base--font-size );
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: $base--line-height;
+    margin: 0;
+
+    // CAMERASKI -> NO
+    @include media( $screen--860 ) {
+        @include rem( font-size, $base--font-size--860 );
+
+    }
+    // /CAMERASKI -> NO
+
+    /* Chrome fix */
+    > div {
+
+        font-size: $base__div--font-size;
+
+        // CAMERASKI -> NO
+        @include media( $screen--860 ) {
+            font-size: $base__div--font-size--860;
+        }
+        // /CAMERASKI -> NO
+
+    }
+
+}

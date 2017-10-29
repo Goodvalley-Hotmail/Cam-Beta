@@ -1,0 +1,42 @@
+.ul-overview-elevation-narrow {
+
+    display: none;
+    //display: block;
+    float: left;
+    @include rem( font-size, $elevation-narrow--font-size );
+    text-align: left;
+    width:100%;
+
+    @include media( $screen--1080 ) {
+        display: block;
+        float: left;
+        text-align: left;
+        font-size: 12px;
+        width: 100%;
+    }
+
+}
+
+.entry-content ul.ul-overview-elevation-narrow {
+
+    @include media( $screen--1080 ) {
+        margin: 0 0 0 5px;
+    }
+
+    @include media( $screen--960 ) {
+        margin: 20px 0 0 5px;
+    }
+
+    @include media( $screen--800 ) {
+        margin: 10px 0 0 15px;
+    }
+
+    @include media( $screen--680-max ) {
+        margin: 0 0 0 15px;
+    }
+
+    @include media( $screen--568 ) {
+        margin-left: 5px;
+    }
+
+}

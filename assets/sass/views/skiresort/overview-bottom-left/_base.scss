@@ -1,0 +1,9 @@
+#overview-bottom-left {
+
+    margin-top: 10px;
+
+    @include media( $screen--1080 ) {
+        margin-top: 5px;
+    }
+
+}

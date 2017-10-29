@@ -1,0 +1,49 @@
+// CLASS "THREE FIFTHS"
+
+.entry-content {
+
+    ul.ul-overview-elevation-narrow,
+    ul.ul-overview-elevation,
+    ul.overview-lifts li,
+    ul.overview-lifts-line-1,
+    ul.overview-lifts-line-2,
+    ul.overview-lift-totals,
+    ul.overview-pricing {
+        margin: 0;
+    }
+
+    ul.overview-slopes-colors li,
+    ul.ul-overview-elevation-narrow li,
+    ul.ul-overview-elevation li,
+    ul.ul-overview-other-slopes li,
+    ul.overview-lifts li,
+    ul.overview-lifts-line-1 li,
+    ul.overview-lifts-line-2 li,
+    ul.overview-lift-totals li,
+    ul.overview-pricing li {
+        list-style-type: none;
+    }
+
+}
+
+#overview-top-right {
+
+    @include media( $screen--1220 ) {
+        margin: 10px 0 0;
+    }
+
+    @include media( $screen--1080 ) {
+        margin: 5px 0 0;
+    }
+
+    @include media( $screen--800 ) {
+
+        margin: 0;
+
+        .overview-clear {
+            clear: both;
+        }
+
+    }
+
+}

@@ -1,0 +1,55 @@
+//
+// Neat Columns - Using the Neat framework
+//==========================================
+
+// CARLES -> LES VARIABLES SÓN DIFERENTS, S'HAN DE RENOMBRAR AMB LES DEL NOSTRE TEMA!!!
+
+.one-half,
+.three-sixths,
+.two-fourths {
+    @include span-columns(6);
+}
+
+.one-third,
+.two-sixths {
+    @include span-columns(4);
+}
+
+.four-sixths,
+.two-thirds {
+    @include span-columns(8);
+}
+
+.one-fourth {
+    @include span-columns(3);
+}
+
+.three-fourths {
+    @include span-columns(9);
+}
+
+.one-sixth {
+    @include span-columns(2);
+}
+
+.five-sixths {
+    @include span-columns(10);
+}
+
+.last {
+    @include omega();
+    clear: right;
+}
+
+.first {
+    @include omega();
+    clear: left;
+}
+
+.one-half {
+    clear: left;
+
+    &.last {
+        clear: none;
+    }
+}

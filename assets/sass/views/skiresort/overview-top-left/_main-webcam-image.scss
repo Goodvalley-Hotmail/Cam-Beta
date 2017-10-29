@@ -1,0 +1,12 @@
+// Estil P (pàrraf) on hi ha la imatge de la WebCam.
+.main-webcam-image {
+
+    margin: 5px 10px auto;
+    margin-bottom: 10px;
+
+    @include media( $screen--1220 ) {
+            margin: 5px 5px auto;
+            margin-bottom: 10px;
+    }
+
+}

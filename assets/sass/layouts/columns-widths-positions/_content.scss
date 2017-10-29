@@ -1,0 +1,46 @@
+/* ### Content */
+
+.content {
+
+    float: right;
+    width: $content--width;
+
+    // CAMERASKI -> NOT
+    @include media( $screen--1340 ) {
+        width: $content--width--1340;
+    }
+
+    @include media( $screen--1200 ) {
+        width: $content--width--1200;
+    }
+    // / CAMERASKI -> NOT
+
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+
+        width: $content-both-sidebars--width;
+
+        // CAMERASKI -> NOT
+        @include media( $screen--1340 ) {
+            width: $content-both-sidebars--width--1340;
+        }
+
+        @include media( $screen--1200 ) {
+            width: $content-both-sidebars--width--1200;
+        }
+        // / CAMERASKI -> NOT
+
+    }
+
+    .content-sidebar &,
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar & {
+        float: left;
+    }
+
+    .full-width-content & {
+        width: 100%;
+    }
+
+}

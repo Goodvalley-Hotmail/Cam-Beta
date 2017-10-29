@@ -1,0 +1,19 @@
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+
+    float: right;
+    width: $primary-sidebar--width;
+
+    @include media( $screen--1340 ) {
+
+        width: $primary-sidebar--width--1340;
+
+    }
+
+    .sidebar-content &,
+    .sidebar-sidebar-content & {
+        float: left;
+    }
+
+}

@@ -1,0 +1,65 @@
+//
+// Dimension Variables
+//==========================================
+
+//$base--width: 1280;
+//$gutter: 40px;
+
+// Imagine that:
+//      1.- Content is 880px (68.75% of 1280).
+//      2.- Gutter is 40px.
+//      3.- Sidebar is 360px (28.125% of 1280).
+//      Total is 1280px, our $base--width.
+// Then, in Content Widths Section:
+// $content--width: $base--width * 0.6875 + px;
+// $primary-sidebar--width: $max-width - $content--width - $gutter;
+// Or:
+// $primary-sidebar--width: $base--width * 0.28125 + px;
+
+//
+// Max Widths
+//==========================================
+$max-width: 1280px; // CameraSki: none
+$max-width--1340: 1140px;
+$max-width--1200: 960px;
+$max-width--1023: 800px;
+$max-width__home: none;
+$max-width__landing-page: 800px;
+
+// It goes Mobile First
+//$base-wrap-max-width: $max-width - 372px;
+//$wrap-max-width-medium: $max-width - 180px;
+//$wrap-max-width-large: $max-width;
+
+//
+// Content Widths
+//==========================================
+$content--width: 880px;
+$content--width--1340: 800px;
+$content--width--1200: 620px;
+
+$content-both-sidebars--width: 660px;
+$content-both-sidebars--width--1340: 580px;
+$content-both-sidebars--width--1200: 400px;
+
+$primary-sidebar--width: 360px;
+$primary-sidebar--width--1340: 300px;
+$secondary-sidebar--width: 180px;
+
+$content-sidebar-wrap--width: 1060px;
+$content-sidebar-wrap--width--1340: 920px;
+$content-sidebar-wrap--width--1200: 740px;
+
+// Header Module
+$title-area--width: 300px;
+$site-title--min-height: 80px;
+
+$header-right--width: 800px;
+$header-right--width--1200: 800px;
+$header-right--width--1340: 620px;
+
+// Footer Module
+$footer-widgets--width: 380px;
+$footer-widgets--width--1340: 340px;
+$footer-widgets--width--1200: 300px;
+$footer-widgets--width--1023: 100%;

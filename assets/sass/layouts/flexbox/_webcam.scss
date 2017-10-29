@@ -1,0 +1,49 @@
+.flexbox-webcam {
+
+    background: #f6f6f6;
+
+    .webcams-one-fourth {
+        background-color: #1E73BE;
+        margin: 5px;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.webcam-wrap {
+    background: #f6f6f6;
+    margin: 5px;
+}
+
+.webcam-image {
+    margin: 0;
+}
+
+.webcam-info-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #1E73BE;
+}
+
+.webcam-name,
+.webcam-description {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.webcam-name {
+    margin: 5px 0 0;
+}
+
+.webcam-description {
+    margin: 0 0 5px 0;
+}

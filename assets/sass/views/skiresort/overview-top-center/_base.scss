@@ -1,0 +1,22 @@
+// CLASS "ONE FIFTH"
+.entry-content {
+
+    ul#ul-status,
+    ul#ul-season {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid $season--border-bottom-color;
+    }
+
+    ul#ul-status,
+    ul#ul-season,
+    ul#ul-today {
+        margin: 0;
+    }
+
+    ul#ul-status li,
+    ul#ul-season li,
+    ul#ul-today li {
+        list-style-type:none;
+    }
+
+}

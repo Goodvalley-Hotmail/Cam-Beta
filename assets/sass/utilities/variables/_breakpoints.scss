@@ -1,0 +1,34 @@
+//
+// Breakpoints
+//==========================================
+
+$screen--1600: new-breakpoint( max-width $screen-1600 12 );
+$screen--1440: new-breakpoint( max-width $screen-1440 12 );
+$screen--1360: new-breakpoint( max-width $screen-1360 12 );
+$screen--1340: new-breakpoint( max-width $screen-1340 12 ); // Genesis Sample
+$screen--1320: new-breakpoint( max-width $screen-1320 12 );
+$screen--1280: new-breakpoint( max-width $screen-1280 12 );
+$screen--1220: new-breakpoint( max-width $screen-1220 12 );
+$screen--1200: new-breakpoint( max-width $screen-1200 12 ); // Genesis Sample
+$screen--1152: new-breakpoint( max-width $screen-1152 12 );
+$screen--1080: new-breakpoint( max-width $screen-1080 12 );
+$screen--1024: new-breakpoint( max-width $screen-1024 12 );
+$screen--1023: new-breakpoint( max-width $screen-1023 6 ); // Genesis Sample
+$screen--960: new-breakpoint( max-width $screen-960 12 );
+$screen--932: new-breakpoint( max-width $screen-932 12 );
+$screen--885: new-breakpoint( max-width $screen-885 12 );
+$screen--860: new-breakpoint( max-width $screen-860 12 ); // Genesis Sample
+$screen--835: new-breakpoint( max-width $screen-835 12 );
+$screen--810: new-breakpoint( max-width $screen-810 12 );
+$screen--800: new-breakpoint( max-width $screen-800 12 );
+$screen--768: new-breakpoint( max-width $screen-768 12 );
+$screen--680-min: new-breakpoint( min-width $screen-680-min 12 );
+$screen--680-max: new-breakpoint( max-width $screen-680-max 12 );
+$screen--568: new-breakpoint( max-width $screen-568 12 );
+$screen--520: new-breakpoint( max-width $screen-520 12 );
+$screen--481-min: new-breakpoint( min-width $screen-481-min 12 );
+$screen--481-max: new-breakpoint( max-width $screen-481-max 12 );
+$screen--430: new-breakpoint( max-width $screen-430 12 );
+$screen--415: new-breakpoint( max-width $screen-415 12 );
+$screen--340: new-breakpoint( max-width $screen-340 12 );
+$screen--320: new-breakpoint( max-width $screen-320 12 );

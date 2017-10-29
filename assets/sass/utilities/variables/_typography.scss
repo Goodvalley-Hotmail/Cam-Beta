@@ -1,0 +1,201 @@
+//
+// Fonts
+//==========================================
+$font-family--source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-family--lato: Lato, sans-serif;
+
+//
+// Base Defaults
+//==========================================
+$html--font-size: 62.5%;
+$rem-baseline: 10px;
+$rem-fallback: true;
+
+$base--font-family: $font-family--lato;
+//$base--font-size: 14;
+//$base--font-size--860: 18;
+//$base__div--font-size: 1.4rem;
+//$base__div--font-size--860: 1.8rem;
+$base--line-height: 1.625;
+
+$base--font-size: 14px;
+$base--font-size--860: 18px;
+$base__div--font-size: 14px;
+$base__div--font-size--860: 18px;
+
+//
+// Headings
+//==========================================
+$headings--font-family: 'Droid Sans', Lato, sans-serif; // SKIREV Anterior: font-family: 'Source Sans Pro', sans-serif;
+$headings--line-height: 1.2;
+
+//$h1--font-size: 21; // CAMERASKI Anterior: 36px;
+//$h2--font-size: 30; // CAMERASKI Anterior: 30px;
+//$h3--font-size: 24; // CAMERASKI Anterior: 24px;
+//$h4--font-size: 14; // CAMERASKI Anterior: 20px;
+//$h5--font-size: 18; // CAMERASKI Anterior: 18px;
+//$h6--font-size: 16; // CAMERASKI Anterior: 16px;
+
+$h1--font-size: 21px; // CAMERASKI Anterior: 36px;
+$h2--font-size: 30px; // CAMERASKI Anterior: 30px;
+$h3--font-size: 24px; // CAMERASKI Anterior: 24px;
+$h4--font-size: 14px; // CAMERASKI Anterior: 20px;
+$h5--font-size: 18px; // CAMERASKI Anterior: 18px;
+$h6--font-size: 16px; // CAMERASKI Anterior: 16px;
+
+//
+// Elements
+//==========================================
+//$blockquote--font-size: 30;
+//$input--font-size: 18;
+
+$blockquote--font-size: 30px;
+$input--font-size: 18px;
+
+//
+// Form Elements
+//==========================================
+//$button--font-size: 16;
+
+$button--font-size: 16px;
+
+//
+// Header
+//==========================================
+//$site-title--font-size: 30;
+//$site-description--font-size: 16;
+
+$site-title--font-size: 30px;
+$site-description--font-size: 16px;
+
+//
+// Navigation
+//==========================================
+//$nav--font-size: 16;
+//$submenu--font-size: 14;
+//$primary-nav--font-size: 14;
+
+$nav--font-size: 16px;
+$submenu--font-size: 14px;
+$primary-nav--font-size: 14px;
+
+//
+// Footer
+//==========================================
+//$site-footer--font-size: 16;
+//$footer-widgets--font-size: 18;
+
+$site-footer--font-size: 16px;
+$footer-widgets--font-size: 18px;
+
+//
+// Entry Content
+//==========================================
+//$entry-title--font-size: 26;
+//
+//$entry-header__entry-meta--font-size: 16;
+//$entry-footer__entry-meta--font-size: 16;
+//
+//$archive-pagination--font-size: 16;
+
+$entry-title--font-size: 26px;
+
+$entry-header__entry-meta--font-size: 16px;
+$entry-footer__entry-meta--font-size: 16px;
+
+$archive-pagination--font-size: 16px;
+
+//
+// Comments
+//==========================================
+//$comments--font-size: 16;
+
+$comments--font-size: 16px;
+
+//
+// Widgets
+//==========================================
+//$sidebar--font-size: 16;
+//$widget-title--font-size: 18;
+//$featured-content__entry-title--font-size: 20;
+
+$sidebar--font-size: 16px;
+$widget-title--font-size: 18px;
+$featured-content__entry-title--font-size: 20px;
+
+//
+// Plugins
+//==========================================
+//$enews--font-size: 16;
+
+$enews--font-size: 16px;
+
+//
+// General Components
+//==========================================
+//$breadcrumbs--font-size: 16;
+//$author-box--font-size: 18;
+//$author-box__title--font-size: 26; // CAMERASKI -> Original: 20px
+//$after-entry--font-size: 18;
+//$archive-title--font-size: 26; // CAMERASKI -> Original: 20px
+//$archive-description--font-size: 18;
+//$archive-entry-title--font-size: 2;
+
+$breadcrumbs--font-size: 16px;
+$author-box--font-size: 18px;
+$author-box__title--font-size: 26px; // CAMERASKI -> Original: 20px
+$after-entry--font-size: 18px;
+$archive-title--font-size: 26px; // CAMERASKI -> Original: 20px
+$archive-description--font-size: 18px;
+$archive-entry-title--font-size: 20px;
+
+//
+// Ski Resort
+//==========================================
+//$season--font-size: 12;
+//$today-title--font-size: 26;
+//$today-data--font-size: 1.3px;
+//
+//$slopes-colors--line-height: 1.225;
+//$slopes-colors--line-height--800: 1.325;
+//$slopes-colors--font-size: 12;
+//$slopes-colors--font-size--1220: 13;
+//$slopes-colors--font-size--1024: 12;
+//$slopes-colors--font-size--800: 14;
+//$slopes-colors--font-size--680-max: 13;
+//$slopes-colors--font-size--568: 12;
+//
+//$elevation-narrow--font-size: 12;
+//
+//$elevation--line-height: 1.225;
+//$elevation--font-size: 12;
+//
+//$other-slopes--line-height: 1.225;
+//
+//$lifts--font-size: 12;
+//
+//$font-icons--font-size: 38;
+
+$season--font-size: 12px;
+$today-title--font-size: 26px;
+$today-data--font-size: 13px;
+
+$slopes-colors--line-height: 1.225;
+$slopes-colors--line-height--800: 1.325;
+$slopes-colors--font-size: 12px;
+$slopes-colors--font-size--1220: 13px;
+$slopes-colors--font-size--1024: 12px;
+$slopes-colors--font-size--800: 14px;
+$slopes-colors--font-size--680-max: 13px;
+$slopes-colors--font-size--568: 12px;
+
+$elevation-narrow--font-size: 12px;
+
+$elevation--line-height: 1.225;
+$elevation--font-size: 12px;
+
+$other-slopes--line-height: 1.225;
+
+$lifts--font-size: 12px;
+
+$font-icons--font-size: 38px;

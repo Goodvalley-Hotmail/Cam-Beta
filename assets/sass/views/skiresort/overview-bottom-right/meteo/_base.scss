@@ -1,0 +1,785 @@
+//
+// DIV ID "OVERVIEW-METEO
+//==========================================
+.mobileOverviewTable {
+
+    display: none;
+
+    @include media( $screen--481-min ) {
+        display: none;
+    }
+
+    @include media( $screen--481-max ) {
+        display: table;
+    }
+
+}
+
+.myTemp {
+    text-shadow: 1px 1px black;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+#pagina {
+    border-radius: 5px;
+    margin: 0px auto;
+    color: black;
+    padding: 0;
+}
+
+.meteo-update {
+    float: right;
+    line-height: 1.225;
+    margin: 5px auto;
+    text-align: right;
+}
+
+#update-times,
+#overview-forecast {
+    margin: 5px auto;
+    /*margin-top: 10px;*/
+    width: 98%;
+}
+
+.overviewTable,
+.yrno6hTable_1,
+.yrno6hTable,
+.yrno3hTable_1,
+.yrno3hTable,
+.meteoYrnoTable,
+.meteoYrnoTable3h {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    color: black;
+    /*border-top-left-radius: 8px;*/
+    /*border-top-right-radius: 8px;*/
+    width: 100%; // CAMERASKI - Anterior: 100%
+    line-height: 1.2;
+    text-align: center;
+}
+
+.mobileOverviewTable,
+.mobileYrno6hTable,
+.mobileYrno6hTable_1,
+.mobileYrno3hTable,
+.mobileYrno3hTable_1 {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    /*border-top-left-radius: 8px;*/
+    /*border-top-right-radius: 8px;*/
+    width: 100%; // CAMERASKI - Anterior: 100%
+    color: black;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.overviewTable,
+.yrno6hTable,
+.yrno3hTable,
+.mobileYrno6hTable,
+.mobileYrno3hTable {
+    margin: 10px auto;
+}
+
+.yrno6hTable_1,
+.yrno3hTable_1,
+.meteoYrnoTable,
+.meteoYrnoTable3h {
+    margin: 0;
+}
+
+.mobileOverviewTable {
+    margin: 20px auto;
+}
+
+.mobileYrno6hTable_1,
+.mobileYrno3hTable_1 {
+    margin: 0 auto;
+}
+
+.centerTable,
+.provaCenterTable,
+.mobileCenterTable,
+.mobileProvaCenterTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overviewTable th,
+.meteoYrnoTable th,
+.meteoYrnoTable3h th,
+.yrno6hTable_1 th,
+.yrno6hTable th,
+.yrno3hTable_1 th,
+.yrno3hTable th,
+.overviewTable td,
+.meteoYrnoTable td,
+.meteoYrnoTable3h td,
+.yrno6hTable_1 td,
+.yrno6hTable td,
+.yrno3hTable_1 td,
+.yrno3hTable td {
+    text-align: center;
+}
+
+.mobileOverviewTable td,
+.mobileYrno6hTable_1 td,
+.mobileYrno6hTable td,
+.mobileYrno3hTable_1 td,
+.mobileYrno3hTable td {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.th-period,
+.td-period,
+.mobile-td-period-1,
+.mobile-td-period-2 {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.td-data-icons,
+.td-data-temperature,
+.td-data-weather,
+.td-arrow-wind,
+.td-foot {
+    padding: 5px;
+}
+
+.td-data-temperature {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.overviewTable th,
+.tr-dayParts td,
+.yrno6hTable_1 th,
+.yrno6hTable th,
+.yrno3hTable_1 th,
+.yrno3hTable th {
+    border-bottom: 1px solid #000;
+}
+
+.overviewTable {
+
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4) {
+        border-left: 1px solid #000;
+    }
+
+    @include media( $screen--481-max ) {
+        display: none;
+    }
+
+}
+
+.tr-dayParts {
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.yrno6hTable {
+
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.yrno3hTable {
+
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-data-weather {
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-3h-data-baro {
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-3h-data-temp {
+
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(9),
+    &:nth-child(11),
+    &:nth-child(13),
+    &:nth-child(15) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-3h-wind-speed {
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-3h-wind-desc {
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.tr-top {
+
+    td:nth-child(3),
+    td:nth-child(5),
+    td:nth-child(7) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.tr-icons {
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.tr-weather {
+
+    td:nth-child(3),
+    td:nth-child(5),
+    td:nth-child(7) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.tr-bottom {
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.td-data-temp,
+.td-arrow-wind,
+.td-6h-data-temperature {
+    border-left: 1px solid #ccc;
+}
+
+.td-3h-arrow-wind {
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8),
+    &:nth-child(10),
+    &:nth-child(12),
+    &:nth-child(14),
+    &:nth-child(16) {
+        border-left: 1px solid #ccc;
+    }
+
+}
+
+.td-6h-data-temperature {
+    border-bottom: 1px solid #ccc;
+}
+
+.td-3h-data-baro,
+.td-3h-data-temp,
+.td-3h-arrow-wind,
+.td-3h-wind-speed {
+    border-top: 1px solid #ccc;
+}
+
+.td-data-weather,
+.td-foot {
+    border-top: 1px solid #ccc;
+}
+
+.td-foot {
+    color: #1e73be;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+td.mobile-td-period-1,
+td.mobile-td-period-2 {
+
+    font-size: 1.4rem;
+
+    @include media( $screen--415 ) {
+        font-size: 1.2rem;
+    }
+
+}
+
+.mobile-td-data-icons {
+    padding: 0;
+}
+
+.row-dark,
+.row-light,
+.tr3hRow {
+    color: #333;
+}
+
+/*.row-dark {
+	background-color: transparent;
+	background-color: #EEEEEE;
+	background-color: white;
+}
+
+.row-light {
+	background-color: transparent;
+	background-color: #f1f8fe;
+	background-color: white;
+}*/
+
+.row-dark,
+.row-light,
+.tr3hRow {
+    background-color: white;
+}
+
+.overviewYrnodateline,
+.provaYrnoDateline,
+.yrnoDateHeader {
+    color: white;
+    vertical-align: middle;
+    height: 28px;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-spacing: 4px;
+    border-color: gray;
+}
+
+.yrnoDateHeader {
+    background-color: #1E73BE;
+}
+
+.yrnoDateHeader th {
+    padding: 5px 10px;
+}
+
+//
+// METEO TABS
+//==========================================
+#blue {
+
+    color: black;
+    /*background-color: #F1F8FE;*/
+
+    li.tabberactive a {
+        background-color: #1E73BE;
+    }
+
+    .table-top,
+    .table-top3h {
+        background-color: white;
+        border-bottom: 3px solid #333;
+        color: black;
+        font-weight: bold;
+    }
+
+    .row-dark {
+        /*background-color: transparent;*/
+        /*background-color: #EEEEEE;*/
+        background-color: white;
+    }
+
+}
+
+
+
+// .tabber = before the tabber interface is set up.
+// .tabberlive = after the tabber interface is set up.
+.tabber {
+}
+
+.tabberlive {
+
+    margin-top: 1em;
+    text-align: left;
+    width: 70%;
+
+    @include media( $screen--1080 ) {
+        width: 100%;
+    }
+
+    // REQUIRED to hide the non-active tab content. But do not hide them in the print stylesheet!
+    .tabbertabhide {
+        display: none;
+    }
+
+    // .tabbertab = the tab content
+    // Add style only after the tabber interface is set up (.tabberlive)
+    .tabbertab {
+        padding: 3px;
+        border: 0px solid #aaa;
+        /* height: 500px; */
+        overflow: auto;
+        border-top: 0;
+
+        /* If you don't want the tab size changing whenever a tab is changed, you can set a fixed height */
+        /* height: 200px; */
+
+        /* If you set a fix height set overflow to auto and you will get a scrollbar when necessary */
+        /* overflow: auto; */
+    }
+
+    /* If desired, hide the heading since a heading is provided by the tab */
+    .tabbertab h2 {
+        display: none;
+    }
+
+    .tabbertab h3 {
+        display: none;
+    }
+
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+.tabbernav {
+
+    margin: 0;
+    padding: 0 3px ;
+    border-bottom: 0px solid #778;
+    font: bold 12px Verdana, sans-serif;
+
+    ul.& {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    li {
+        list-style: none;
+        min-height: 40px;
+        margin: 0;
+        margin-right: 3px;
+        max-width: 30%;
+        display: inline;
+    }
+
+    li a {
+        background: white;
+        padding: 3px 0.5em;
+        min-height: 40px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /*margin-left: 3px;*/
+        border: 1px solid #778;
+        border-bottom: none;
+        /* background-color: #AAA;  */
+        text-decoration: none;
+        color: black;
+    }
+
+    li a:hover {
+        color: #000;
+        background: white;
+        border-bottom: none;
+    }
+
+    li.tabberactive a {
+        /*  background-color: #fff; */
+        border-bottom: none;
+        color: white;
+        height: 40px;
+    }
+
+}
+
+h2 {
+    height: 40px;
+}
+
+/*
+ul.tabbernav li.tabberactive a:hover {
+	color: #000;
+	background: white;
+	border-bottom: none;
+}*/
+
+#credit {
+    margin: 10px auto;
+    text-align: center;
+    width: 70%;
+}
+
+//
+// TABLE 3H
+//==========================================
+
+.table-top3h {
+
+    td {
+        border-bottom: 1px solid #000;
+    }
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+        border-left: 1px solid #000;
+    }
+
+}
+
+.tr3hRow {
+
+    td:nth-child(2),
+    td:nth-child(2),
+    td:nth-child(4),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(6),
+    td:nth-child(8),
+    td:nth-child(8) {
+        border-left: 1px solid #ccc;
+    }
+
+    &:nth-child(2) td,
+    &:nth-child(2) td,
+    &:nth-child(3),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(8) {
+        border-top: 1px solid #ccc;
+    }
+
+    td,
+    td {
+        border-bottom: 1px solid #ccc;
+        padding: 0;
+    }
+
+}
+
+.period3h {
+
+    color: #1e73be;
+
+    @include media( $screen--835 ) {
+        font-size: 1.2rem;
+    }
+
+}
+
+.mobile-td-data-temperature-1,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-1,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_1,
+.mobile-td-data-wind-text_2,
+.mobile-td-day-hours,
+.mobile-td-data-weather,
+.mobile-td-data-wind,
+.mobile-td-data-baro {
+    padding: 5px;
+}
+
+.mobile-td-data-icons-1,
+.mobile-td-data-icons-2,
+.mobile-td-rain,
+.mobile-td-data-temperature-1,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-1,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_1,
+.mobile-td-data-wind-text_2,
+.mobile-td-data-weather,
+.mobile-td-data-wind,
+.mobile-td-data-wind-text,
+.mobile-td-data-baro {
+    border-left: 1px solid #ccc;
+}
+
+.mobile-td-period-2,
+.mobile-td-data-icons-2,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_2 {
+    border-top: 1px solid #000;
+}
+
+.mobile-td-day-hours {
+    color: #1e73be;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mobileYrno6hTable_1 th,
+.mobileYrno6hTable th,
+.mobileYrno3hTable_1 th,
+.mobileYrno3hTable th {
+    border-bottom: 1px solid #000;
+}
+
+.mobile3htr-Top,
+.mobile3htr-Bottom {
+    background-color: white;
+}
+
+.mobile3hPeriod {
+    color: #1e73be;
+}
+
+.mobile3htr-Top td {
+    border-top: 1px solid #000;
+}
+
+.mobile3htr-Top td:nth-child(1) {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mobile3htr-Top {
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5) {
+        border-left: 1px solid #ccc;
+    }
+
+}
+
+.mobile3htr-Bottom {
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5) {
+        border-left: 1px solid #ccc;
+    }
+
+}
+
+@include media( $screen--680-min ) {
+
+    .mobileYrno6hTable_1,
+    .mobileYrno6hTable,
+    .mobileYrno3hTable_1,
+    .mobileYrno3hTable {
+        display: none;
+    }
+
+}
+
+@include media( $screen--680-max ) {
+
+    .yrno6hTable_1,
+    .yrno6hTable,
+    .yrno3hTable_1,
+    .yrno3hTable
+    .table-top3h {
+        display: none;
+    }
+
+}
+
+@include media( $screen--481-max ) {
+
+    // .tabbernav li:nth-child(1) {
+		// display: none;
+	// }
+
+}
+
+@include media( $screen--430 ) {
+
+    .mobile-tr-bottom td:nth-child(1) {
+        padding-left: 5px;
+    }
+
+}
+
+@include media( $screen--340 ) {
+
+    ul.tabbernav li:nth-child(2),
+    ul.tabbernav li:nth-child(3) {
+        display: none;
+    }
+
+}

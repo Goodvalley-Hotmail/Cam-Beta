@@ -1,0 +1,63 @@
+.overview-slopes-map {
+
+    float: left;
+    margin: 10px 0 10px 10px;
+    width: 39%;
+
+    @include media( $screen--1360 ) {
+        width: 38%;
+    }
+
+    @include media( $screen--1320 ) {
+        width: 37%;
+    }
+
+    @include media( $screen--1220 ) {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 41%;
+    }
+
+    @include media( $screen--1080 ) {
+        margin-top: 10px;
+        width: 37%;
+    }
+
+    @include media( $screen--932 ) {
+        margin-top: 10px;
+        width: 34%;
+    }
+
+    @include media( $screen--800 ) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 30%;
+    }
+
+    @include media( $screen--568 ) {
+        margin-left: 5px;
+        width: 30%;
+    }
+
+    @include media( $screen--415 ) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    p {
+
+        margin: 0;
+
+        @include media( $screen--415 ) {
+            margin-left: 0;
+            text-align: center;
+        }
+
+    }
+
+}
+
+body .overview-slopes-map-mini {
+    line-height: 0;
+}

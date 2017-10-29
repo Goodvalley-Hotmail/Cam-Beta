@@ -1,0 +1,11 @@
+// Estil P (pàrraf) on hi ha el títol de la WebCam.
+.main-webcam-title {
+    background-color: $main-webcam-title--background-color;
+    border: solid 0 10px $main-webcam-title--border-color;
+    border-radius: 2px;
+    color: $main-webcam-title--text-color;
+    display: inline-block;
+    margin: 10px 0 5px 0;
+    padding: 0 5px;
+    text-align: center;
+}

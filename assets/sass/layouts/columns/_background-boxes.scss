@@ -1,0 +1,6 @@
+.background-boxes {
+    background:#ffffff;
+    @include background( linear-gradient( top, #ffffff, #f6f6f6 ) );
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #d7d7d7;*/
+}

@@ -1,0 +1,24 @@
+#overview-central-tabs {
+
+    ul#ul-status li.datetime,
+    ul#ul-season li.season {
+        margin: 5px 5px;
+        text-align: center;
+    }
+
+    p {
+
+        margin: 5px 20px 5px;
+        text-align: center;
+
+        @include media( $screen--1220 ) {
+            margin: 0 20px 5px;
+        }
+
+    }
+
+    ul#ul-season li.season {
+        @include rem( font-size, $season--font-size );
+    }
+
+}

@@ -1,0 +1,41 @@
+#overview-right-tabs-2 ul.overview-pricing li.overview-pricing-title {
+    margin: 0;
+}
+
+span.see-all-prices {
+    background-color: $see-all-prices--background-color;
+    border: solid 0 10px $see-all-prices--border-color;
+    border-radius: 2px;
+    color: $see-all-prices--text-color;
+    display: inline-block;
+    margin: 5px 2px 5px 10px;
+    padding: 0 5px;
+}
+
+#overview-right-tabs-2 ul.overview-pricing {
+
+    float: left;
+    font-size: 12px;
+    margin: 0 0 5px 10px;
+    text-align: left;
+    width: 60%;
+
+    @include media( $screen--1220 ) {
+        margin: 0 0 5px 10px;
+    }
+
+    @include media( $screen--960 ) {
+
+        width: 100%;
+
+        li.end-of-prices-tab {
+            margin: 0;
+        }
+
+    }
+
+}
+
+#overview-right-tabs-2 ul.overview-pricing li.end-of-prices-tab {
+    margin: 0;
+}

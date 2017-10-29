@@ -1,0 +1,29 @@
+/*!
+	Theme Name: CameraSki
+	Theme URI: https://cameraski.com/
+
+	Description: This is the CameraSki Theme created for the Genesis Framework.
+	Author: Carles Goodvalley
+	Author URI: https://cameraski.com/
+
+	Version: 2.2.4
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	Text Domain: cameraski
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import 'bourbon';
+@import 'neat';
+@import '../../node_modules/sass-rem/rem';
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'layouts/index';
+@import 'components/index';
+@import 'plugins/index';
+@import 'views/index';

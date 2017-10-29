@@ -1,0 +1,188 @@
+//
+// Color assignments
+//==========================================
+$white: #fff;
+$white-dark: #eee;
+$white-darker: #ddd;
+$black: #000;
+$gray-lighter: #999;
+$gray-light: #777;
+$gray: #666;
+$gray-dark: #333;
+$red: #c3251d;
+$camski-blue: #1E73BE;
+
+//
+// General
+//==========================================
+$link--color: $red;
+$link--hover-color: $gray-dark;
+$headings--text-color: $gray; // CAMERASKI Anterior: No hi havia color;
+
+//
+// Elements
+//==========================================
+$body--background-color: url("images/main_bg.png") repeat;
+$base--text-color: $gray-dark;
+
+$gallery-image--border-color: $white-dark;
+$gallery-image--hover-border-color: $gray-lighter;
+
+//
+// Form Elements
+//==========================================
+$search-input--background-color: $white;
+$search-input--text-color: $gray-dark;
+
+$input--background-color: $white;
+$input--border-color: $white-darker;
+$input--border-focus-color: $gray-lighter;
+$input--text-color: $gray-dark;
+
+$button--background-color: $gray-dark;
+$button--hover-background-color: $red;
+$button--text-color: $white;
+$button--text-hover-color: $white;
+$button--disabled-background-color: $white-dark;
+$button--disabled-text-color: $gray-light;
+
+//
+// Header
+//==========================================
+$site-header--background-color: $camski-blue;
+$site-title--link-text-color: $gray-dark;
+
+//
+// Navigation
+//==========================================
+$nav--link-color: $gray-dark;
+$nav--link-hover-color: $red;
+$submenu--link-background-color: $white;
+$submenu--border-color: $white-dark;
+
+$primary-nav--background-color: $camski-blue;
+$primary-nav--link-color: $nav--link-color;
+$primary-nav--border-color: $white-dark;
+
+$secondary-nav--background-color: $white;
+$secondary-nav--link-color: $nav--link-color;
+$secondary-nav--border-color: $white-dark;
+
+$js-nav--background-color: $white;
+$js-nav--hover-link-color: $black;
+$js-nav--focus-link-color: $red;
+
+$nav-toggle--background-color: $white;
+$nav-toggle--text-color: $gray-dark;
+
+$archive-pagination--background-color: $white;
+$archive-pagination--text-color: $gray-dark;
+$archive-pagination--hover-background-color: $red;
+$archive-pagination--hover-text-color: $white;
+
+// Responsive Menu
+$menu-primary__responsive-menu-icon--text-color: $white;
+$responsive-menu--text-color: $white;
+
+//
+// Site Footer
+//==========================================
+$site-footer--background-color: linear-gradient(to top, #ffffff, #b5b5b5);
+$site-footer--border-color: $white-dark;
+$footer-widgets--background-color: $white;
+
+//
+// Entry Content
+//==========================================
+$entry-footer__meta--border-color: $white-dark;
+$entry--background-color: $white;
+$entry-header--background-color: $white;
+$entry-header--background: linear-gradient(to top, #ffffff, #f6f6f6);
+$entry-title--link-color: $gray-dark;
+$entry-title--hover-color: $red;
+$entry-content__code--background-color: $gray-dark;
+$entry-content__code--text-color: $white-dark;
+
+//
+// Comments
+//==========================================
+$comment--background-color: $white;
+
+//
+// Widgets
+//==========================================
+$widget--background-color: $white;
+$widget-title--link-color: $gray-dark;
+
+//
+// Plugins
+//==========================================
+$enews-widget--background-color: $gray-dark;
+$enews-widget__widget-title--text-color: $white;
+$enews-widget__input--border-color: $gray-dark;
+$enews__submit-button--background-color: $red;
+$enews__submit-button--text-color: $white;
+$enews__submit-button--background-hover-color: $white;
+$enews__submit-button--hover-text-color: $gray-dark;
+
+//
+// General Components
+//==========================================
+$breadcrumbs--background-color: $white;
+$author-box--background-color: $white;
+$after-entry--background-color: $white;
+$archive-description--background-color: $white;
+
+//
+// Ski Resorts Overview
+//==========================================
+//$column-classes--background-color: @include linear-gradient(to top, #ffffff, #f6f6f6);
+
+$main-webcam-title--background-color: #1E73BE;
+$main-webcam-title--border-color: #1E73BE;
+$main-webcam-title--text-color: $white;
+
+$season--border-bottom-color: #d7d7d7;
+
+$operating-status-open--background-color: #008000;
+$operating-status-open--border-color: #ff0000;
+$operating-status-open--text-color: $white;
+$operating-status-closed--background-color: #ff0000;
+$operating-status-closed--border-color: #ff0000;
+$operating-status-closed--text-color: $white;
+
+$today-title--text-color: #1E73BE;
+
+$slopes-green--text-color: green;
+$slopes-blue--text-color: blue;
+$slopes-red--text-color: red;
+$slopes-black--text-color: $black;
+$ski-routes--text-color: orange;
+$nordic-tracks--text-color: #9C9EA0;
+
+$snow-report--link-background-color: $black;
+$snow-report--link-text-color: $white;
+$snow-report--link-border-color: $black;
+
+$slopes-total--background-color: $black;
+$slopes-total--border-color: $black;
+$slopes-total--text-color: $white;
+
+$lift-icons--border-color: $black;
+$lift-totals--border-top-color: #d7d7d7;
+
+$see-all-prices--background-color: #1E73BE;
+$see-all-prices--border-color: #1E73BE;
+$see-all-prices--text-color: $white;
+
+$meteo-container--text-color: $black;
+
+
+//
+// WebCam
+//==========================================
+
+
+//
+// Meteo Weather
+//==========================================

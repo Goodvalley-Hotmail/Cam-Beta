@@ -1,0 +1,34 @@
+#overview-right-tabs-1 ul.ul-overview-elevation {
+
+    float: left;
+    line-height: $elevation--line-height;
+    margin: 0 0 5px 10px;
+    text-align: left;
+    @include rem( font-size, $elevation--font-size );
+    width: 50%;
+
+    @include media( $screen--1220 ) {
+        margin: 0 0 10px 5px;
+    }
+
+    @include media( $screen--800 ) {
+        margin: 0 0 5px 15px;
+        width: 40%;
+    }
+
+    @include media( $screen--415 ) {
+        margin-left: 10px;
+        margin-top: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+}
+
+#overview-right-tabs-2 ul.ul-overview-elevation {
+
+    @include media( $screen--1080 ) {
+        display: none;
+    }
+
+}

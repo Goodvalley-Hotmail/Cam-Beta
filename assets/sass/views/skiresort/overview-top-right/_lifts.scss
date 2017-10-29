@@ -1,0 +1,111 @@
+#overview-right-tabs-2 {
+
+    ul.overview-lifts,
+    ul.overview-lift-totals {
+        float: left;
+        @include rem( font-size, $lifts--font-size );
+        width: 100%;
+    }
+
+    ul.overview-lifts {
+
+        margin: 10px 0 0 10px;
+
+        @include media( $screen--800 ) {
+            margin-top: 10px;
+        }
+
+    }
+
+    ul.overview-lift-totals {
+
+        margin: 5px 0 0 10px;
+
+        @include media( $screen--960 ) {
+            float: left;
+            font-size: 12px;
+            margin: 10px 0 0 10px;
+            width: 100%;
+        }
+
+        & p.divi-horizontal-half {
+            border-top: 1px solid $lift-totals--border-top-color;
+            margin: 5px 0 5px;
+            width: 95%;
+        }
+
+    }
+
+    ul.overview-lifts li {
+        background: url("/images/icon-sprites.png") no-repeat scroll 0 0 transparent;
+        border: 1px solid $lift-icons--border-color;
+        float: left;
+        height: 50px;
+        margin-right: 10px;
+        overflow: hidden;
+        padding: 30px 0 0;
+        text-align: center;
+        width: 35px;
+    }
+
+    ul.overview-lifts li.cog-railways,
+    ul.overview-lifts li.funicular,
+    ul.overview-lifts li.aerial-cable-tramway-reversible-ropeway,
+    ul.overview-lifts li.circulating_ropeway-gondola-lift,
+    ul.overview-lifts li.combined-installation,
+    ul.overview-lifts li.chairlift,
+    ul.overview-lifts li.t-bar-lift-platter-button-lift,
+    ul.overview-lifts li.rope-tow-beginner-lift,
+    ul.overview-lifts li.magic-carpet-people-mover {
+        margin-bottom: 5px;
+    }
+
+    ul.overview-lifts li.cog-railways {
+        background-position: -665px 0;
+    }
+
+    ul.overview-lifts li.funicular {
+        background-position: -595px 0;
+    }
+
+    ul.overview-lifts li.aerial-cable-tramway-reversible-ropeway {
+        background-position: -70px 0;
+    }
+
+    ul.overview-lifts li.circulating_ropeway-gondola-lift {
+        background-position: -315px 0;
+    }
+
+    ul.overview-lifts li.combined-installation {
+        background-position: -385px 0;
+    }
+
+    ul.overview-lifts li.chairlift {
+        background-position: -245px 0;
+    }
+
+    ul.overview-lifts li.t-bar-lift-platter-button-lift {
+        background-position: -525px 0;
+    }
+
+    ul.overview-lifts li.rope-tow-beginner-lift {
+        background-position: -490px 0;
+    }
+
+    ul.overview-lifts li.magic-carpet-people-mover {
+        background-position: -420px 0;
+    }
+
+}
+
+@include media( $screen--960 ) {
+
+    #overview-right-tabs-2 ul.overview-lifts-line-1,
+    #overview-right-tabs-2 ul.overview-lifts-line-2 {
+        float: left;
+        font-size: 12px;
+        margin: 10px 0 0 10px;
+        width: 100%;
+    }
+
+}

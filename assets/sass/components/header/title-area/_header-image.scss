@@ -1,0 +1,32 @@
+.header-image {
+
+    .title-area {
+
+        margin: 0 auto;
+        max-width: $title-area--width;
+        padding: 10px 0; // CAMERASKI Anterior: 0;
+
+        @include media( $screen--1023 ) {
+
+            float: none;
+
+        }
+
+    }
+
+    .site-title > a {
+        background-position: center !important;
+        background-size: contain !important;
+        float: left;
+        min-height: $site-title--min-height;
+        width: 100%;
+    }
+
+    .site-description,
+    .site-title {
+        display: block;
+        // CAMERASKI text-indent: -9999px;
+        text-indent: 0;
+    }
+
+}

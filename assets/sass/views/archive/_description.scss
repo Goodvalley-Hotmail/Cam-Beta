@@ -1,0 +1,21 @@
+.archive-description {
+
+    background-color: $archive-description--background-color;
+    @include rem( font-size, $archive-description--font-size );
+    margin: 10px 0; // CAMERASKI -> Original: 40px
+    padding: 10px 10px 10px 20px; // CAMERASKI -> Original: 60px
+
+    @include media( $screen--860 ) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        color: #000;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+}
