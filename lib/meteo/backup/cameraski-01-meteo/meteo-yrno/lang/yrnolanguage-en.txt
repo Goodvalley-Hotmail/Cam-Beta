@@ -1,0 +1,209 @@
+# langfile wxsim 3in1 leuven Beta as of 2013-01-06 
+charset|ISO-8859-1|
+# days of the week long
+langlookup|Friday|Friday|  
+langlookup|Monday|Monday|  
+langlookup|Saturday|Saturday|  
+langlookup|Sunday|Sunday|  
+langlookup|Thursday|Thursday|  
+langlookup|Tuesday|Tuesday|  
+langlookup|Wednesday|Wednesday|  
+# month names long
+langlookup|April|April|  
+langlookup|August|August|  
+langlookup|December|December|  
+langlookup|February|February|  
+langlookup|January|January|  
+langlookup|July|July|  
+langlookup|June|June|  
+langlookup|March|March|  
+langlookup|May|May|  
+langlookup|November|November|  
+langlookup|October|October|  
+langlookup|September|September|  
+# time created
+langlookup|Updated|Updated|  
+langlookup|Next update|Next update|
+#  tab names
+langlookup|Overview|Overview|
+langlookup|Forecast by 3 hour intervals|Forecast by 3 hour intervals|
+langlookup|48 hours details|48 hours details|
+langlookup|Grass and soil forecast|Grass and soil forecast|
+# column headers
+langlookup|Icon|Icon|
+langlookup|Temperature|Temperature|  
+langlookup|Wind|Wind|  
+langlookup|Precipation|Precipitation|
+langlookup|UV|UV|
+langlookup|Pressure|Pressure|  
+langlookup|Conditions|Conditions|  
+langlookup|Thunderstorm|Thunderstorm|  
+langlookup|probability|probability|
+langlookup|Dewpoint|Dewpoint|
+langlookup|Humidity|Humidity|  
+langlookup|Cloud cover|Cloud cover|
+langlookup|Visibility|Visibility|  
+langlookup|Surface temperature|Surface temperature|
+langlookup|Grass temperature|Grass temperature|
+langlookup|Soil|Soil|
+langlookup|Moisture|Moisture|  
+langlookup|Rain|Rain|  
+# UV words 
+langlookup|Low|Low|  
+langlookup|Medium|Medium|  
+langlookup|High|High|  
+langlookup|Very High|Very High|  
+langlookup|Extreme|Extreme|  
+# beafort wind names
+langlookup|Calm|Calm|  
+langlookup|Fresh breeze|Fresh breeze|  
+langlookup|Gale|Gale|  
+langlookup|Gentle breeze|Gentle breeze|  
+langlookup|Hurricane|Hurricane|  
+langlookup|Light air|Light air|  
+langlookup|Light breeze|Light breeze|  
+langlookup|Moderate breeze|Moderate breeze|  
+langlookup|Near gale|Near gale|  
+langlookup|Storm|Storm|  
+langlookup|Strong breeze|Strong breeze|  
+langlookup|Strong gale|Strong gale|  
+langlookup|Violent storm|Violent storm|  
+# wind direction compass headings
+langlookup|E|E|  
+langlookup|ENE|ENE|  
+langlookup|ESE|ESE|  
+langlookup|East|East|  
+langlookup|N|N|  
+langlookup|NE|NE|  
+langlookup|NNE|NNE|  
+langlookup|NNW|NNW|  
+langlookup|NW|NW|  
+langlookup|North|North|  
+langlookup|S|S|  
+langlookup|SE|SE|  
+langlookup|SSE|SSE|  
+langlookup|SSW|SSW|  
+langlookup|SW|SW|  
+langlookup|South|South|  
+langlookup|W|W|  
+langlookup|WNW|WNW|  
+langlookup|WSW|WSW|  
+langlookup|West|West|  
+# heat words
+langlookup|Cold|Cold|  
+langlookup|Comfortable|Comfortable|  
+langlookup|Cool|Cool|  
+langlookup|Extreme Cold|Extreme Cold|  
+langlookup|Extreme Heat Caution|Extreme Heat Caution|  
+langlookup|Extreme Heat Danger|Extreme Heat Danger|  
+langlookup|Extremely Hot|Extremely Hot|  
+langlookup|Heat Danger|Heat Danger|  
+langlookup|Hot|Hot|  
+langlookup|Uncomfortably Cold|Uncomfortably Cold|  
+langlookup|Uncomfortably Hot|Uncomfortably Hot|  
+langlookup|Unknown|Unknown|  
+langlookup|Very Cold|Very Cold|  
+langlookup|Warm|Warm|  
+# graphs
+langlookup|Graphs|Graphs|
+langlookup|Thunder|Thunder|  
+langlookup|Max/Min Temperature|Max/Min Temperature|
+langlookup|Minimum temperature|Minimum temperature|
+langlookup|Maximum temperature|Maximum temperature|
+langlookup|Sol|Sol|
+# other
+langlookup|-|-|
+langlookup|Daylength|Daylength|
+langlookup|less than|less than|
+langlookup|more than|more than|
+langlookup|Feels like|Feels like|  
+langlookup|Windgust|Windgust|
+langlookup|None|None|  
+langlookup|No precipation|No precipation|
+langlookup|PoP|PoP|
+langlookup|Snowdepth|Snowdepth|
+langlookup|Solar|Solar|  
+langlookup|wsWxsimForecast.|The weather forecast for the area of |
+langlookup|by:|Prepared by:|
+# cloud and precipitation conditions
+langlookup|Clear|Clear|  
+langlookup|Mostly clear|Mostly clear|
+langlookup|Cloudy|Cloudy|  
+langlookup|Mostly cloudy|Mostly Cloudy|  
+langlookup|Partly cloudy|Partly cloudy|  
+langlookup|Heavy dew|Heavy dew|
+langlookup|Light dew|Light dew|
+langlookup|Moderate dew|Moderate dew|
+langlookup|Drizzle|Drizzle|  
+langlookup|Chance of drizzle|Chance of drizzle|
+langlookup|Probably drizzle|Probably drizzle|
+langlookup|Dense fog|Dense fog|
+langlookup|Light fog|Light fog|
+langlookup|Moderate fog|Moderate fog|
+langlookup|Freezing drizzle|Freezing drizzle|
+langlookup|Freezing rain|Freezing rain|  
+langlookup|Chance of freezing rain|Chance of freezing rain|
+langlookup|Probably freezing rain|Probably freezing rain|
+langlookup|heavy frost|Heavy frost|
+langlookup|Light frost|Light frost|
+langlookup|Moderate frost|Moderate frost|
+langlookup|Frost scattered|Frost scattered|
+langlookup|Ice storm|Ice storm|
+langlookup|Overcast|Overcast|  
+langlookup|Rain/sleet|Rain/sleet|
+langlookup|Chance of rain/sleet|Chance of rain/sleet|
+langlookup|Probably rain/sleet|Probably rain/sleet|
+langlookup|Snow/rain|Snow/rain|
+langlookup|Heavy snow/rain|Heavy snow/rain|
+langlookup|Chance of snow/rain|Chance of snow/rain|
+langlookup|Light rain/snow|Light rain/snow|
+langlookup|Probably rain/snow|Probably rain/snow|
+langlookup|Heavy rain|Heavy rain|
+langlookup|Light rain|Light rain|  
+langlookup|Moderate rain|Moderate rain|
+langlookup|Chance of showers|Chance of showers|
+langlookup|Probably showers|Probably showers|
+langlookup|Sleet/freezing rain|Sleet/freezing rain|
+langlookup|Chance of sleet/freezing rain|Chance of sleet/freezing rain|
+langlookup|Probably sleet/freezing rain|Probably sleet/freezing rain|
+langlookup|Chance of sleet/mix|Chance of sleet/mix|
+langlookup|Heavy sleet/mix|Heavy sleet/mix|
+langlookup|Sleet/mixture|Sleet/mixture|
+langlookup|Light sleet/mix|Light sleet/mix|
+langlookup|Probably sleet/mix|Probably sleet/mix|
+langlookup|Sleet/snow|Sleet/snow|
+langlookup|Chance of sleet/snow|Chance of sleet/snow|
+langlookup|Light sleet/snow|Light sleet/snow|
+langlookup|Probably sleet/snow|Probably sleet/snow|
+langlookup|Chance of sleet|Chance of sleet|
+langlookup|Heavy sleet|Heavy sleet|
+langlookup|Light sleet|Light sleet
+langlookup|Moderate sleet|Moderate sleet|
+langlookup|Probably sleet|Probably sleet|
+langlookup|Snow and blizzards|Snow and blizzards|
+langlookup|Chance of snow|Chance of snow|
+langlookup|Snow flurries|Snow flurries|
+langlookup|Heavy snow|Heavy snow|
+langlookup|Light snow|Light snow|
+langlookup|Moderate snow|Moderate snow|
+langlookup|Probably snow|Probably snow|
+langlookup|Sunny with haze|Sunny with haze|
+
+
+langlookup|night|night|
+langlookup|morning|morning|
+langlookup|afternoon|afternoon|
+langlookup|evening|evening|
+langlookup|MetNoForecast.|The weatherforecast for: |
+langlookup|yourArea|yourArea|
+langlookup|Period|Period|
+langlookup|Forecast|Forecast|
+langlookup|Precipitation|Precipitation|
+langlookup|from the|from the|
+langlookup|this|this|
+langlookup|Fair|Fair|
+langlookup|Light rain showers|Light rain showers|
+langlookup|Clear sky|Clear sky|
+langlookup|Rain showers|Rain showers|
+langlookup|Forecast by 6 hour intervals|Forecast by 6 hour intervals|
+langlookup|Forecast details|Forecast details|

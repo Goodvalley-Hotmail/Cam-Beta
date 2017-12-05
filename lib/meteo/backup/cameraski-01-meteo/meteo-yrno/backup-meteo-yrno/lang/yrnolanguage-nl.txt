@@ -1,0 +1,160 @@
+# langfile  of 2014-07-12 
+charset|UTF8|
+# days of the week long
+langlookup|Sunday|Zondag|
+langlookup|Monday|Maandag|
+langlookup|Tuesday|Dinsdag|
+langlookup|Wednesday|Woensdag|
+langlookup|Thursday|Donderdag|
+langlookup|Friday|Vrijdag|
+langlookup|Saturday|Zaterdag|
+# month names long
+langlookup|January|Januari|
+langlookup|February|Februarie|
+langlookup|March|Maart|
+langlookup|April|April|
+langlookup|May|Mei|
+langlookup|June|Juni|
+langlookup|July|Juli|
+langlookup|August|Augustus|
+langlookup|September|September|
+langlookup|October|Oktober|
+langlookup|November|November|
+langlookup|December|December|
+#day parts
+langlookup|Today|Vandaag|
+langlookup|morning|Ochtend|
+langlookup|afternoon|Namiddag|
+langlookup|evening|Avond|
+langlookup|night|Nacht|
+langlookup|this|deze|
+# time created
+langlookup|Updated|Gewijzigd|
+langlookup|Next update|Volgende versie om|
+# column headers
+langlookup|Forecast|Verwachting|
+langlookup|Temperature|Temperatuur|
+langlookup|Wind|Wind|
+langlookup|Precipitation|Neerslag|
+langlookup|Precipation|Neerslag|
+langlookup|and chance|en kans|
+langlookup|Pressure|Luchtdruk|
+# beafort wind names
+langlookup|Calm|Kalm|
+langlookup|Light air|Zwak|
+langlookup|Light breeze|Zwak|
+langlookup|Gentle breeze|Matig|
+langlookup|Moderate breeze|Matig|
+langlookup|Fresh breeze|Vrij krachtig|
+langlookup|Strong breeze|Krachtig|
+langlookup|Near gale|Hard|
+langlookup|Gale|Stormachtig|
+langlookup|Strong gale|Storm|
+langlookup|Storm|Zware storm|
+langlookup|Violent storm|Zeer zware storm|
+langlookup|Hurricane|Orkaankracht|
+# wind direction compass headings
+langlookup|E|O|
+langlookup|ENE|ONO|
+langlookup|ESE|OZO|
+langlookup|East|Oosten|
+langlookup|N|N|
+langlookup|NE|NO|
+langlookup|NNE|NNO|
+langlookup|NNW|NNW|
+langlookup|NW|NW|
+langlookup|North|Noorden|
+langlookup|S|Z|
+langlookup|SE|ZO|
+langlookup|SSE|ZZO|
+langlookup|SSW|ZZW|
+langlookup|SW|ZW|
+langlookup|South|Zuiden|
+langlookup|W|W|
+langlookup|WNW|WNW|
+langlookup|WSW|WZW|
+langlookup|West|Westen|
+# other
+langlookup|-|-|
+langlookup|MetNoForecast.|Verwachtingen voor:|
+langlookup|Period|Periode|
+langlookup|from the|vanuit het|
+langlookup|by:|Opgesteld door:|
+langlookup|Daylength|Dag lengte|
+langlookup|Forecast by 6 hour intervals|Verwachtingen per 6 uur|
+langlookup|Forecast details|Gedetailleerde verwachtingen|
+langlookup|Graph|Grafiek|
+#
+# cloud and precipitation conditions
+
+langlookup|Rain showers|Regen buien|
+langlookup|Fair|Helder|
+langlookup|Light rain showers|Kleinere regen buien|
+langlookup|Clear sky|Heldere hemel|
+langlookup|Heavy rain showers|Zware regen buien|
+
+
+langlookup|Clear|Helder|
+langlookup|Mostly clear|Grotendeels onbewolkt|
+langlookup|Cloudy|Bewolkt|
+langlookup|Mostly cloudy|Grotendeels bewolkt|
+langlookup|Partly cloudy|Gedeeltelijk bewolkt|
+langlookup|Heavy dew|Veel dauw|
+langlookup|Light dew|Enige dauw|
+langlookup|Moderate dew|Dauw|
+langlookup|Drizzle|Motregen|
+langlookup|Chance of drizzle|Kans op motregen|
+langlookup|Probably drizzle|Waarschijnlijk motregen|
+langlookup|Dense fog|Zware mist|
+langlookup|Light fog|Lichte mist|
+langlookup|Moderate fog|Mist|
+langlookup|Freezing drizzle|Aanvriezende motregen|
+langlookup|Freezing rain|IJsregen|
+langlookup|Chance of freezing rain|Kans op aanvriezende regen|
+langlookup|Probably freezing rain |Waarschijnlijk aanvriezende regen|
+langlookup|Heavy frost|Hevige vorst|
+langlookup|Light frost|Lichte vorst|
+langlookup|Moderate frost|Matige vorst|
+langlookup|Frost scattered|Verspreide vorst|
+langlookup|Ice storm|IJs en hagel|
+langlookup|Overcast|Geheel bewolkt|
+langlookup|Rain and or sleet|Winterse omstandigheden|
+langlookup|Chance of rain and or sleet|Kans op winterse omstandigheden|
+langlookup|Probably rain and or sleet|Waarschijnlijk winterse omstandigheden|
+langlookup|Snow and or rain|Sneeuw en of regen|
+langlookup|Heavy snow and or rain|Veel sneeuw en of regen|
+langlookup|Chance of snow and or rain|Kans op sneeuw en of regen|
+langlookup|Light rain and or snow|Wat sneeuw en of regen|
+langlookup|Probably rain and or snow|Waarschijnlijk sneeuw en of regen|
+langlookup|Heavy rain|Veel regen|
+langlookup|Light rain|Wat regen|
+langlookup|Moderate rain|Regen|
+langlookup|Chance of showers|Kans op buien|
+langlookup|Probably showers|(Regen)buien waarschijnlijk|
+langlookup|Sleet and or freezing rain|IJsregen en of aanvriezende regen|
+langlookup|Chance of sleet and or freezing rain|Kans op ijsregen en of aanvriezende regen|
+langlookup|Probably sleet and or freezing rain|Waarschijnlijk ijsregen en of aanvriezende regen|
+langlookup|Chance of sleet and or mix|Kans zeer winterse omstandigheden|
+langlookup|Heavy sleet and or mix|zeer winterse omstandigheden|
+langlookup|Sleet and or mixture|Winterse omstandigheden|
+langlookup|Light sleet and or mixture|Enige winterse omstandigheden|
+langlookup|Probably sleet and or mixture|Waarschijnlijk  winterse omstandigheden|
+langlookup|Sleet and or snow|Winterse omstandigheden|
+langlookup|Chance of sleet and or snow|Kans op winterse omstandigheden|
+langlookup|Light sleet and or snow|Enige winterse omstandigheden|
+langlookup|Probably sleet and or snow|Waarschijnlijk winterse omstandigheden|
+langlookup|Chance of sleet|Kans op ijsregen|
+langlookup|Heavy sleet|Veel ijsregen|
+langlookup|Light sleet|Wat ijsregen|
+langlookup|Moderate sleet|IJsregen|
+langlookup|Probably sleet|Waarschijnlijk ijsregen|
+langlookup|Snow and blizzards|Sneeuw en sneeuwstormen|
+langlookup|Chance of snow|Kans op sneeuw|
+langlookup|Snow flurries|Sneeuw buien|
+langlookup|Heavy snow|Veel sneeuw|
+langlookup|Light snow|Wat  sneeuw|
+langlookup|Moderate snow|Normale   sneeuw|
+langlookup|Probably snow|Waarschijnlijk sneeuw|
+langlookup|Sunny with haze|Zonnig met wat nevel|
+langlookup|Snow|Sneeuw|
+langlookup|Rain|Regen|

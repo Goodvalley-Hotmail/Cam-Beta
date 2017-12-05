@@ -1,0 +1,190 @@
+# langfile wxsim 3in1 leuven Beta as of 2013-01-06 
+charset|ISO-8859-1|
+# days of the week long
+langlookup|Friday|Vendredi|  
+langlookup|Monday|Lundi|  
+langlookup|Saturday|Samedi|  
+langlookup|Sunday|Dimanche|  
+langlookup|Thursday|Jeudi|  
+langlookup|Tuesday|Mardi|  
+langlookup|Wednesday|Mercredi|  
+# month names long
+langlookup|April|avril|  
+langlookup|August|Août|  
+langlookup|December|décembre|  
+langlookup|February|février|  
+langlookup|January|janvier|  
+langlookup|July|juillet|  
+langlookup|June|juin|  
+langlookup|March|mars|  
+langlookup|May|mai|  
+langlookup|November|novembre|  
+langlookup|October|octobre|  
+langlookup|September|septembre|  
+# time created
+langlookup|Updated|Mise à jour|  
+langlookup|Next update|Prochaine mise à jour|
+#  tab names
+langlookup|Overview|Vue d'ensemble|
+langlookup|Forecast by 3 hour intervals|3 heures d'intervalle|
+langlookup|48 hours details|48 heures plus de détails|
+langlookup|Grass and soil forecast|de l'herbe et du sol|
+# column headers
+langlookup|Icon|Icône|
+langlookup|Temperature|Température|  
+langlookup|Wind|Vent|  
+langlookup|Precipation|Précipitation|
+langlookup|UV|UV|
+langlookup|Pressure|Pression baro|  
+langlookup|Conditions|conditions de|  
+langlookup|Thunderstorm|Orage|  
+langlookup|probability|probabilité|
+langlookup|Dewpoint|Point de rosée|
+langlookup|Humidity|Humidité|  
+langlookup|Cloud cover|Couverture nuageuse|
+langlookup|Visibility|Visibilité|  
+langlookup|Surface temperature|Température à la surface|
+langlookup|Grass temperature|Température de l'herbe|
+langlookup|Soil|Sol|
+langlookup|Moisture|Humidité|  
+langlookup|Rain|Pluie|  
+# UV words 
+langlookup|Low|Bas|  
+langlookup|Medium|Moyen|  
+langlookup|High|Elevé|  
+langlookup|Very High|Très élevé|  
+langlookup|Extreme|Extrème|  
+# beafort wind names
+langlookup|Calm|Calme|  
+langlookup|Fresh breeze|Bonne brise|  
+langlookup|Gale|Coup de vent|  
+langlookup|Gentle breeze|Petite brise|  
+langlookup|Hurricane|Ouragan|  
+langlookup|Light air|Très légère brise|  
+langlookup|Light breeze|Légère brise|  
+langlookup|Moderate breeze|Jolie brise|  
+langlookup|Near gale|Grand frais|  
+langlookup|Storm|Tempête|  
+langlookup|Strong breeze|Vent frais|  
+langlookup|Strong gale|Fort coup de vent|  
+langlookup|Violent storm|Violente tempête|  
+# wind direction compass headings
+langlookup|E|E|  
+langlookup|ENE|ENE|  
+langlookup|ESE|ESE|  
+langlookup|East|Est|  
+langlookup|N|N|  
+langlookup|NE|NE|  
+langlookup|NNE|NNE|  
+langlookup|NNW|NNO|  
+langlookup|NW|NO|  
+langlookup|North|North|  
+langlookup|S|S|  
+langlookup|SE|SE|  
+langlookup|SSE|SSE|  
+langlookup|SSW|SSO|  
+langlookup|SW|SO|  
+langlookup|South|Sud|  
+langlookup|W|O|  
+langlookup|WNW|ONO|  
+langlookup|WSW|OSO|  
+langlookup|West|Ouest|  
+# heat words
+langlookup|Cold|froid|  
+langlookup|Comfortable|Confortable|  
+langlookup|Cool|frais|  
+langlookup|Extreme Cold|extrêmement froid|  
+langlookup|Extreme Heat Caution|fort risque de chaleur|  
+langlookup|Extreme Heat Danger|extrême danger de chaleur|  
+langlookup|Extremely Hot|extrêmement chaud|  
+langlookup|Heat Danger|danger de chaleur|  
+langlookup|Hot|Chaud|  
+langlookup|Uncomfortably Cold|inconfortablement froid|  
+langlookup|Uncomfortably Hot|inconfortablement chaud|  
+langlookup|Unknown|inconnu|  
+langlookup|Very Cold|Très froid|  
+langlookup|Warm|modérément chaud|  
+# graphs
+langlookup|Graphs|Graphiques|
+langlookup|Thunder|Orages|  
+langlookup|Max/Min Temperature|Température max/min|
+langlookup|Minimum temperature|Température minimale|
+langlookup|Maximum temperature|Température maximale|
+langlookup|Sol|Solaire|
+# other
+langlookup|-|-|
+langlookup|Daylength|La longueur du jour|
+langlookup|less than|moins que|
+langlookup|more than|plus que|
+langlookup|Feels like|Sensation de|  
+langlookup|Windgust|Rafale|
+langlookup|None|aucun|  
+langlookup|No precipation|aucune précipitation|
+langlookup|PoP|PoP|
+langlookup|Snowdepth|Profondeur de neige|
+langlookup|Solar|Solaire|  
+langlookup|wsWxsimForecast.|Les prévisions météorologiques pour la région de |
+langlookup|by:|Préparé par: |
+# cloud and precipation conditions
+langlookup|Clear|Ciel dégagé|  
+langlookup|Mostly clear|Ciel dégagé|
+langlookup|Cloudy|Nuageux|  
+langlookup|Mostly cloudy|Nuageux|  
+langlookup|Partly cloudy|Partiellement nuageux|  
+langlookup|Heavy dew|Forte rosée|
+langlookup|Light dew|Rosée léger|
+langlookup|Moderate dew|Rosée modérée|
+langlookup|Drizzle|Bruine|  
+langlookup|Chance of drizzle|Risque de bruine|
+langlookup|Probably drizzle|Probablement de bruine|
+langlookup|Dense fog|Brouillard dense|
+langlookup|Light fog|Léger brouillard|
+langlookup|Moderate fog|Brouillard|
+langlookup|Freezing drizzle|La bruine verglaçante|
+langlookup|Freezing rain|Pluie verglaçante|  
+langlookup|Chance of freezing rain|Risque de bruine verglaçante|
+langlookup|Probably freezing rain|Probablement  bruine verglaçante|
+langlookup|Heavy frost|Forte gelée|
+langlookup|Light frost|Gel léger|
+langlookup|Moderate frost|Modéré gel|
+langlookup|Frost scattered|Diffusée au gel|
+langlookup|Ice storm|tempête de verglas|
+langlookup|Overcast|Couvert|  
+langlookup|Rain and or sleet|La pluie ou le grésil|  ?
+langlookup|Chance of rain and or sleet|Risque de pluie ou le grésil|  ?
+langlookup|Probably rain and or sleet|Probablement la pluie et le grésil ou|  ?
+langlookup|Snow and or rain|La neige et la pluie|  ?
+langlookup|Heavy snow and or rain|Fortes chutes de neige et la pluie|  ?
+langlookup|Chance of snow and or rain|Risque de neige ou de pluie et de|  ?
+langlookup|Light rain and or snow|Faible pluie ou de la neige|  ?
+langlookup|Probably rain and or snow|Probablement pluie ou de la neige|  ?
+langlookup|Heavy rain|Fortes pluies|  ?
+langlookup|Light rain|Pluie faible|  
+langlookup|Moderate rain|Pluie modérée|  ?
+langlookup|Chance of showers|Possibilité d'averses|  ?
+langlookup|Probably showers|Probablement les averses|  ?
+langlookup|Sleet and or freezing rain|Grésil ou de pluie verglaçante|  ?
+langlookup|Chance of sleet and or freezing rain|Risque de verglas ou de pluie verglaçante|  ?
+langlookup|Probably sleet and or freezing rain|Probablement grésil ou de pluie verglaçante|  ?
+langlookup|Chance of sleet and or mix|Chance of sleet and or mix|  ?
+langlookup|Heavy sleet and or mix|Heavy sleet and or mix|  ?
+langlookup|Sleet and or mixture|Grésil ou du mélange|  ?
+langlookup|Light sleet and or mixture|Grésil léger ou du mélange|  ?
+langlookup|Probably sleet and or mixture|Probablement grésil ou du mélange|  ?
+langlookup|Sleet and or snow|Le grésil et la neige|  ?
+langlookup|Chance of sleet and or snow|Risque de verglas ou de la neige|  ?
+langlookup|Light sleet and or snow|Pluie ou neige légère|  ?
+langlookup|Probably sleet and or snow|Probablement pluie ou neige légère|  ?
+langlookup|Chance of sleet|Risque de verglas|  ?
+langlookup|Heavy sleet|Le grésil forte|  ?
+langlookup|Light sleet|Le grésil  légère|  ?
+langlookup|Moderate sleet|Le grésil|  ?
+langlookup|Probably sleet|Probablement le grésil|  ?
+langlookup|Snow and blizzards|La neige et les tempêtes de neige|  ?
+langlookup|Chance of snow|Risque de neige|  ?
+langlookup|Snow flurries|Averses de neige|  ?
+langlookup|Heavy snow|Neige abondante|  ?
+langlookup|Light snow|Neige légère|  ?
+langlookup|Moderate snow|neige modérée|  ?
+langlookup|Probably snow|Probablement neige|  ?
+langlookup|Sunny with haze|Ensoleillé avec de la brume|  ?

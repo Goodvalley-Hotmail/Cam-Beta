@@ -22,6 +22,10 @@ function load_nonadmin_files() {
 
 	$filenames = array(
 		'setup.php',
+		'components/cameraski/taxonomies.php',
+		'components/cameraski/cpts.php',
+		'components/cameraski/term-meta-locations.php',
+		'components/cameraski/functions-cameraski.php',
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',
 		'functions/formatting.php',
