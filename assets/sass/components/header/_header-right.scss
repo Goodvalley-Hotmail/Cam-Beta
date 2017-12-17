@@ -2,8 +2,8 @@
 --------------------------------------------- */
 
 .site-header .widget-area {
-    float: right;
-    text-align: right;
+    float: left;
+    text-align: left;
     width: $header-right--width;
 
     @include media( $screen--1200 ) {

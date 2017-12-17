@@ -19,12 +19,12 @@
 //
 // Max Widths
 //==========================================
-$max-width: 1280px; // CameraSki: none
-$max-width--1340: 1140px;
-$max-width--1200: 960px;
-$max-width--1023: 800px;
-$max-width__home: none;
-$max-width__landing-page: 800px;
+$site-inner--max-width: none; // 1280px;
+$site-inner--max-width--1340: none; /*1140px;*/
+$site-inner--max-width--1200: none; /*960px;*/
+$site-inner--max-width--1023: none; /*800px;*/
+$site-inner--max-width__home: none;
+$site-inner--max-width__landing-page: none; /*800px;*/
 
 // It goes Mobile First
 //$base-wrap-max-width: $max-width - 372px;
@@ -51,10 +51,11 @@ $content-sidebar-wrap--width--1340: 920px;
 $content-sidebar-wrap--width--1200: 740px;
 
 // Header Module
-$title-area--width: 300px;
+$title-area--width: 10%; /*300px;*/
+$title-area--width--1023: 10%;
 $site-title--min-height: 80px;
 
-$header-right--width: 800px;
+$header-right--width: 90%; /*800px;*/
 $header-right--width--1200: 800px;
 $header-right--width--1340: 620px;
 

@@ -4,24 +4,24 @@
 .site-inner,
 .wrap {
     margin: 0 auto;
-    max-width: $max-width; // CAMERASKI Anterior: max-width: 1280px;
+    max-width: $site-inner--max-width; /*max-width: 1280px;*/
 
     // CAMERASKI -> NOT
     @include media( $screen--1340 ) {
 
-        max-width: $max-width--1340;
+        max-width: $site-inner--max-width--1340;
 
     }
 
     @include media( $screen--1200 ) {
 
-        max-width: $max-width--1200;
+        max-width: $site-inner--max-width--1200;
 
     }
 
     @include media( $screen--1023 ) {
 
-        max-width: $max-width--1023;
+        max-width: $site-inner--max-width--1023;
 
     }
     // / CAMERASKI -> NOT
