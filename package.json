@@ -33,6 +33,9 @@
     "notify-send": "^0.1.2"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "sass-rem": "^2.0.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "description": ""
 }

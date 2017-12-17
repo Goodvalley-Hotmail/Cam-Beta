@@ -60,11 +60,11 @@
 
 // CAMERASKI Only for FrontPage
 .home .site-inner {
-    max-width: $max-width__home;
+    max-width: $site-inner--max-width__home;
     padding-top: 0;
 }
 // /CAMERASKI
 
 .landing-page .site-inner {
-    max-width: $max-width__landing-page;
+    max-width: $site-inner--max-width__landing-page;
 }
