@@ -10,3 +10,16 @@
  */
 
 namespace CameraSki;
+
+add_filter( 'genesis_footer_creds_text', __NAMESPACE__ . '\add_footer_credits' );
+/**
+ * Change the Credits line in the Footer.
+ *
+ * @since   1.0.0
+ *
+ * @return void
+ */
+function add_footer_credits() {
+	echo '<div class="creds"><p>Copyright &copy; ' . date( 'Y' ) . ' &middot; <a href="https://cameraski.com/">CameraSki</a> &middot; All Rights reserved</a></p></div>';
+}
+
