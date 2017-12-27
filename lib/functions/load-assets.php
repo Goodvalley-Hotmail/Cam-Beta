@@ -54,18 +54,4 @@ function remove_genesis_page_templates( $page_templates ) {
 	unset( $page_templates['page_archive.php'] );
 	unset( $page_templates['page_blog.php'] );
 	return $page_templates;
-}add_filter( 'theme_page_templates', __NAMESPACE__ . '\remove_genesis_page_templates' );
-/**
- * Removes Genesis Page Templates.
- *
- * @since   1.0.0
- *
- * @param $page_templates
- *
- * @return mixed
- */
-function remove_genesis_page_templates( $page_templates ) {
-	unset( $page_templates['page_archive.php'] );
-	unset( $page_templates['page_blog.php'] );
-	return $page_templates;
 }
