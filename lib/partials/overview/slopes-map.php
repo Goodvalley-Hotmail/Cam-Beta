@@ -12,7 +12,7 @@
 namespace CameraSki;
 
 // REPEATER - SLOPES MAPS
-$count_slopes_maps  = get_post_meta( get_the_ID(), 'slopes_maps', true );
+//$count_slopes_maps  = get_post_meta( get_the_ID(), 'slopes_maps', true );
 
 /*if ( $count_slopes_maps ) {
 
@@ -40,17 +40,24 @@ $count_slopes_maps  = get_post_meta( get_the_ID(), 'slopes_maps', true );
 
 }*/
 
-if ( $count_slopes_maps ) {
+//if ( $count_slopes_maps ) {
+//
+//	for ( $i = 0; $i < $count_slopes_maps; $i++ ) {
+//
+//		$slopes_map_full		= (int) get_post_meta( get_the_ID(), 'slopes_maps_' . $i . '_slopes_map_full', true );
+//		$slopes_map_thumbnail	= (int) get_post_meta( get_the_ID(), 'slopes_maps_' . $i . '_slopes_map_thumbnail', true );
+//
+//		if ( $slopes_map_thumbnail ) {
+//			echo '<p class="overview-slopes-map-mini"><a href="' . wp_get_attachment_url( $slopes_map_full ) . '">' . wp_get_attachment_image( $slopes_map_thumbnail, 'slopes_maps' ) . '</a></p>';
+//		}
+//
+//	}
+//
+//}
 
-	for ( $i = 0; $i < $count_slopes_maps; $i++ ) {
+$slopes_map_full		= get_post_meta( get_the_ID(), 'ski_resort_map_full', true );
+$slopes_map_thumbnail	= get_post_meta( get_the_ID(), 'ski_resort_map_thumbnail', true );
 
-		$slopes_map_full		= (int) get_post_meta( get_the_ID(), 'slopes_maps_' . $i . '_slopes_map_full', true );
-		$slopes_map_thumbnail	= (int) get_post_meta( get_the_ID(), 'slopes_maps_' . $i . '_slopes_map_thumbnail', true );
-
-		if ( $slopes_map_thumbnail ) {
-			echo '<p class="overview-slopes-map-mini"><a href="' . wp_get_attachment_url( $slopes_map_full ) . '">' . wp_get_attachment_image( $slopes_map_thumbnail, 'slopes_maps' ) . '</a></p>';
-		}
-
-	}
-
+if ( $slopes_map_thumbnail ) {
+	echo '<p class="overview-slopes-map-mini"><a href="' . wp_get_attachment_url( $slopes_map_full ) . '">' . wp_get_attachment_image( $slopes_map_thumbnail, 'slopes_maps' ) . '</a></p>';
 }

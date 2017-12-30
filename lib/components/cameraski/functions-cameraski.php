@@ -55,7 +55,7 @@ function custom_post_meta() {
 }
 
 // Enqueue YrNo Styles
-wp_enqueue_style( 'meteo-styles' );
+//wp_enqueue_style( 'meteo-styles' );
 
 add_filter( 'gettext', __NAMESPACE__ . '\remove_lostpassword_text' );
 /**

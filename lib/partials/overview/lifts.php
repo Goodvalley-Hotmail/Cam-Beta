@@ -39,8 +39,8 @@ if ( $count_lifts ) {
 				echo '<li class="aerial-cable-tramway-reversible-ropeway"><strong>' . $aerial_tramways_reversible_ropeways . '</strong></li>';
 			}
 
-			if ( $circulating_ropeway_gondola_lift ) {
-				echo ' <li class="circulating_ropeway-gondola-lift"><strong>' . $circulating_ropeway_gondola_lift . '</strong></li>';
+			if ( $circulating_ropeways_gondola_lifts ) {
+				echo ' <li class="circulating_ropeway-gondola-lift"><strong>' . $circulating_ropeways_gondola_lifts . '</strong></li>';
 			}
 
 			if ( $combined_installations_gondola_and_chair ) {
@@ -55,12 +55,12 @@ if ( $count_lifts ) {
 				echo '<li class="t-bar-lift-platter-button-lift"><strong>' . $t_bar_lifts_platters_button_lifts . '</strong></li>';
 			}
 
-			if ( $rope_tow_beginner_lift ) {
-				echo ' <li class="rope-tow-beginner-lift"><strong>' . $rope_tow_beginner_lift . '</strong></li>';
+			if ( $rope_tows_beginner_lifts ) {
+				echo ' <li class="rope-tow-beginner-lift"><strong>' . $rope_tows_beginner_lifts . '</strong></li>';
 			}
 
-			if ( $magic_carpet_people_mover ) {
-				echo ' <li class="magic-carpet-people-mover"><strong>' . $magic_carpet_people_mover . '</strong></li>';
+			if ( $magic_carpets_people_movers ) {
+				echo ' <li class="magic-carpet-people-mover"><strong>' . $magic_carpets_people_movers . '</strong></li>';
 			}
 
 			if ( $surface_lifts ) {

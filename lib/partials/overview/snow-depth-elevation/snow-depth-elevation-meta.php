@@ -32,7 +32,7 @@ if ( $count_snow_depth ) {
 
 	for ( $i = 0; $i < $count_snow_depth; $i++ ) {
 
-		$elevation_snow_unique		= get_post_meta( get_the_ID(), 'snow_depth_' . $i . '_elevation_snow_unique', true );
+		$elevation_snow_unique		= get_post_meta( get_the_ID(), 'snow_depth_' . $i . '_elevation_snow_depth_unique', true );
 		$elevation_snow_depth_min	= get_post_meta( get_the_ID(), 'snow_depth_' . $i . '_elevation_snow_depth_min', true );
 		$elevation_snow_depth_max	= get_post_meta( get_the_ID(), 'snow_depth_' . $i . '_elevation_snow_depth_max', true );
 		$elevation_snow_depth_1		= get_post_meta( get_the_ID(), 'snow_depth_' . $i . '_elevation_snow_depth_1', true );
@@ -64,6 +64,7 @@ if ( $count_name_depth ) {
 		$name_depth_5		= get_post_meta( get_the_ID(), 'name_depth_' . $i . '_name_depth_5', true );
 		$name_depth_6		= get_post_meta( get_the_ID(), 'name_depth_' . $i . '_name_depth_6', true );
 		$name_depth_7		= get_post_meta( get_the_ID(), 'name_depth_' . $i . '_name_depth_7', true );
+		$name_depth_8		= get_post_meta( get_the_ID(), 'name_depth_' . $i . '_name_depth_8', true );
 
 	}
 
