@@ -1,64 +1,43 @@
 /* ## CAMERASKI - Column Classes
 --------------------------------------------- */
 
-.one-half,
-.one-fifth,
-.one-fourth,
-.two-fifths,
-.three-fifths,
-.four-fifths,
-.five-fifths {
-    background:#ffffff;
-    background: linear-gradient(to top, #ffffff, #f6f6f6);
-    border-bottom: 1px solid #d7d7d7;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+.column-top-left,
+.column-top-center,
+.column-top-right,
+.column-top-right--bottom,
+.column-bottom {
     float: left;
 }
 
-.one-half,
-.one-fifth,
-.two-fifths,
-.three-fifths,
-.four-fifths  {
+.column-top-left,
+.column-top-center,
+.column-top-right,
+.column-bottom {
+    background: linear-gradient( to bottom, #ffffff, #f6f6f6 );
+}
+
+.column-top-left,
+.column-top-center,
+.column-top-right,
+.column-bottom {
+    border-bottom: 1px solid #d7d7d7;
+    box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1 );
+}
+
+
+.column-top-left,
+.column-top-center,
+.column-top-right,
+.column-top-right--top,
+.column-bottom {
     margin-left: 0.83333333333333%;
 }
 
-.one-half,
-.three-sixths,
-.two-fourths {
+.column-bottom {
     width: 49.583333333333%;
 }
 
-.one-third,
-.two-sixths {
-    width: 32.777777777778%;
-}
-
-.four-sixths,
-.two-thirds {
-    width: 66.388888888889%;
-}
-
-.one-fourth,
-.webcams-one-fourth {
-    max-width: 24.3%;
-}
-
-.three-fourths {
-    width: 74.791666666667%;
-}
-
-.one-fifth {
-
-    width: 27.333333333333%;
-
-    @include media( $screen--1220 ) {
-        width: 49.583333333333%;
-    }
-
-}
-
-.two-fifths {
+.column-top-left {
 
     text-align: center;
     width: 35.5%;
@@ -69,19 +48,28 @@
 
 }
 
-.three-fifths {
+.column-top-center {
 
-    width: 35.5%;// CAMERASKI Anterior: 59.666666666667%
+    width: 27.333333333333%;
+
+    @include media( $screen--1220 ) {
+        width: 49.583333333333%;
+    }
+
+}
+
+.column-top-right {
+
+    width: 35.5%;
 
     @include media( $screen--1220 ) {
         background: none;
         border-bottom: none;
         box-shadow: none;
         float: left;
-        background-color: url("images/main_bg.png") repeat;
         width: 100%;
-        display: -webkit-flex;
-        display: -ms-flexbox;
+        /*display: -webkit-flex;
+        display: -ms-flexbox;*/
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -89,41 +77,26 @@
 
 }
 
-//.four-fifths {
-//	width: 79.833333333333%;
-//}
-
-.one-sixth {
-    width: 15.972222222222%;
-}
-
-.five-sixths {
-    width: 83.194444444444%;
+.webcams-one-fourth {
+    max-width: 24.3%;
 }
 
 .first {
-    clear: both;
-    margin-left: 0;
-}
-
-.first-2 {
     margin-left: 0;
 }
 
 @include media( $screen--1220 ) {
 
-    .four-fifths,
-    .five-fifths	{
-        background:#ffffff;
-        background: linear-gradient(to top, #ffffff, #f6f6f6);
+    .column-top-right--top,
+    .column-top-right--bottom {
+        background: linear-gradient( to bottom, #ffffff, #f6f6f6 );
         border-bottom: 1px solid #d7d7d7;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1 );
         float: left;
         width: 49.583333333333%;
     }
 
-    .five-fifths {
-        float: left;
+    .column-top-right--bottom {
         margin-left: 0.83333333333333%;
     }
 
@@ -131,7 +104,7 @@
 
 @include media( $screen--960 ) {
 
-    .one-half {
+    .column-bottom {
         margin: 0;
         width: 100%;
     }
@@ -140,10 +113,10 @@
 
 @include media( $screen--800 ) {
 
-    .one-fifth,
-    .two-fifths,
-    .four-fifths,
-    .five-fifths {
+    .column-top-left,
+    .column-top-center,
+    .column-top-right--top,
+    .column-top-right--bottom {
         margin-left: 0;
         width: 100%;
     }

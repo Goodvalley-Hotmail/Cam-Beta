@@ -14,10 +14,10 @@ body {
     margin: 0;
 
     // CAMERASKI -> NO
-    @include media( $screen--860 ) {
+    /*@include media( $screen--860 ) {
         @include rem( font-size, $base--font-size--860 );
 
-    }
+    }*/
     // /CAMERASKI -> NO
 
     /* Chrome fix */
@@ -26,9 +26,9 @@ body {
         font-size: $base__div--font-size;
 
         // CAMERASKI -> NO
-        @include media( $screen--860 ) {
+        /*@include media( $screen--860 ) {
             font-size: $base__div--font-size--860;
-        }
+        }*/
         // /CAMERASKI -> NO
 
     }

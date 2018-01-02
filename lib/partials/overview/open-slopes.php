@@ -29,7 +29,7 @@ if ( $count_number_of_ski_slopes ) {
 		$off_piste_runs			= get_post_meta( get_the_ID(), 'number_of_ski_slopes_' . $i . '_number_of_off-piste_runs', true );
 		$manual_runs			= get_post_meta( get_the_ID(), 'number_of_ski_slopes_' . $i . '_number_of_manual_runs', true );
 
-		$total_slopes			= ( $green_slopes + $blue_slopes + $red_slopes + $black_slopes + $ski_routes + $nordic_tracks + $off_piste_runs );
+		$total_slopes			= ( $green_slopes + $blue_slopes + $red_slopes + $black_slopes + $double_black_slopes + $extreme_black_slopes + $ski_routes + $nordic_tracks + $off_piste_runs );
 
 	}
 
@@ -87,7 +87,7 @@ if ( $manual_runs ) {
 				echo ' + ';
 			}
 
-			echo ' <strong><span class="working-black">' . $working_slopes_double_black . '</span></strong>&#9830;&#9830;';
+			echo ' <strong><span class="working-black double-diamond">' . $working_slopes_double_black . '</span></strong>&#9830;&#9830;';
 
 		}
 
@@ -97,7 +97,7 @@ if ( $manual_runs ) {
 				echo ' + ';
 			}
 
-			echo ' <strong><span class="working-black">' . $working_slopes_extreme_black . '&#9830;&#9830;</span></strong>';
+			echo ' <strong><span class="working-black double-diamond">' . $working_slopes_extreme_black . '&#9830;&#9830;</span></strong>';
 
 		}
 

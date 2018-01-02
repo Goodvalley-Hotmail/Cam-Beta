@@ -9,12 +9,12 @@
     // CAMERASKI width: 360px;
     width: $title-area--width;
 
-    @include media( $screen--1023 ) {
+    /*@include media( $screen--1023 ) {
 
         width: 100%;
         text-align: center;
 
-    }
+    }*/
 
     .header-full-width & {
         float: none;

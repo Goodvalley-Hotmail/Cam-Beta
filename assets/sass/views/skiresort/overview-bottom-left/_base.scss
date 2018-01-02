@@ -1,5 +1,6 @@
 #overview-bottom-left {
 
+    clear: both;
     margin-top: 10px;
 
     @include media( $screen--1080 ) {

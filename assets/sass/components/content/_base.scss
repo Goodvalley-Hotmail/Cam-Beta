@@ -3,7 +3,7 @@
 //==========================================
 
 .content .entry {
-    background: url("images/main_bg.png") repeat; // CAMERASKI Anterior: background-color: #fff;
+    background: url("assets/images/main_bg.png") repeat;
 }
 
 .entry {
@@ -12,21 +12,12 @@
     margin-bottom: 0;
     padding: 5px 10px;
 
-    @include media( $screen--1220 ) {
-        // padding: 10px 10px;
-    }
-
-    // CAMERASKI -> NO
-    @include media( $screen--860 ) {
-
-        padding: 30px;
-        margin-bottom: 5%;
-
-    }
-    // / CAMERASKI -> NO
-
     @include media( $screen--800 ) {
         padding: 10px 20px;
+    }
+
+    @include media( $screen--481-max ) {
+        padding: 10px 30px 10px 5px;
     }
 
 }

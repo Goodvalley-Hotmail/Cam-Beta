@@ -28,7 +28,7 @@ namespace CameraSki;
 			//$local_currency = get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_local_currency', true );
 			//break;
 
-			case 'overview_prices':
+			case 'overview_prices_layout':
 
 				$local_currency = get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_local_currency', true );
 				$adult			= get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_adult', true );
@@ -40,7 +40,7 @@ namespace CameraSki;
 
 				break;
 
-			case 'season_pass':
+			case 'season_pass_layout':
 
 				$adult			= get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_adult', true );
 				$junior			= get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_junior', true );

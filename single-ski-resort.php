@@ -87,15 +87,13 @@ if ( have_posts() ) :
 			
 			<div class="flexbox-top">
 
-				<!--TWO-FIFTHS FIRST-->
-				<div id="overview-top-left" class="two-fifths first">
+				<div id="overview-top-left" class="column-top-left first background-boxes">
 
 					<?php include ( locate_template( 'lib/partials/overview/main-webcam.php' ) ); ?>
 
 				</div>
 
-				<!--ONE-FIFTH-->
-				<div id="overview-top-center" class="one-fifth">
+				<div id="overview-top-center" class="column-top-center background-boxes">
 
 					<?php include ( locate_template( 'lib/partials/overview/post-meta.php' ) ); ?>
 
@@ -105,7 +103,7 @@ if ( have_posts() ) :
 
 						<?php include ( locate_template( 'lib/partials/overview/season.php' ) ); ?>
 
-						<ul id="ul-today" class="background-boxes">
+						<ul id="ul-today">
 
 							<p class="today"><strong>TODAY</strong></p>
 
@@ -226,13 +224,11 @@ if ( have_posts() ) :
 
 				</div>
 
-				<!--TWO-FIFTHS-->
-				<div id="overview-top-right" class="three-fifths">
+				<div id="overview-top-right" class="column-top-right">
 
-					<div class="four-fifths first-2">
+					<div class="column-top-right--top first">
 
-					<!--SLOPES - ELEVATION - PRICING - LIFTS-->
-					<div id="overview-right-tabs-1" class="background-boxes">
+					<div id="overview-right-tabs-1">
 
 						<div class="overview-slopes-map">
 
@@ -254,7 +250,7 @@ if ( have_posts() ) :
 
 					</div>
 
-					<div class="five-fifths">
+					<div class="column-top-right--bottom">
 
 						<div id="overview-right-tabs-2" class="background-boxes">
 
@@ -270,20 +266,16 @@ if ( have_posts() ) :
 
 			</div>
 
-			<!--FLEXBOX-BOTTOM-->
 			<div class="flexbox-bottom">
 
-				<!--ONE-HALF FIRST-->
-				<div id="overview-bottom-left" class="one-half first">
+				<div id="overview-bottom-left" class="column-bottom first">
 
 					<?php include ( locate_template( 'lib/partials/overview/map.php' ) ); ?>
 
 				</div>
 
-				<!--ONE-HALF-->
-				<div id="overview-bottom-right" class="one-half">
+				<div id="overview-bottom-right" class="column-bottom">
 
-					<!--METEO-->
 					<div id="overview-meteo">
 
 						<?php include ( locate_template( 'lib/partials/overview/meteo.php' ) ); ?>
