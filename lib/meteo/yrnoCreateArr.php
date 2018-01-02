@@ -1,5 +1,7 @@
 <?php
 
+//namespace CameraSki;
+
 $pageName		= 'yrnoCreateArr.php';
 $pageVersion	= '3.00 2014-07-11';
 $string         = $pageName . '- version: ' . $pageVersion;
@@ -10,7 +12,7 @@ if ( $pageFile <> $pageName ) {
 }
 
 // AFEGIT
-echo '<!-- module loaded:'.$string.' -->'.PHP_EOL;
+echo '<!-- module loaded:' . $string . ' -->' . PHP_EOL;
 
 #---------------------------------------------------------------------------
 # retrieve weather infor from weathersource (YrNo weather) 
@@ -92,7 +94,7 @@ class yrnoWeather {
 		# first, get and save request info / units etc
 		#---------------------------------------------------------------------------
 		$returnArray['request_info']['type']			= 'xml';
-		$returnArray['request_info']['city']			= ( string ) $xml->location->name.'-'.$xml->location->country;
+		$returnArray['request_info']['city']			= ( string ) $xml->location->name . '-' . $xml->location->country;
 		$returnArray['request_info']['logo']			= ( string ) $xml->credit->link['text'];
 		$returnArray['request_info']['link']			= ( string ) $xml->credit->link['url'];
 		$returnArray['request_info']['uomTemp']			= $this->uomTemp;
@@ -144,7 +146,7 @@ class yrnoWeather {
 				$amount	= $data->precipitation['minvalue'];
 				$string	= ( string ) yrnoConvertRain( $amount, $this->uomRain );
 				$amount	= $data->precipitation['maxvalue'];
-				$string	.='-'.( string ) yrnoConvertRain( $amount, $this->uomRain );
+				$string	.='-' . ( string ) yrnoConvertRain( $amount, $this->uomRain );
 			} else {
 				$amount	= $data->precipitation['value'];
 				$string	=( string ) yrnoConvertRain( $amount, $this->uomRain );
@@ -184,7 +186,9 @@ class yrnoWeather {
 			return;
 		} // new update should be available => goback
 		
-      	echo "<!-- weatherdata ($this->cacheFile) loaded from cache. Next-update at $updatestring ( $updatetime ). It is now $nowtimestring ( $now ) -->" . PHP_EOL; 
+      	echo "<!-- weatherdata ($this->cacheFile) loaded from cache.
+      	        Next-update at $updatestring ( $updatetime ).
+      	        It is now $nowtimestring ( $now ) -->" . PHP_EOL;
         return $returnArray;
 		
 	} // eof loadFromCache
@@ -192,9 +196,10 @@ class yrnoWeather {
 	private function writeToCache( $data ) {
 		
 		if ( !file_put_contents( $this->cacheFile, serialize( $data ) ) ) {   
-			echo PHP_EOL."<!-- Could not save data ($this->cacheFile) to cache ($this->cacheFile). Please make sure your cache directory exists and is writable. -->" . PHP_EOL;
+			echo PHP_EOL . "<!-- Could not save data ($this->cacheFile) to cache ($this->cacheFile).
+			Please make sure your cache directory exists and is writable. -->" . PHP_EOL;
 		} else {
-			echo "<!-- Weatherdata ($this->cacheFile) saved to cache  -->".PHP_EOL;
+			echo "<!-- Weatherdata ($this->cacheFile) saved to cache. -->".PHP_EOL;
 		}
 		
 	} // eof writeToCache
@@ -211,13 +216,13 @@ class yrnoWeather {
 			$this->rawData = yrnoCurl ( $this->weatherApiUrl );
 		}
 		
-		echo '<!-- curl for: ' . $this->weatherApiUrl.' -->' . PHP_EOL;
+		echo '<!-- curl for: ' . $this->weatherApiUrl . ' -->' . PHP_EOL;
 		
 		if ( empty( $this->rawData ) ) {
 			return false;
 		}
 		
-		$search = array ( 'Service Unavailable','Error 504','Error 503' );
+		$search = array ( 'Service Unavailable', 'Error 504', 'Error 503' );
 		$error  = false;
 		
 		for ( $i = 0; $i < count( $search ); $i++ ) {

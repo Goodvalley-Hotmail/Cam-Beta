@@ -1,5 +1,7 @@
 <?php
 
+//namespace CameraSki;
+
 $pageName		= 'yrnoCreateDetailArr.php';
 $pageVersion	= '3.00 2014-07-11';
 $string         = $pageName.'- version: ' . $pageVersion;

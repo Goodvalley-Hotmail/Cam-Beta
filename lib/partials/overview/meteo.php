@@ -31,7 +31,7 @@ if ( $resort_name || $location_meteo ) {
 	$pageWidth		= '100%';
 	//$scriptDir	    = site_url( '/wp-content/themes/cameraski/lib/meteo/' ); // CARLES LOCAL
 	$scriptDir	    = './'; // CARLES SERVER
-	$pageName		= 'single-ski-resort.php';
+	$pageName		= 'single-ski-resort.pnamespace CameraSki;hp';
 	$pageVersion	= '3.00 2014-07-11';
 	$string         = $pageName . '- version: ' . $pageVersion;
 	$pageFile 		= basename( __FILE__ );

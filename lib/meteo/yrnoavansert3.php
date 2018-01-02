@@ -1,4 +1,7 @@
 <?php
+
+//namespace CameraSki;
+
 # display source of script if requested so
 #
 if (isset($_REQUEST['sce']) && strtolower($_REQUEST['sce']) == 'view' ) {

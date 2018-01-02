@@ -1,5 +1,7 @@
 <?php
 
+//namespace CameraSki;
+
 //$script	= $scriptDir . 'yrnosettings.php'; // we need hard coded directory path here because settings are not loaded yet.
 //$script	= site_url( '/wp-content/themes/cameraski/lib/meteo/yrnosettings.php' ); // CARLES LOCAL
 

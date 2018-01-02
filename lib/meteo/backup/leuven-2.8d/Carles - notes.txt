@@ -1,4 +1,0 @@
-Aquests arxius són els que estan a la última versió de la web de localhost 'plugins' del portàtil (versió 2.8d), i estan preparats per a treballar amb ells.
-
-S'han de col·locar a la mateixa carpeta del tema, tal com van.
-

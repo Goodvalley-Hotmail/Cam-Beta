@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+//namespace CameraSki;
 
 if ( !isset ( $insideTemplate ) ) {
 	
@@ -82,11 +84,11 @@ $langDir	= $scriptDir . 'lang/'; // all language files are store here
 //$imgDir	= $scriptDir . 'img/'; // contains images like sun-up  sun-down // CARLES LOCAL
 
 // SERVER -> DESCOMENTAR LES 5 LINIES
-$cacheDir		= $scriptDir.'/wp-content/themes/cameraski/lib/meteo/cache/'; // the retrieved information is cached here. // CARLES SERVER
-$langDir		= $scriptDir.'/wp-content/themes/cameraski/lib/meteo/lang/'; // all language files are store here. // CARLES SERVER
-$javascriptsDir	= $scriptDir.'/wp-content/themes/cameraski/lib/meteo/javaScripts/'; // contains the javascripts for graphs. // CARLES SERVER
-$iconsDir		= $scriptDir.'/wp-content/themes/cameraski/lib/meteo/img/'; // all icons are stored here in separate folders. // CARLES SERVER
-$imgDir	    	= $scriptDir.'/wp-content/themes/cameraski/lib/meteo/img/'; // contains images like sun-up  sun-down. // CARLES SERVER
+$cacheDir		= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/cache/'; // the retrieved information is cached here. // CARLES SERVER
+$langDir		= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/lang/'; // all language files are store here. // CARLES SERVER
+$javascriptsDir	= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/javaScripts/'; // contains the javascripts for graphs. // CARLES SERVER
+$iconsDir		= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/img/'; // all icons are stored here in separate folders. // CARLES SERVER
+$imgDir	    	= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/img/'; // contains images like sun-up  sun-down. // CARLES SERVER
 
 #-----------------------------------------------------------------------
 # the icon folders 

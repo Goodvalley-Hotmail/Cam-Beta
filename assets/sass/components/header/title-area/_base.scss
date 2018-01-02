@@ -9,6 +9,28 @@
     // CAMERASKI width: 360px;
     width: $title-area--width;
 
+    @include media( $screen--1280 ) {
+        padding: 5px 0;
+        width: $title-area--width--1280;
+    }
+
+    @include media( $screen--1023 ) {
+        width: $title-area--width--1023;
+    }
+
+    @include media( $screen--800 ) {
+        width: $title-area--width--800;
+    }
+
+    @include media( $screen--568 ) {
+        width: $title-area--width--568;
+    }
+
+    @include media( $screen--415 ) {
+        padding: 2px 0;
+        width: $title-area--width--415;
+    }
+
     /*@include media( $screen--1023 ) {
 
         width: 100%;

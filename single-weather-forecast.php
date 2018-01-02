@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace CameraSki;
+//namespace CameraSki;
 
 add_filter( 'genesis_attr_site-inner', __NAMESPACE__ . '\attributes_site_inner' ); // Aix� ho hav�em comentat el 25/04/2016, no ho tinc clar per� en principi �s correcte tal com est�.
 /**
@@ -151,9 +151,19 @@ if ( have_posts() ) :
 				ob_end_clean();
 				
 				if ( $includeHTML ) {
+
 				    echo'<script type="text/javascript">
-						var docready=[],$=function(){return{ready:function(fn){docready.push(fn)}}};
+
+						var docready = [], $ = function() {
+						    return {
+						        ready:function( fn ) {
+						            docready . push( fn )
+						        }
+						    }
+						};
+						
 			    	</script>
+			    	
 			    	<div id="' . $colorClass . '" style="text-align: center;">
 						<div id="pagina" style="width: ' . $pageWidth . '; "><br />' . PHP_EOL;
 				}
