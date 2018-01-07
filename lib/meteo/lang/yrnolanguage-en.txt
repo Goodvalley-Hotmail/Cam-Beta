@@ -22,7 +22,7 @@ langlookup|November|November|
 langlookup|October|October|  
 langlookup|September|September|  
 # time created
-langlookup|Updated|Updated|  
+langlookup|Updated|Last Updated|
 langlookup|Next update|Next update|
 #  tab names
 langlookup|Overview|Overview|

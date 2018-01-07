@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-//namespace CameraSki;
+namespace CameraSki;
 
 add_filter( 'genesis_attr_site-inner', __NAMESPACE__ . '\attributes_site_inner' ); // Aix� ho hav�em comentat el 25/04/2016, no ho tinc clar per� en principi �s correcte tal com est�.
 /**
@@ -84,13 +84,15 @@ if ( have_posts() ) :
 			printf( '<div %s>', genesis_attr( 'entry-content' ) );
 			
 			do_action( 'genesis_entry_content' );
+
+			echo '<div class="one-half first">';
 			
-			echo '<div class="flexbox-meteo">';
+			//echo '<div class="flexbox-meteo">';
 			
 				ob_start();
 				
 				# ---------------HERE YOU NEED TO MAKE SOME CHANGES --------------------
-				$defaultWidth           = '60%';        // set do desired width 999px  or 100%
+				$defaultWidth           = '100%';        // set do desired width 999px  or 100%
 				# what parts should be printed
 				$times                  = true;         // 
 				# icons for top of page or startpage
@@ -131,14 +133,14 @@ if ( have_posts() ) :
 				$pageVersion            = '1.00';
 				$string                 = $pageName . '- version: ' . $pageVersion;
 				$pageFile               = basename( __FILE__ ); // check to see this is the real script
-				$title                  = '<title>yrno  forecast. Script ' . $pageName . '</title>';
+				$title                  = '<title>YRNO  Forecast. Script ' . $pageName . '</title>';
 				$myPage	                = $pageName;
 				
 				#-----------------------------------------------------------------------
 				# Now create all tables and graphs to be printed here
 				#-----------------------------------------------------------------------
-				//$script	= $scriptDir . '/wp-content/themes/genesis-sample/meteo-yrno-forecast/yrnoGenerateHtml.php';
-				$script	= $scriptDir . '/wp-content/themes/cameraski/lib/meteo/yrnoGenerateHtml.php';
+				//$script = $scriptDir . '/wp-content/themes/genesis-sample/meteo-yrno-forecast/yrnoGenerateHtml.php';
+				$script	= $scriptDir . '/wp-content/themes/cameraski/lib/meteo-yrno-forecast/yrnoGenerateHtml.php';
 				echo '<!-- trying to load ' . $script . '... -->' . PHP_EOL;
 				include $script;
 				
@@ -152,7 +154,7 @@ if ( have_posts() ) :
 				
 				if ( $includeHTML ) {
 
-				    echo'<script type="text/javascript">
+				    echo '<script type="text/javascript">
 
 						var docready = [], $ = function() {
 						    return {
@@ -164,12 +166,11 @@ if ( have_posts() ) :
 						
 			    	</script>
 			    	
-			    	<div id="' . $colorClass . '" style="text-align: center;">
-						<div id="pagina" style="width: ' . $pageWidth . '; "><br />' . PHP_EOL;
+			    	<div id="meteo-layout"><br />' . PHP_EOL;
 				}
 				
 				// En producció, comentem la següent línia
-				echo $string; // Display info about all loaded scripts and version numbers as html comment lines
+				//echo $string; // Display info about all loaded scripts and version numbers as html comment lines
 				
 				$styleborder    = ' border: 1px inset; border-radius: 5px;';
 				$margin         = ' margin: 10px auto;'; 
@@ -187,7 +188,7 @@ if ( have_posts() ) :
 				#
 				if ( $times ) {
 				    $style = 'style="" ';
-				    echo '<div id="times" style="" >' . PHP_EOL;
+				    echo '<div id="meteo-update-times">' . PHP_EOL;
 				    	echo $wsUpdateTimes . PHP_EOL;
 				    echo '</div>' . PHP_EOL;
 				}
@@ -195,80 +196,82 @@ if ( have_posts() ) :
 				if ( $tableInTabs || $MeteogramInTabs ) { // generate html for tabs
 				    // ORIGINAL -> echo '<div class="tabber" style="' . $topWidth . ' margin: auto;">' . PHP_EOL;
 					//echo '<div class="tabber" style="margin: auto;">' . PHP_EOL;
-					echo '<div class="tabber" style="margin: 30px auto;">' . PHP_EOL;
+					echo '<div class="tabber">' . PHP_EOL;
 				}
 				
-				if ( $tableInTabs ) {
-					
-			    	// CARLES - Hem modificat: a dalt hem comentat l'alçada, i aquí hem tret $tableHeight per evitar l'avís
-			    	// CARLES - ORIGINAL: $style  = 'style="padding: 0px; '.$tableHeight.'"';
-			    	$style = 'style="padding: 3px;"';
-              		
-              		if ( $yrnoTable ) {
-			    	    echo '<div class="tabbertab" ' . $style . '>' . PHP_EOL;
-			    	    	echo '<h2>' . yrnotransstr( 'Every 6 hour' ) . '</h2>' . PHP_EOL;
-                	        //echo $yrnoListTable . PHP_EOL;
-                	  		echo $yrno6hTable_1 . PHP_EOL;
-			    	    	echo $yrno6hTable_2 . PHP_EOL;
-                	  		echo $yrno6hTable_3 . PHP_EOL;
-                	  		echo $yrno6hTable_4 . PHP_EOL;
-                	  		echo $yrno6hTable_5 . PHP_EOL;
-                	  		echo $yrno6hTable_6 . PHP_EOL;
-                	  		echo $yrno6hTable_7 . PHP_EOL;
-                	  		echo $yrno6hTable_8 . PHP_EOL;
-                	  		echo $yrno6hTable_9 . PHP_EOL;
-                	  		echo $yrno6hTable_10 . PHP_EOL;
-							echo $mobileYrno6hTable_1 . PHP_EOL;
-							echo $mobileYrno6hTable_2 . PHP_EOL;
-							echo $mobileYrno6hTable_3 . PHP_EOL;
-							echo $mobileYrno6hTable_4 . PHP_EOL;
-							echo $mobileYrno6hTable_5 . PHP_EOL;
-							echo $mobileYrno6hTable_6 . PHP_EOL;
-							echo $mobileYrno6hTable_7 . PHP_EOL;
-							echo $mobileYrno6hTable_8 . PHP_EOL;
-							echo $mobileYrno6hTable_9 . PHP_EOL;
-			    	    echo '</div>' . PHP_EOL;
-			    	}
-              		
-              		if ( $yrnoDetailTable ) {
-			    	    echo '<div class="tabbertab" ' . $style . '>' . PHP_EOL;
-			    	    	echo '<h2>' . yrnotransstr( '3 hour' ) . '</h2>' . PHP_EOL;
-							echo $yrno3hTable_1 . PHP_EOL;
-							//echo $yrnoDetailTable . PHP_EOL;
-							echo $yrno3hTable_2 . PHP_EOL;
-							echo $yrno3hTable_3 . PHP_EOL;
-							echo $yrno3hTable_4 . PHP_EOL;
-							echo $yrno3hTable_5 . PHP_EOL;
-							echo $yrno3hTable_6 . PHP_EOL;
-							echo $yrno3hTable_7 . PHP_EOL;
-							echo $yrno3hTable_8 . PHP_EOL;
-							echo $yrno3hTable_9 . PHP_EOL;
-							echo $mobileYrno3hTable_1 . PHP_EOL;
-							echo $mobileYrno3hTable_2 . PHP_EOL;
-							echo $mobileYrno3hTable_3 . PHP_EOL;
-							echo $mobileYrno3hTable_4 . PHP_EOL;
-							echo $mobileYrno3hTable_5 . PHP_EOL;
-							echo $mobileYrno3hTable_6 . PHP_EOL;
-							echo $mobileYrno3hTable_7 . PHP_EOL;
-							echo $mobileYrno3hTable_8 . PHP_EOL;
-							echo $mobileYrno3hTable_9 . PHP_EOL;
-			    	    echo '</div>' . PHP_EOL;
-			    	}
-              		
-					if ( $yrnoMeteogram && $MeteogramInTabs ) {
-					  	$style  = 'style="width: 100%; overflow: hidden; "';
-						//include_once ( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/genesis-sample/meteo-yrno-forecast/yrnoavansert3.php' );
-                	  	include_once ( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/cameraski/lib/meteo/yrnoavansert3.php' );
-					   	echo '<div class="tabbertab" style="padding: 3px;"><h2>' . yrnotransstr( 'Meteogram' ) . '</h2>' . PHP_EOL;
-					   		echo '<div ' . $style . '>';
-					   			//echo '<a href="http://www.yr.no/place/' . $yrnoID . '" target="_blank" title="Vooruitzichten scandinavische leveranciers yr.no">' . PHP_EOL;
-					   			echo '<img src="' . $im . '" alt="  " style="vertical-align: top; width: 100%; height: 302px;"/>' . PHP_EOL;
-					   			echo '</a>' . PHP_EOL;
-					   		echo '</div>' . PHP_EOL;
-					   	echo '</div>' . PHP_EOL;
+					if ( $tableInTabs ) {
+
+				        // CARLES - Hem modificat: a dalt hem comentat l'alçada, i aquí hem tret $tableHeight per evitar l'avís
+				        // CARLES - ORIGINAL: $style  = 'style="padding: 0px; '.$tableHeight.'"';
+				        //$style = 'style="padding: 3px;"';
+
+	                    if ( $yrnoTable ) {
+				            echo '<div class="tabbertab">' . PHP_EOL;
+				                echo '<h2>' . yrnotransstr( 'Every 6 hour' ) . '</h2>' . PHP_EOL;
+	                            //echo $yrnoListTable . PHP_EOL;
+	                            echo $yrno6hTable_1 . PHP_EOL;
+				                echo $yrno6hTable_2 . PHP_EOL;
+	                            echo $yrno6hTable_3 . PHP_EOL;
+	                            echo $yrno6hTable_4 . PHP_EOL;
+	                            echo $yrno6hTable_5 . PHP_EOL;
+	                            echo $yrno6hTable_6 . PHP_EOL;
+	                            echo $yrno6hTable_7 . PHP_EOL;
+	                            echo $yrno6hTable_8 . PHP_EOL;
+	                            echo $yrno6hTable_9 . PHP_EOL;
+	                            echo $yrno6hTable_10 . PHP_EOL;
+								echo $mobileYrno6hTable_1 . PHP_EOL;
+								echo $mobileYrno6hTable_2 . PHP_EOL;
+								echo $mobileYrno6hTable_3 . PHP_EOL;
+								echo $mobileYrno6hTable_4 . PHP_EOL;
+								echo $mobileYrno6hTable_5 . PHP_EOL;
+								echo $mobileYrno6hTable_6 . PHP_EOL;
+								echo $mobileYrno6hTable_7 . PHP_EOL;
+								echo $mobileYrno6hTable_8 . PHP_EOL;
+								echo $mobileYrno6hTable_9 . PHP_EOL;
+				            echo '</div>' . PHP_EOL;
+				        }
+
+	                    if ( $yrnoDetailTable ) {
+				            echo '<div class="tabbertab" ' . $style . '>' . PHP_EOL;
+				                echo '<h2>' . yrnotransstr( '1 hour' ) . '</h2>' . PHP_EOL;
+								echo $yrno3hTable_1 . PHP_EOL;
+								//echo $yrnoDetailTable . PHP_EOL;
+								echo $yrno3hTable_2 . PHP_EOL;
+								echo $yrno3hTable_3 . PHP_EOL;
+								echo $yrno3hTable_4 . PHP_EOL;
+								echo $yrno3hTable_5 . PHP_EOL;
+								echo $yrno3hTable_6 . PHP_EOL;
+								echo $yrno3hTable_7 . PHP_EOL;
+								echo $yrno3hTable_8 . PHP_EOL;
+								echo $yrno3hTable_9 . PHP_EOL;
+								echo $mobileYrno3hTable_1 . PHP_EOL;
+								echo $mobileYrno3hTable_2 . PHP_EOL;
+								echo $mobileYrno3hTable_3 . PHP_EOL;
+								echo $mobileYrno3hTable_4 . PHP_EOL;
+								echo $mobileYrno3hTable_5 . PHP_EOL;
+								echo $mobileYrno3hTable_6 . PHP_EOL;
+								echo $mobileYrno3hTable_7 . PHP_EOL;
+								echo $mobileYrno3hTable_8 . PHP_EOL;
+								echo $mobileYrno3hTable_9 . PHP_EOL;
+				            echo '</div>' . PHP_EOL;
+				        }
+
+						if ( $yrnoMeteogram && $MeteogramInTabs ) {
+
+						    $style  = 'style="width: 100%; overflow: hidden; "';
+							//include_once ( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/genesis-sample/meteo-yrno-forecast/yrnoavansert3.php' );
+	                        include_once ( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/cameraski/lib/meteo-yrno-forecast/yrnoavansert3.php' );
+
+						    echo '<div class="tabbertab"><h2>' . yrnotransstr( 'Meteogram' ) . '</h2>' . PHP_EOL;
+						        echo '<div ' . $style . '>';
+						            //echo '<a href="http://www.yr.no/place/' . $yrnoID . '" target="_blank" title="Vooruitzichten scandinavische leveranciers yr.no">' . PHP_EOL;
+						            echo '<img src="' . $im . '" alt="  " style="vertical-align: top; height: 302px;"/>' . PHP_EOL;
+						            echo '</a>' . PHP_EOL;
+						        echo '</div>' . PHP_EOL;
+						    echo '</div>' . PHP_EOL;
+						}
+
 					}
-					
-				}
 				
 				if ( $tableInTabs || $MeteogramInTabs ) {
 				    echo '</div>' . PHP_EOL;
@@ -278,14 +281,14 @@ if ( have_posts() ) :
 				# IMPORTANT do not delete as legally you are bind to display 
 				# credit to Metno/Yrno in original readable text, same size as average text in window
 				$style = 'style="' . $topWidth . $margin . '"';
-				echo '<div id="credit" ' . $style . '>' . PHP_EOL;
-				//echo '<div id="credit">' . PHP_EOL;
+				//echo '<div id="credit" ' . $style . '>' . PHP_EOL;
+				echo '<div id="yrno-credit">' . PHP_EOL;
 					echo $creditString . PHP_EOL;
 				echo '</div>' . PHP_EOL;
 				
 				#  end of enclosing div
 				if ( $includeHTML ) {
-				    echo '</div>' . PHP_EOL; // end pagina div
+				    echo '</div>' . PHP_EOL; // end meteo-layout div
 				}
 				
 				$javaOutput = $includeHTML;	// we print javascript based on setting of enclosing html
@@ -297,32 +300,38 @@ if ( have_posts() ) :
 					}
 				
 				}
+
+			echo '</div>';
+
+		echo '<div class="one-half">';
+
+		echo '</div>';
 				
 				#---------------------------------------------------------------------------
 				# Leave this code here .. it will help you see what language translations are missing 
 				# if you dont want them set next line to comment by adding a # as first cahracter on the line
 				$noMissingLang = true;
 				#
-				if ( !isset ( $noMissingLang ) || $noMissingLang  == true ) {
-					
-					$string = '';
-					
-					foreach ( $missingTrans as $key => $val ) {
-					
-						$string .= "langlookup|$key|$key|" . PHP_EOL;
-					}
-					
-					if ( strlen( $string ) > 0 ) {
-						
-						echo PHP_EOL . '<!-- missing langlookup entries for lang=' . $lang . PHP_EOL;
-						echo $string;
-						echo count( $missingTrans ) . ' entries found.' . PHP_EOL . 'End of missing langlookup entries. -->' . PHP_EOL;
-						
-					}
-					
-				}
+//				if ( !isset ( $noMissingLang ) || $noMissingLang  == true ) {
+//
+//					$string = '';
+//
+//					foreach ( $missingTrans as $key => $val ) {
+//
+//						$string .= "langlookup|$key|$key|" . PHP_EOL;
+//					}
+//
+//					if ( strlen( $string ) > 0 ) {
+//
+//						echo PHP_EOL . '<!-- missing langlookup entries for lang=' . $lang . PHP_EOL;
+//						echo $string;
+//						echo count( $missingTrans ) . ' entries found.' . PHP_EOL . 'End of missing langlookup entries. -->' . PHP_EOL;
+//
+//					}
+//
+//				}
 				
-			echo '</div>';
+			//echo '</div>';
 				
 			do_action( 'genesis_after_entry_content' );
 

@@ -21,24 +21,67 @@
     font-size: 150%;
 }
 
-#pagina {
+#meteo-layout {
+
     border-radius: 5px;
-    margin: 0px auto;
+    margin: auto;
     color: black;
     padding: 0;
+    text-align: center;
+    width: 100%;
+
+    li.tabberactive a {
+        background-color: #1E73BE;
+    }
+
+    .table-top,
+    .table-top3h {
+        background-color: white;
+        border-bottom: 3px solid #333;
+        color: black;
+        font-weight: bold;
+    }
+
+    .row-dark {
+        /*background-color: transparent;*/
+        /*background-color: #EEEEEE;*/
+        background-color: white;
+    }
+
 }
 
 .meteo-update {
+
     float: right;
     line-height: 1.225;
     margin: 5px auto;
     text-align: right;
+
+    @include media( $screen--520 ) {
+        margin: 5px;
+    }
+
 }
 
-#update-times,
+/*#update-times,
 #overview-forecast {
     margin: 5px auto;
     /*margin-top: 10px;*/
+    /*width: 98%;
+}*/
+
+#overview-update-times {
+    margin: 0 5px auto;
+    width: 98%;
+}
+
+#meteo-update-times {
+    margin: 0 10px 10px;
+    text-align: left;
+}
+
+#overview-meteo {
+    margin: 5px auto;
     width: 98%;
 }
 
@@ -431,12 +474,12 @@ td.mobile-td-period-2 {
 //
 // METEO TABS
 //==========================================
-#blue {
+/*#blue {
 
     color: black;
     /*background-color: #F1F8FE;*/
 
-    li.tabberactive a {
+    /*li.tabberactive a {
         background-color: #1E73BE;
     }
 
@@ -451,26 +494,29 @@ td.mobile-td-period-2 {
     .row-dark {
         /*background-color: transparent;*/
         /*background-color: #EEEEEE;*/
-        background-color: white;
+        /*background-color: white;
     }
 
-}
+}*/
 
 
 
 // .tabber = before the tabber interface is set up.
 // .tabberlive = after the tabber interface is set up.
 .tabber {
+    margin: auto;
+    padding: 0 5px;
 }
 
 .tabberlive {
 
     margin-top: 1em;
+    padding: 0 5px;
     text-align: left;
-    width: 70%;
+    width: 100%;
 
-    @include media( $screen--1080 ) {
-        width: 100%;
+    @include media( $screen--680-max ) {
+        padding: 0;
     }
 
     // REQUIRED to hide the non-active tab content. But do not hide them in the print stylesheet!
@@ -484,7 +530,7 @@ td.mobile-td-period-2 {
         padding: 3px;
         border: 0px solid #aaa;
         /* height: 500px; */
-        overflow: auto;
+        overflow: hidden;
         border-top: 0;
 
         /* If you don't want the tab size changing whenever a tab is changed, you can set a fixed height */
@@ -509,17 +555,17 @@ td.mobile-td-period-2 {
   ul.tabbernav = the tab navigation list
   li.tabberactive = the active tab
   --------------------------------------------------*/
+ul.tabbernav {
+    margin: 0;
+    max-width: 100%;
+}
+
 .tabbernav {
 
     margin: 0;
     padding: 0 3px ;
-    border-bottom: 0px solid #778;
+    border-bottom: 0 solid #778;
     font: bold 12px Verdana, sans-serif;
-
-    ul.& {
-        margin: 0;
-        max-width: 100%;
-    }
 
     li {
         list-style: none;
@@ -570,10 +616,53 @@ ul.tabbernav li.tabberactive a:hover {
 	border-bottom: none;
 }*/
 
-#credit {
-    margin: 10px auto;
+#yrno-credit {
+    padding: 0 8px 10px;
     text-align: center;
-    width: 70%;
+    width: 100%;
+
+    @include media( $screen--680-max ) {
+        padding: 0 3px 5px;
+    }
+
+}
+
+.table-yrno-credit {
+    background: linear-gradient( to bottom, #ffffff, #f6f6f6 );
+    border: 1px solid #333;
+    line-height: 1;
+    width: 100%;
+}
+
+.logo-yrno {
+    padding: 5px;
+}
+
+.yrno-image {
+
+    margin: 5px;
+    width: 50%;
+
+    @include media( $screen--1440 ) {
+        width: 70%;
+    }
+
+    @include media( $screen--1220 ) {
+        width: 80%;
+    }
+
+    @include media( $screen--960 ) {
+        width: 50%;
+    }
+
+    @include media( $screen--680-max ) {
+        width: 70%;
+    }
+
+    @include media( $screen--520 ) {
+        width: 100%;
+    }
+
 }
 
 //
@@ -752,18 +841,22 @@ ul.tabbernav li.tabberactive a:hover {
     .yrno6hTable_1,
     .yrno6hTable,
     .yrno3hTable_1,
-    .yrno3hTable
+    .yrno3hTable,
     .table-top3h {
         display: none;
     }
 
 }
 
-@include media( $screen--481-max ) {
+@include media( $screen--520 ) {
 
     // .tabbernav li:nth-child(1) {
-		// display: none;
-	// }
+    // display: none;
+    // }
+
+    ul.tabbernav li:nth-child(3) {
+        display: none;
+    }
 
 }
 
@@ -775,11 +868,11 @@ ul.tabbernav li.tabberactive a:hover {
 
 }
 
-@include media( $screen--340 ) {
+/*@include media( $screen--340 ) {
 
-    ul.tabbernav li:nth-child(2),
-    ul.tabbernav li:nth-child(3) {
+    ul.tabbernav li:nth-child(2) {
+    //ul.tabbernav li:nth-child(3) {
         display: none;
     }
 
-}
+}*/

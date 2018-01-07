@@ -5,21 +5,24 @@
 .column-top-center,
 .column-top-right,
 .column-top-right--bottom,
-.column-bottom {
+.column-bottom,
+.one-half {
     float: left;
 }
 
 .column-top-left,
 .column-top-center,
 .column-top-right,
-.column-bottom {
+.column-bottom,
+.one-half {
     background: linear-gradient( to bottom, #ffffff, #f6f6f6 );
 }
 
 .column-top-left,
 .column-top-center,
 .column-top-right,
-.column-bottom {
+.column-bottom,
+.one-half {
     border-bottom: 1px solid #d7d7d7;
     box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1 );
 }
@@ -29,11 +32,13 @@
 .column-top-center,
 .column-top-right,
 .column-top-right--top,
-.column-bottom {
+.column-bottom,
+.one-half {
     margin-left: 0.83333333333333%;
 }
 
-.column-bottom {
+.column-bottom,
+.one-half {
     width: 49.583333333333%;
 }
 
@@ -104,7 +109,8 @@
 
 @include media( $screen--960 ) {
 
-    .column-bottom {
+    .column-bottom,
+    .one-half {
         margin: 0;
         width: 100%;
     }

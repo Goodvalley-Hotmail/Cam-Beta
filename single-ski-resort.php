@@ -276,11 +276,7 @@ if ( have_posts() ) :
 
 				<div id="overview-bottom-right" class="column-bottom">
 
-					<div id="overview-meteo">
-
 						<?php include ( locate_template( 'lib/partials/overview/meteo.php' ) ); ?>
-
-					</div>
 
 				</div>
 
