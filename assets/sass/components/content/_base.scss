@@ -12,12 +12,12 @@
     margin-bottom: 0;
     padding: 5px 10px;
 
-    @include media( $screen--800 ) {
+    /*@include media( $screen--800 ) {
         padding: 10px 20px;
-    }
+    }*/
 
     @include media( $screen--481-max ) {
-        padding: 10px 30px 10px 5px;
+        padding: 5px 30px 5px 5px;
     }
 
 }

@@ -278,6 +278,8 @@ if ( have_posts() ) :
 
 						<?php include ( locate_template( 'lib/partials/overview/meteo.php' ) ); ?>
 
+						<?php include ( locate_template( 'lib/partials/overview/yrno-logo.php' ) ); ?>
+
 				</div>
 
 			</div>

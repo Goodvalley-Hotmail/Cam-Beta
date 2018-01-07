@@ -687,17 +687,15 @@ $tableIconsMobile_2	= '
 /* CARLES - FINAL CODI TAULA 2 MÒBIL	*/
 /****************************************/
 
-$logoMetYr = '<img src="' . $imgDir . 'met.no_logo2_eng_250px.jpg" style="height: 30px; margin: 4px 4px 4px 4px;" alt="Met.No - Yr.No logo"/>';
-$creditString = 
-'<div>
-	<table style="width: 100%;">
-		<tr>
-			<td>' . $logoMetYr . '</td>
-			<td><small>Weather <a target="new" href="http://www.yr.no/?lang=en">Forecast</a> from yr.no, 
-				delivered by the Norwegian Meteorological Institute and the NRK. </small></td>
-			</tr>
-	</table>
-</div>';
+$logoMetYr      = '<img src="' . $imgDir . 'met.no_logo2_eng_250px.jpg" class="yrno-image" alt="Met.No - Yr.No logo"/>';
+$creditString   =
+	'<table class="table-yrno-credit">
+   	<tr>
+       	<td class="logo-yrno">' . $logoMetYr . '</td>
+           <td><small><a href="https://www.yr.no/place/' . $yrnoID . '" target="_blank" rel="noopener noreferrer">Weather Forecast</a> from <a target="_blank" href="http://www.yr.no/?lang=en" rel="noopener noreferrer">yr.no</a>, 
+            	delivered by the Norwegian Meteorological Institute (met.no) and the Norwegian Broadcasting Corporation (NRK).</small></td>
+		</tr>
+</table>';
 /* / METEO-WEATHER */
 
 function myCommonTemperature( $value ) {

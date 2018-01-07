@@ -2821,13 +2821,13 @@ $mobileYrno6hTable_9	= '
 
 /* FINAL ---------------------------------------------------------------------------- */
 
-$logoMetYr = '<img src="' . $imgDir . 'met.no_logo2_eng_250px.jpg" class="yrno-image" alt="Met.No - Yr.No logo"/>';
-$creditString =
+$logoMetYr      = '<img src="' . $imgDir . 'met.no_logo2_eng_250px.jpg" class="yrno-image" alt="Met.No - Yr.No logo"/>';
+$creditString   =
 '<table class="table-yrno-credit">
    	<tr>
        	<td class="logo-yrno">' . $logoMetYr . '</td>
-           <td><small>Weather <a target="new" href="http://www.yr.no/?lang=en">Forecast</a> from yr.no, 
-            	delivered by the Norwegian Meteorological Institute and the NRK. </small></td>
+           <td><small><a href="https://www.yr.no/place/' . $yrnoID . '" target="_blank" rel="noopener noreferrer">Weather Forecast</a> from <a target="_blank" href="http://www.yr.no/?lang=en" rel="noopener noreferrer">yr.no</a>, 
+            	delivered by the Norwegian Meteorological Institute (met.no) and the Norwegian Broadcasting Corporation (NRK).</small></td>
 		</tr>
 </table>';
 

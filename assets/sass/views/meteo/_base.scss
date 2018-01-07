@@ -1,20 +1,6 @@
 //
 // DIV ID "OVERVIEW-METEO
 //==========================================
-.mobileOverviewTable {
-
-    display: none;
-
-    @include media( $screen--481-min ) {
-        display: none;
-    }
-
-    @include media( $screen--481-max ) {
-        display: table;
-    }
-
-}
-
 .myTemp {
     text-shadow: 1px 1px black;
     font-weight: bolder;
@@ -124,7 +110,13 @@
 .yrno3hTable,
 .mobileYrno6hTable,
 .mobileYrno3hTable {
+
     margin: 10px auto;
+
+    @include media( $screen--481-max ) {
+        margin: 5px auto;
+    }
+
 }
 
 .yrno6hTable_1,
@@ -135,7 +127,18 @@
 }
 
 .mobileOverviewTable {
-    margin: 20px auto;
+
+    display: none;
+    margin: 5px auto;
+
+    @include media( $screen--481-min ) {
+        display: none;
+    }
+
+    @include media( $screen--481-max ) {
+        display: table;
+    }
+
 }
 
 .mobileYrno6hTable_1,
@@ -527,11 +530,16 @@ td.mobile-td-period-2 {
     // .tabbertab = the tab content
     // Add style only after the tabber interface is set up (.tabberlive)
     .tabbertab {
+
         padding: 3px;
         border: 0px solid #aaa;
         /* height: 500px; */
         overflow: hidden;
         border-top: 0;
+
+        @include media( $screen--481-max ) {
+            padding: 3px 3px 0;
+        }
 
         /* If you don't want the tab size changing whenever a tab is changed, you can set a fixed height */
         /* height: 200px; */
@@ -615,6 +623,30 @@ ul.tabbernav li.tabberactive a:hover {
 	background: white;
 	border-bottom: none;
 }*/
+
+#yrno-credit-overview {
+
+    padding: 0 8px 10px;
+    text-align: center;
+    width: 100%;
+
+    @include media( $screen--1340 ) {
+        padding: 0 6px 10px;
+    }
+
+    @include media( $screen--960 ) {
+        padding: 0 8px 10px;
+    }
+
+    @include media( $screen--768 ) {
+        padding: 0 6px 10px;
+    }
+
+    @include media( $screen--680-max ) {
+        padding: 0 5px 5px;
+    }
+
+}
 
 #yrno-credit {
     padding: 0 8px 10px;
