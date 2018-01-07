@@ -16,8 +16,8 @@
         padding: 10px 20px;
     }*/
 
-    @include media( $screen--481-max ) {
-        padding: 5px 30px 5px 5px;
+    @include media( $screen--960 ) {
+        padding: 5px;
     }
 
 }

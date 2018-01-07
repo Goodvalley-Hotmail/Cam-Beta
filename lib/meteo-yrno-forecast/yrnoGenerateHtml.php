@@ -51,7 +51,7 @@ $wsUpdateTimes  = '
 		$wsUpdateTimes .= yrnotransstr( 'Updated' ) . ': ' . myLongDate ( $fileTime ) . ' - ' . date ( $timeFormat, $fileTime ) . '<br />';
 		$wsUpdateTimes .= yrnotransstr( 'Next update' ) . ': ' . myLongDate ( $nextUpdate ) . ' - ' . date ( $timeFormat, $nextUpdate ) . '
 	</span>
-	<h4 style="margin: 0px;">' . yrnotransstr( 'MetNoForecast.' ) . ' ' . yrnotransstr( $yourArea ) . '
+	<h4 class="h4-update-times">' . yrnotransstr( 'MetNoForecast.' ) . ' ' . yrnotransstr( $yourArea ) . '
 	<br />' . yrnotransstr( 'by:' ) . ' ' . $organ . '</h4>';
 
 #echo $wsUpdateTimes . '<pre>'; print_r( $returnArray ); exit;
@@ -2827,7 +2827,7 @@ $creditString   =
    	<tr>
        	<td class="logo-yrno">' . $logoMetYr . '</td>
            <td><small><a href="https://www.yr.no/place/' . $yrnoID . '" target="_blank" rel="noopener noreferrer">Weather Forecast</a> from <a target="_blank" href="http://www.yr.no/?lang=en" rel="noopener noreferrer">yr.no</a>, 
-            	delivered by the Norwegian Meteorological Institute (met.no) and the Norwegian Broadcasting Corporation (NRK).</small></td>
+            	delivered by the <strong>Norwegian Meteorological Institute (met.no)</strong> and the <strong>Norwegian Broadcasting Corporation (NRK)</strong>.</small></td>
 		</tr>
 </table>';
 

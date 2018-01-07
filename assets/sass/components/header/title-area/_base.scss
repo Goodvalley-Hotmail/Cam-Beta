@@ -22,8 +22,24 @@
         width: $title-area--width--800;
     }
 
+    @include media( $screen--680-max ) {
+        width: $title-area--width--680;
+    }
+
     @include media( $screen--568 ) {
         width: $title-area--width--568;
+    }
+
+    @include media( $screen--520 ) {
+        width: $title-area--width--520;
+    }
+
+    @include media( $screen--481-max ) {
+        width: $title-area--width--481;
+    }
+
+    @include media( $screen--430 ) {
+        width: $title-area--width--430;
     }
 
     @include media( $screen--415 ) {

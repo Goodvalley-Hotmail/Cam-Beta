@@ -36,6 +36,7 @@
 
 }
 
+.overview-meteo-update,
 .meteo-update {
 
     float: right;
@@ -43,18 +44,32 @@
     margin: 5px auto;
     text-align: right;
 
+}
+
+.overview-meteo-update {
+
+    width: 100%;
+
+    @include media( $screen--481-max ) {
+        font-size: 1.2rem;
+        margin-right: 3px;
+    }
+
+}
+
+.meteo-update {
+
+    width: 47%;
+
+    @include media( $screen--1220 ) {
+        font-size: 1.2rem;
+    }
+
     @include media( $screen--520 ) {
         margin: 5px;
     }
 
 }
-
-/*#update-times,
-#overview-forecast {
-    margin: 5px auto;
-    /*margin-top: 10px;*/
-    /*width: 98%;
-}*/
 
 #overview-update-times {
     margin: 0 5px auto;
@@ -62,8 +77,34 @@
 }
 
 #meteo-update-times {
+
     margin: 0 10px 10px;
     text-align: left;
+
+    @include media( $screen--1220 ) {
+        font-size: 1.2rem;
+    }
+
+    @include media( $screen--568 ) {
+        font-size: 1.2rem;
+    }
+
+}
+
+.h4-update-times {
+
+    float: left;
+    margin: 5px auto;
+    width: 47%;
+
+    @include media( $screen--1220 ) {
+        font-size: 1.2rem;
+    }
+
+    @include media( $screen--568 ) {
+        font-size: 1.2rem;
+    }
+
 }
 
 #overview-meteo {
@@ -111,19 +152,19 @@
 .mobileYrno6hTable,
 .mobileYrno3hTable {
 
-    margin: 10px auto;
-
-    @include media( $screen--481-max ) {
-        margin: 5px auto;
-    }
+    margin: 5px auto;
 
 }
 
 .yrno6hTable_1,
-.yrno3hTable_1,
 .meteoYrnoTable,
 .meteoYrnoTable3h {
     margin: 0;
+}
+
+.yrno3hTable_1,
+.mobileYrno3hTable_1 {
+    margin: 0 0 5px;
 }
 
 .mobileOverviewTable {
@@ -141,8 +182,7 @@
 
 }
 
-.mobileYrno6hTable_1,
-.mobileYrno3hTable_1 {
+.mobileYrno6hTable_1 {
     margin: 0 auto;
 }
 
@@ -537,7 +577,7 @@ td.mobile-td-period-2 {
         overflow: hidden;
         border-top: 0;
 
-        @include media( $screen--481-max ) {
+        @include media( $screen--680-max ) {
             padding: 3px 3px 0;
         }
 
@@ -580,7 +620,7 @@ ul.tabbernav {
         min-height: 40px;
         margin: 0;
         margin-right: 3px;
-        max-width: 30%;
+        max-width: 100%;
         display: inline;
     }
 
@@ -623,6 +663,12 @@ ul.tabbernav li.tabberactive a:hover {
 	background: white;
 	border-bottom: none;
 }*/
+
+.meteogram {
+    overflow: hidden;
+    margin: 0 0 5px;
+    width: 100%;
+}
 
 #yrno-credit-overview {
 

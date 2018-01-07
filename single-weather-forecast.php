@@ -168,7 +168,7 @@ if ( have_posts() ) :
 							
 				        </script>
 				        
-				        <div id="meteo-layout"><br />' . PHP_EOL;
+				        <div id="meteo-layout">' . PHP_EOL;
 					}
 
 					// En producció, comentem la següent línia
@@ -193,6 +193,7 @@ if ( have_posts() ) :
 					    echo '<div id="meteo-update-times">' . PHP_EOL;
 					        echo $wsUpdateTimes . PHP_EOL;
 					    echo '</div>' . PHP_EOL;
+						echo '<div style="clear: both;"></div>';
 					}
 
 					if ( $tableInTabs || $MeteogramInTabs ) { // generate html for tabs
@@ -265,7 +266,8 @@ if ( have_posts() ) :
 		                        include_once ( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/cameraski/lib/meteo-yrno-forecast/yrnoavansert3.php' );
 
 							    echo '<div class="tabbertab"><h2>' . yrnotransstr( 'Meteogram' ) . '</h2>' . PHP_EOL;
-							        echo '<div ' . $style . '>';
+							        //echo '<div ' . $style . '>';
+									echo '<div class="meteogram">';
 							            //echo '<a href="http://www.yr.no/place/' . $yrnoID . '" target="_blank" title="Vooruitzichten scandinavische leveranciers yr.no">' . PHP_EOL;
 							            echo '<img src="' . $im . '" alt="  " style="vertical-align: top; height: 302px;"/>' . PHP_EOL;
 							            //echo '</a>' . PHP_EOL;
