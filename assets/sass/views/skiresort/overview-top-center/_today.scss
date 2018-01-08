@@ -67,6 +67,10 @@
                 margin: 0 0 0 5px;
             }
 
+            @include media( $screen--415 ) {
+                font-size: $today-data--font-size--415;
+            }
+
         }
 
         & li.snow-depth-title {

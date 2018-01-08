@@ -15,6 +15,14 @@
         padding: 20px 0;
     }
 
+    @include media( $screen--481-max ) {
+        font-size: $site-footer--font-size--481-max;
+    }
+
+    @include media( $screen--340 ) {
+        font-size: $site-footer--font-size--340;
+    }
+
     p {
         margin-bottom: 0;
     }

@@ -23,10 +23,10 @@
         width: 37%;
     }
 
-    @include media( $screen--932 ) {
+    /*@include media( $screen--932 ) {
         margin-top: 10px;
         width: 34%;
-    }
+    }*/
 
     @include media( $screen--800 ) {
         margin-top: 10px;
@@ -37,7 +37,7 @@
 
     @include media( $screen--568 ) {
         margin-left: 5px;
-        width: 30%;
+        width: 40%;
     }
 
     @include media( $screen--415 ) {

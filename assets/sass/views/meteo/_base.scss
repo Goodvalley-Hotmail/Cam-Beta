@@ -730,6 +730,7 @@ ul.tabbernav li.tabberactive a:hover {
     }
 
     @include media( $screen--960 ) {
+        margin: 0 5px;
         width: 50%;
     }
 

@@ -108,9 +108,9 @@ if ( have_posts() ) :
 					}
                     
                     if ( $i == 3 || $i == 7 || $i == 11 || $i == 15 || $i == 19 || $i == 23 || $i == 27 || $i == 31 ) {
-						echo '<div class="' . $class . '"><p class="webcam-image"><img src="' . $DOCUMENT_ROOT . $webcam_file_16_9 . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p><div class="webcam-info-wrap"><p class="webcam-name"><strong>' . $webcam_name . '</strong></p><p class="webcam-description">' . $webcam_text . '</p></div></div></div>';
+						echo '<div class="' . $class . '"><p class="webcam-image"><img src="' . $DOCUMENT_ROOT . $webcam_file_generic . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p><div class="webcam-info-wrap"><p class="webcam-name"><strong>' . $webcam_name . '</strong></p><p class="webcam-description">' . $webcam_text . '</p></div></div></div>';
 					} else {
-						echo '<div class="' . $class . '"><p class="webcam-image"><img src="' . $DOCUMENT_ROOT . $webcam_file_16_9 . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p><div class="webcam-info-wrap"><p class="webcam-name"><strong>' . $webcam_name . '</strong></p><p class="webcam-description">' . $webcam_text . '</p></div></div>';
+						echo '<div class="' . $class . '"><p class="webcam-image"><img src="' . $DOCUMENT_ROOT . $webcam_file_generic . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p><div class="webcam-info-wrap"><p class="webcam-name"><strong>' . $webcam_name . '</strong></p><p class="webcam-description">' . $webcam_text . '</p></div></div>';
 					}
 					
 					if ( $i == $webcam - 1 ) {

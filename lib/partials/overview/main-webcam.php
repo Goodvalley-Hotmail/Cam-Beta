@@ -13,6 +13,7 @@ namespace CameraSki;
 
 //WEBCAM
 $main_webcam_name		= get_post_meta( get_the_ID(), 'main_webcam_name', true );
+$main_webcam_url_generic= get_post_meta( get_the_ID(), 'main_webcam_url_generic', true );
 $main_webcam_url_16_9	= get_post_meta( get_the_ID(), 'main_webcam_url_16_9', true );
 $main_webcam_url_4_3	= get_post_meta( get_the_ID(), 'main_webcam_url_4_3', true );
 $main_webcam_url_1_1	= get_post_meta( get_the_ID(), 'main_webcam_url_1_1', true );
@@ -25,9 +26,9 @@ $webcam					= get_post_meta( get_the_ID(), 'webcam', true );
 
 <?php
 // Field
-if ( $main_webcam_url_16_9 ) {
+if ( $main_webcam_url_generic ) {
 
-	echo '<p class="main-webcam-image"><img src="' . $DOCUMENT_ROOT . $main_webcam_url_16_9 . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p>';
+	echo '<p class="main-webcam-image"><img src="' . $DOCUMENT_ROOT . $main_webcam_url_generic . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p>';
 
 } /*elseif ( $main_webcam_url_4_3 ) {
 

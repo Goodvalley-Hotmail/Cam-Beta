@@ -5,8 +5,12 @@
     margin: 6px 10px 6px 0;
     width: 55%;
 
-    @include media( $screen--932 ) {
-        width: 63%;
+    @include media( $screen--1023 ) {
+        width: 60%;
+    }
+
+    @include media( $screen--568 ) {
+        width: 55%;
     }
 
     @include media( $screen--415 ) {
@@ -49,12 +53,27 @@
 
     }
 
-    ul.overview-slopes-colors li.overview-green {
+    /*ul.overview-slopes-colors li.overview-green {
+
         color: $slopes-green--text-color;
         @include rem( font-size, $slopes-colors--font-size );
         text-align: right;
-    }
 
+        @include media( $screen--1340 ) {
+            font-size: $slopes-colors--font-size--1340;
+        }
+
+        @include media( $screen--960 ) {
+            font-size: $slopes-colors--font-size--1023;
+        }
+
+        @include media( $screen--568 ) {
+            font-size: $slopes-colors--font-size--568;
+        }
+
+    }*/
+
+    ul.overview-slopes-colors li.overview-green,
     ul.overview-slopes-colors li.overview-blue,
     ul.overview-slopes-colors li.overview-red,
     ul.overview-slopes-colors li.overview-black,
@@ -67,12 +86,16 @@
         @include rem( font-size, $slopes-colors--font-size );
         text-align: right;
 
+        @include media( $screen--1360 ) {
+            font-size: $slopes-colors--font-size--1360;
+        }
+
         @include media( $screen--1220 ) {
             font-size: $slopes-colors--font-size--1220;
         }
 
-        @include media( $screen--1220 ) {
-            font-size: $slopes-colors--font-size--1024;
+        @include media( $screen--960 ) {
+            font-size: $slopes-colors--font-size--1023;
         }
 
         @include media( $screen--800 ) {
@@ -89,11 +112,13 @@
         }
 
         @include media( $screen--415 ) {
+            font-size: $slopes-colors--font-size--415;
             margin-left: 10px;
             text-align: right;
         }
 
         @include media( $screen--340 ) {
+            font-size: $slopes-colors--font-size--340;
             margin-right: 10px;
         }
 
