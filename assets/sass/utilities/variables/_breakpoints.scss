@@ -24,6 +24,7 @@ $screen--800: new-breakpoint( max-width $screen-800 12 );
 $screen--768: new-breakpoint( max-width $screen-768 12 );
 $screen--680-min: new-breakpoint( min-width $screen-680-min 12 );
 $screen--680-max: new-breakpoint( max-width $screen-680-max 12 );
+$screen--640: new-breakpoint( max-width $screen-640 12 );
 $screen--568: new-breakpoint( max-width $screen-568 12 );
 $screen--520: new-breakpoint( max-width $screen-520 12 );
 $screen--481-min: new-breakpoint( min-width $screen-481-min 12 );

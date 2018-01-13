@@ -111,6 +111,34 @@ function remove_lostpassword_text ( $text ) {
 
 }
 
+add_filter( 'genesis_post_title_text', __NAMESPACE__ . '\add_tabs_after_cpt_title' );
+function add_tabs_after_cpt_title( $title ) {
+
+	$cameraski_ski_resort           = 'http://beta-01.com/ski-resort/';
+	$cameraski_ski_resort_webcams   = 'http://beta-01.com/ski-resort-webcams/';
+	$cameraski_weather_forecast     = 'http://beta-01.com/weather-forecast/';
+
+
+	$tab = get_post_meta( get_the_ID(), 'tab', true );
+
+	if ( is_singular( 'ski-resort' ) ) {
+
+		$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+
+	} elseif ( is_singular( 'ski-resort-webcams' ) ) {
+
+		$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+
+	} elseif ( is_singular( 'weather-forecast' ) ) {
+
+		$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+
+	}
+
+	return $title;
+
+}
+
 //* Add Overview-Main image sizes
 //add_image_size( 'overview-main', 495, 279, TRUE );
 //add_image_size( 'slope-map-200x109', 200, 109, TRUE );

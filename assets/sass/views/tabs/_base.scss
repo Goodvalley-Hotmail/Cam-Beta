@@ -1,0 +1,108 @@
+ul.cameraski-tabs {
+    margin: 0 0 -2px 0;
+    overflow: hidden;
+}
+
+ul.cameraski-tabs li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+}
+
+ul.cameraski-tabs li a {
+    display: block;
+    background: #f0f0f0;
+    color: #555;
+    font-weight: 700;
+    padding: 10px 30px;
+    //border: #eee solid 2px;
+    border: #a0a0a0 solid 2px;
+    border-bottom: 0 none;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    outline: none;
+}
+
+ul.cameraski-tabs li a:hover {
+    color: #888;
+}
+
+ul.cameraski-tabs li.ui-tabs-active a {
+    background: #fff;
+    padding-bottom: 12px;
+    margin-bottom: -2px;
+}
+
+ul.cameraski-tabs li.ui-tabs-active a:hover {
+    color: #555; /* This counteracts the Tab color hover. */
+}
+
+.cameraski-tab-content {
+    padding: 20px;
+    //border: 2px solid #eee;
+    border: #a0a0a0 solid 2px;
+    overflow: hidden;
+}
+
+span#tabbed {
+
+    margin-left: 20px;
+
+    @include media( $screen--640 ) {
+
+        display: table;
+        margin-left: 0;
+
+    }
+
+}
+
+.tab-active,
+.tab-ski-resort,
+.tab-ski-resort-webcams,
+.tab-weather-forecast {
+
+    display: inline-block;
+    margin: 0 4px 0 2px;
+
+    @include media( $screen--415 ) {
+
+        //display: table;
+        //margin: 0 0 4px;
+
+    }
+
+}
+
+.tab-weather-forecast {
+
+    @include media( $screen--415 ) {
+
+        margin: 4px 0 0;
+
+    }
+
+}
+
+h1.entry-title span a {
+
+    display: block;
+    //background: #f0f0f0;
+    background: linear-gradient( to bottom, #ffffff, #f6f6f6 );
+    color: #555;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 10px;
+    //border: #eee solid 2px;
+    border: #a0a0a0 solid 2px;
+    //border-bottom: 0 none;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+
+    @include media( $screen--800 ) {
+
+        font-size: 12px;
+
+    }
+
+}

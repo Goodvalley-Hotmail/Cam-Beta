@@ -3,6 +3,7 @@
 }
 
 span.see-all-prices {
+
     background-color: $see-all-prices--background-color;
     border: solid 0 10px $see-all-prices--border-color;
     border-radius: 2px;
@@ -10,6 +11,12 @@ span.see-all-prices {
     display: inline-block;
     margin: 5px 2px 5px 10px;
     padding: 0 5px;
+
+    & a {
+        color: $white;
+        text-decoration: none;
+    }
+
 }
 
 #overview-right-tabs-2 ul.overview-pricing {

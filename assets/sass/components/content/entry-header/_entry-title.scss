@@ -7,6 +7,12 @@
     @include rem( font-size, $entry-title--font-size );
     font-weight: bold;
 
+    @include media( $screen--640 ) {
+
+        @include rem( font-size, $entry-title--font-size--640 );
+
+    }
+
     a {
 
         color: $entry-title--link-color;

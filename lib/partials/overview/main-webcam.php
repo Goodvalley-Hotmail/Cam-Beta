@@ -20,9 +20,11 @@ $main_webcam_url_1_1	= get_post_meta( get_the_ID(), 'main_webcam_url_1_1', true 
 $main_webcam_file		= get_post_meta( get_the_ID(), 'main_webcam_file', true );
 $webcam					= get_post_meta( get_the_ID(), 'webcam', true );
 
+$cameraski_ski_resort_webcams   = 'http://beta-01.com/ski-resort-webcams/';
+$tab                            = get_post_meta( get_the_ID(), 'tab', true );
+
 ?>
-<!--Field-->
-<p class="main-webcam-title"><strong>ALL  WEBCAMS</strong></p>
+<p class="main-webcam-title"><a href="<?php echo $cameraski_ski_resort_webcams . $tab; ?>"><strong>ALL WEBCAMS</strong></a></p>
 
 <?php
 // Field

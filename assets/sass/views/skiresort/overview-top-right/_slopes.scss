@@ -53,26 +53,6 @@
 
     }
 
-    /*ul.overview-slopes-colors li.overview-green {
-
-        color: $slopes-green--text-color;
-        @include rem( font-size, $slopes-colors--font-size );
-        text-align: right;
-
-        @include media( $screen--1340 ) {
-            font-size: $slopes-colors--font-size--1340;
-        }
-
-        @include media( $screen--960 ) {
-            font-size: $slopes-colors--font-size--1023;
-        }
-
-        @include media( $screen--568 ) {
-            font-size: $slopes-colors--font-size--568;
-        }
-
-    }*/
-
     ul.overview-slopes-colors li.overview-green,
     ul.overview-slopes-colors li.overview-blue,
     ul.overview-slopes-colors li.overview-red,
@@ -122,6 +102,10 @@
             margin-right: 10px;
         }
 
+    }
+
+    ul.overview-slopes-colors li.overview-green {
+        color: $slopes-green--text-color;
     }
 
     ul.overview-slopes-colors li.overview-blue {
