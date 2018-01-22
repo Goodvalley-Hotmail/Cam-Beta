@@ -2,6 +2,7 @@
 // Breakpoints
 //==========================================
 
+$screen--1700: new-breakpoint( max-width $screen-1700 12 );
 $screen--1600: new-breakpoint( max-width $screen-1600 12 );
 $screen--1440: new-breakpoint( max-width $screen-1440 12 );
 $screen--1360: new-breakpoint( max-width $screen-1360 12 );

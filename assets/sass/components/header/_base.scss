@@ -7,16 +7,24 @@
     background-color: $site-header--background-color;
 
     > .wrap {
+
         padding: 0 40px;
+
+        @include media( $screen--1152 ) {
+
+            padding: 0 20px;
+
+        }
+
     }
 
-    @include media( $screen--1023 ) {
+    /*@include media( $screen--1023 ) {
 
         .wrap {
             padding-left: 5%;
             padding-right: 5%;
         }
 
-    }
+    }*/
 
 }

@@ -9,13 +9,29 @@
     // CAMERASKI width: 360px;
     width: $title-area--width;
 
+    @include media( $screen--1700 ) {
+        padding: 15px 0 0;
+    }
+
+    @include media( $screen--1600 ) {
+        padding: 15px 0 0;
+    }
+
+    @include media( $screen--1440 ) {
+        width: $title-area--width--1440;
+    }
+
     @include media( $screen--1280 ) {
-        padding: 5px 0;
         width: $title-area--width--1280;
     }
 
     @include media( $screen--1023 ) {
         width: $title-area--width--1023;
+    }
+
+    @include media( $screen--960 ) {
+        padding: 10px 0 0;
+        width: $title-area--width--960;
     }
 
     @include media( $screen--800 ) {
@@ -27,11 +43,9 @@
     }
 
     @include media( $screen--568 ) {
+        float: none;
+        margin: 0 auto;
         width: $title-area--width--568;
-    }
-
-    @include media( $screen--520 ) {
-        width: $title-area--width--520;
     }
 
     @include media( $screen--481-max ) {
@@ -43,8 +57,12 @@
     }
 
     @include media( $screen--415 ) {
-        padding: 2px 0;
+        padding: 10px 0 0;
         width: $title-area--width--415;
+    }
+
+    @include media( $screen--340 ) {
+        width: $title-area--width--340;
     }
 
     /*@include media( $screen--1023 ) {

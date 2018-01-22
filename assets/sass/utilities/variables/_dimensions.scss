@@ -51,21 +51,34 @@ $content-sidebar-wrap--width--1340: 920px;
 $content-sidebar-wrap--width--1200: 740px;
 
 // Header Module
-$title-area--width: 10%; /*300px;*/
-$title-area--width--1280: 12%;
+$title-area--width: 10%;
+$title-area--width--1440: 12%;
+$title-area--width--1280: 15%;
 $title-area--width--1023: 15%;
+$title-area--width--960: 20%;
 $title-area--width--800: 20%;
 $title-area--width--680: 25%;
-$title-area--width--568: 30%;
-$title-area--width--520: 35%;
-$title-area--width--481: 40%;
-$title-area--width--430: 45%;
-$title-area--width--415: 50%;
+$title-area--width--568: 40%;
+$title-area--width--481: 45%;
+$title-area--width--430: 50%;
+$title-area--width--415: 55%;
+$title-area--width--340: 60%;
 $site-title--min-height: 80px;
 
-$header-right--width: 90%; /*800px;*/
-$header-right--width--1200: 800px;
-$header-right--width--1340: 620px;
+// Header Right Widget
+$header-right--width: 90%;
+$header-right--width--1440: 88%;
+$header-right--width--1280: 85%;
+$header-right--width--1023: 85%;
+$header-right--width--960: 80%;
+$header-right--width--800: 80%;
+$header-right--width--680: 75%;
+$header-right--width--568: 100%;
+//$header-right--width--568: 70%;
+//$header-right--width--520: 65%;
+//$header-right--width--481: 100%;
+//$header-right--width--430: 55%;
+//$header-right--width--415: 50%;
 
 // Footer Module
 $footer-widgets--width: 380px;
