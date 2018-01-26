@@ -16,7 +16,7 @@ namespace CameraSki;
 
 <?php
 
-echo '<li class="datetime"><strong><time datetime="'.date( 'c' ).'">'.date( 'F j, Y ' ).'</time></strong> ';
+echo '<li class="datetime"><strong><time datetime="' . date( 'c' ) . '">' . date( 'F j, Y ' ) . '</time></strong> ';
 
 if ( $operating_status == 'OPEN' ) {
 

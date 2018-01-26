@@ -1,0 +1,13 @@
+.ski-resorts-archive .entry-content {
+
+    background: $archive-ski-resorts--entry-content--background-color;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #1E73BE;
+    padding: 10px;
+
+    ul {
+        margin: 5px 10px;
+    }
+
+}

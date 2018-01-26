@@ -104,13 +104,28 @@ function add_new_image_sizes() {
 			'width' => 720,
 			'height'=> 400,
 			'crop'  => true,
-		)
+		),
+		'ski-resort-map-200x109' => array(
+			'width' => 200,
+			'height'=> 109,
+			'crop'  => true,
+		),
+		'ski-resort-map-250x136' => array(
+			'width' => 250,
+			'height'=> 136,
+			'crop'  => true,
+		),
+		'ski-resort-map-300x163' => array(
+			'width' => 300,
+			'height'=> 163,
+			'crop'  => true,
+		),
 	);
 
 	foreach ( $config as $name => $args ) {
 
 		$crop = array_key_exists( 'crop', $args ) ? $args['crop'] : false;
-		//add_image_size( $name, $args['width'], $args['height'], $crop );
+		add_image_size( $name, $args['width'], $args['height'], $crop );
 
 	}
 

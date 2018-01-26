@@ -46,12 +46,16 @@
         text-decoration: none;
 
         &:hover,
-        &:focus,
-        .active & {
+        &:focus {
             background-color: $archive-pagination--hover-background-color;
             color: $archive-pagination--hover-text-color;
         }
 
+    }
+
+    .active a {
+        background-color: $archive-pagination--hover-background-color;
+        color: $archive-pagination--hover-text-color;
     }
 
 }

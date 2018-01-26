@@ -1,0 +1,86 @@
+.entry-content {
+
+    ul.archive-slopes-colors li,
+    ul.ul-overview-other-slopes li {
+        list-style-type: none;
+    }
+
+}
+
+.ski-resorts-archive {
+
+    ul.archive-slopes-colors {
+
+        line-height: 1.225;
+
+        li.archive-green {
+            color: green;
+            font-size: 12px;
+            text-align: right;
+        }
+
+        li.archive-blue,
+        li.archive-red,
+        li.archive-black,
+        li.archive-nordic-tracks,
+        li.archive-ski-routes,
+        li.archive-total-slopes {
+            font-size: 12px;
+            text-align: right;
+        }
+
+        li.archive-blue {
+            color: blue;
+        }
+
+        li.archive-red {
+            color: red;
+        }
+
+        li.archive-black {
+            color: black;
+        }
+
+        li.archive-total-slopes {
+            background-color: #000;
+            border: solid 0 10px #000;
+            border-radius: 2px;
+            clear: both;
+            color: #fff;
+            display: inline-block;
+            /*margin: 0 10px 0 0;*/
+            margin-top: 5px;
+            float: right;
+            padding: 0 3px;
+            text-align: center;
+        }
+
+    }
+
+    ul.ul-archive-other-slopes {
+
+        li.archive-ski-routes,
+        li.archive-nordic-tracks {
+            font-size: 12px;
+            text-align: right;
+        }
+
+    }
+
+    ul.archive-slopes-colors li.archive-ski-routes,
+    ul.ul-archive-other-slopes li.archive-ski-routes {
+        clear: both;
+        color: orange;
+        display: inline-block;
+        float: right;
+    }
+
+    ul.archive-slopes-colors li.archive-nordic-tracks,
+    ul.ul-archive-other-slopes li.archive-nordic-tracks {
+        clear: both;
+        color: #9C9EA0;
+        display: inline-block;
+        float: right;
+    }
+
+}

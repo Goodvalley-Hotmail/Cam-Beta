@@ -25,6 +25,7 @@ function load_nonadmin_files() {
 		'components/cameraski/taxonomies.php',
 		'components/cameraski/cpts.php',
 		'components/cameraski/term-meta-locations.php',
+		'components/cameraski/yoast-breadcrumbs.php',
 		'components/cameraski/functions-cameraski.php',
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',

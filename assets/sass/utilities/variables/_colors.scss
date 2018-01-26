@@ -23,7 +23,7 @@ $headings--text-color: $gray;
 //
 // Elements
 //==========================================
-$body--background-color: url("images/main_bg.png") repeat;
+$body--background-color: url( "assets/images/main_bg.png" ) repeat;
 $base--text-color: $gray-dark;
 
 $gallery-image--border-color: $white-dark;
@@ -178,6 +178,10 @@ $see-all-prices--text-color: $white;
 
 $meteo-container--text-color: $black;
 
+//
+// Ski Resorts Overview
+//==========================================
+$archive-ski-resorts--entry-content--background-color: linear-gradient( to bottom, #ffffff, #f0f0f0 );
 
 //
 // WebCam

@@ -139,12 +139,6 @@ function add_tabs_after_cpt_title( $title ) {
 
 }
 
-//* Add Overview-Main image sizes
-//add_image_size( 'overview-main', 495, 279, TRUE );
-//add_image_size( 'slope-map-200x109', 200, 109, TRUE );
-//add_image_size( 'slope-map-250x136', 250, 136, TRUE );
-//add_image_size( 'slope-map-300x163', 300, 163, TRUE );
-
 add_action( 'admin_bar_menu', __NAMESPACE__ . '\show_template' );
 /**
  *

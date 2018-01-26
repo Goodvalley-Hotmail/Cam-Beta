@@ -1,5 +1,3 @@
-// CAMERASKI
 #archive-entry-title-attr {
-    font-size: $archive-entry-title--font-size;
+    @include rem( font-size, $archive-entry-title--font-size );
 }
-// /CAMERASKI

@@ -1,0 +1,39 @@
+.ski-resorts-archive {
+
+    #breadcrumbs,
+    .archive-season,
+    .archive-elevation,
+    .archive-lifts,
+    .archive-pricing-day,
+    .archive-pricing-season {
+        margin-left: 10px;
+    }
+
+}
+
+#breadcrumbs {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.archive-season,
+.archive-lifts {
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+.archive-elevation,
+.archive-pricing-day,
+.archive-pricing-season {
+    font-size: 1.2rem;
+    line-height: 1.225;
+}
+
+.ski-resorts-archive .ski-resort .archive-pricing-season {
+    margin-bottom: 10px;
+}
+
+p.archive-season .operating-status-open,
+p.archive-season .operating-status-closed {
+    margin-left: 5px;
+}
