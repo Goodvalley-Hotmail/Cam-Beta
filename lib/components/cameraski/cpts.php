@@ -37,6 +37,7 @@ function register_cpts() {
 			'plural_name'   => 'Ski Resorts',
 			'label'         => __( 'Ski Resort', CHILD_TEXT_DOMAIN ),
 			'description'   => __( 'CPT Ski Resort', CHILD_TEXT_DOMAIN ),
+			'publicly_queryable'    => false,
 			'menu_icon'     => 'dashicons-chart-area',
 			'has_archive'   => 'ski-resorts',
 		),

@@ -1,5 +1,5 @@
 .ski-resorts-archive .ski-resort .entry-title {
-    font-size: 24px;
+    @include rem( font-size, $archive-ski-resorts-entry-title--font-size );
     line-height: 1;
     margin: 5px 0 5px 10px;
 }

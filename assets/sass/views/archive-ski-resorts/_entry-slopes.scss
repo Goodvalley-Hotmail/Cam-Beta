@@ -14,9 +14,19 @@
         line-height: 1.225;
 
         li.archive-green {
+
             color: green;
-            font-size: 12px;
+            @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
+
+            @include media( $screen--680-max ) {
+                text-align: left;
+            }
+
+            @include media( $screen--340 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--415 );
+            }
+
         }
 
         li.archive-blue,
@@ -25,8 +35,18 @@
         li.archive-nordic-tracks,
         li.archive-ski-routes,
         li.archive-total-slopes {
-            font-size: 12px;
+
+            @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
+
+            @include media( $screen--680-max ) {
+                text-align: left;
+            }
+
+            @include media( $screen--340 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--415 );
+            }
+
         }
 
         li.archive-blue {
@@ -42,6 +62,7 @@
         }
 
         li.archive-total-slopes {
+
             background-color: #000;
             border: solid 0 10px #000;
             border-radius: 2px;
@@ -53,6 +74,11 @@
             float: right;
             padding: 0 3px;
             text-align: center;
+
+            @include media( $screen--680-max ) {
+                float: left;
+            }
+
         }
 
     }
@@ -61,26 +87,48 @@
 
         li.archive-ski-routes,
         li.archive-nordic-tracks {
-            font-size: 12px;
+
+            @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
+
+            @include media( $screen--680-max ) {
+                text-align: left;
+            }
+
+            @include media( $screen--340 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--415 );
+            }
+
         }
 
     }
 
     ul.archive-slopes-colors li.archive-ski-routes,
     ul.ul-archive-other-slopes li.archive-ski-routes {
+
         clear: both;
         color: orange;
         display: inline-block;
         float: right;
+
+        @include media( $screen--680-max ) {
+            float: left;
+        }
+
     }
 
     ul.archive-slopes-colors li.archive-nordic-tracks,
     ul.ul-archive-other-slopes li.archive-nordic-tracks {
+
         clear: both;
         color: #9C9EA0;
         display: inline-block;
         float: right;
+
+        @include media( $screen--680-max ) {
+            float: left;
+        }
+
     }
 
 }

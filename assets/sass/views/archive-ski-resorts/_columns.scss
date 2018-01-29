@@ -1,24 +1,63 @@
 .ski-resorts-archive {
 
-    .first {
+    .first,
+    .two-fourths-first {
         margin-left: 0;
     }
 
     .one-fourth,
-    .two-fourths {
+    .two-fourths,
+    .two-fourths-first {
         display: flex;
         flex-direction: column;
         /*margin-left: 0.83333333333333%;*/
         margin-left: 0;
     }
 
+    .two-fourths-first {
+
+        @include media( $screen--1153 ) {
+            display: none;
+        }
+
+        @include media( $screen--1152 ) {
+            min-width: 100%;
+        }
+
+    }
+
     .one-fourth {
+
         /*min-width: 24.3%;*/
         min-width: 25%;
+
+        @include media( $screen--1152 ) {
+            float: left;
+            min-width: 50%;
+        }
+
+        @include media( $screen--680-max ) {
+            min-width: 100%;
+        }
+
     }
 
     .two-fourths {
+
         min-width: 50%;
+
+        @include media( $screen--1152 ) {
+            display: none;
+        }
+
+    }
+
+    @include media( $screen--1152 ) {
+
+        .ski-resort .overview-clear {
+            clear: both;
+        }
+
     }
 
 }

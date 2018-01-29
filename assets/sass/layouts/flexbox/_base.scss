@@ -1,6 +1,7 @@
 .flexbox-top,
 .flexbox-bottom,
-.flexbox-webcam {
+.flexbox-webcam,
+.flexbox-archive-ski-resorts {
     display: flex;
     overflow: hidden;
 }
@@ -24,6 +25,16 @@
 .flexbox-webcam {
 
     @include media( $screen--800 ) {
+        flex-wrap: wrap;
+    }
+
+}
+
+.flexbox-archive-ski-resorts {
+
+    width: 100%;
+
+    @include media( $screen--1152 ) {
         flex-wrap: wrap;
     }
 

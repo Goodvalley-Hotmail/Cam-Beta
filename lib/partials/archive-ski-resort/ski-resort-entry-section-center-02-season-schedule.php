@@ -38,11 +38,11 @@ if ( $count_season_schedule ) {
 
 		} elseif ( $full_year_round ) {
 
-			echo '<p class="archive-season">' . $full_year_round . '<strong> | </strong>' . $operating_schedule;
+			echo '<p class="archive-season">' . $full_year_round . '<strong> | </strong>' . $operating_schedule . '</p>';
 
 		}
 
-		if ( $operating_status == 'OPEN' ) {
+		/*if ( $operating_status == 'OPEN' ) {
 
 			echo '<span class="operating-status-open"><strong> ' . $operating_status_english . '</strong></span></p>';
 
@@ -50,7 +50,7 @@ if ( $count_season_schedule ) {
 
 			echo '<span class="operating-status-closed"><strong> ' . $operating_status_english . '</strong></span></p>';
 
-		}
+		}*/
 
 	}
 

@@ -11,6 +11,7 @@ $screen--1320: new-breakpoint( max-width $screen-1320 12 );
 $screen--1280: new-breakpoint( max-width $screen-1280 12 );
 $screen--1220: new-breakpoint( max-width $screen-1220 12 );
 $screen--1200: new-breakpoint( max-width $screen-1200 12 ); // Genesis Sample
+$screen--1153: new-breakpoint( min-width $screen-1153 12 );
 $screen--1152: new-breakpoint( max-width $screen-1152 12 );
 $screen--1080: new-breakpoint( max-width $screen-1080 12 );
 $screen--1024: new-breakpoint( max-width $screen-1024 12 );

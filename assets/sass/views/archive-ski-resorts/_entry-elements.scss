@@ -33,7 +33,50 @@
     margin-bottom: 10px;
 }
 
-p.archive-season .operating-status-open,
-p.archive-season .operating-status-closed {
-    margin-left: 5px;
+h2#ski-resort-entry-title .operating-status-open,
+h2#ski-resort-entry-title .operating-status-closed {
+
+    border-radius: 2px;
+    display: inline-block;
+    @include rem( font-size, $archive-ski-resorts-entry-title-span--font-size );
+    line-height: $color-tags--line-height;
+    margin: 0 auto 0 10px;
+    padding: 0 5px;
+
+    @include media( $screen--415 ) {
+        margin: 0 auto 0 5px;
+    }
+
+}
+
+h2#ski-resort-entry-title .operating-status-open {
+    background-color: $operating-status-open--background-color;
+    border: solid 0 10px $operating-status-open--border-color;
+    color: $operating-status-open--text-color;
+}
+
+h2#ski-resort-entry-title .operating-status-closed {
+    background-color: $operating-status-closed--background-color;
+    border: solid 0 10px $operating-status-closed--border-color;
+    color: $operating-status-closed--text-color;
+}
+
+h2#ski-resort-entry-title .title-webcams {
+    background-color: $see-all-prices--background-color;
+    border: solid 0 10px $see-all-prices--border-color;
+    border-radius: 2px;
+    color: $see-all-prices--text-color;
+    display: inline-block;
+    @include rem( font-size, $archive-ski-resorts-webcams-entry-title-span--font-size );
+    margin: 0 10px 0 0;
+    padding: 0 5px;
+
+    & a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+p.archive-lifts {
+    color: #1E73BE;
 }
