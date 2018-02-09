@@ -30,7 +30,7 @@ $tab                            = get_post_meta( get_the_ID(), 'tab', true );
 // Field
 if ( $main_webcam_url_generic ) {
 
-	echo '<p class="main-webcam-image"><img src="' . $DOCUMENT_ROOT . $main_webcam_url_generic . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></p>';
+	echo '<p class="main-webcam-image"><a href="' . $cameraski_ski_resort_webcams . $tab . '"><img src="' . $DOCUMENT_ROOT . $main_webcam_url_generic . '" alt="Baqueira" width="100%"  align="middle" class="main-webcam" /></a></p>';
 
 } /*elseif ( $main_webcam_url_4_3 ) {
 

@@ -47,7 +47,7 @@ span#tabbed {
 
     margin-left: 20px;
 
-    @include media( $screen--640 ) {
+    @include media( $screen--960 ) {
 
         display: table;
         margin-left: 0;

@@ -140,32 +140,42 @@ function archive_ski_resorts_loop() {
 
 						echo '<div class="two-fourths-first">';
 
-						echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+							$title_domain = get_post_meta( get_the_ID(), 'title_domain', true );
 
-						if ( $operating_status == 'OPEN' ) {
+							if ( $title_domain ) {
 
-							echo '<span class="operating-status-open"><strong> ' . $operating_status_english . '</strong></span></h2>';
+								echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . ' - ' .  $title_domain . '</a>';
 
-						} elseif ( $operating_status == 'CLOSED' ) {
+							} else {
 
-							echo '<span class="operating-status-closed"><strong> ' . $operating_status_english . '</strong></span></h2>';
+								echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
 
-						}
+							}
 
-						// BreadCrumbs in every Post found -> PART 2/3 START
-						$wp_query->is_singular          = true;
-						WPSEO_Breadcrumbs::$instance    = NULL;
+							if ( $operating_status == 'OPEN' ) {
 
-						if ( function_exists( 'yoast_breadcrumb' ) ) {
-							yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
-						}
-						// BreadCrumbs in every Post found -> PART 2/3 END
+								echo '<span class="operating-status-open"><strong> ' . $operating_status_english . '</strong></span></h2>';
 
-						include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-01-breadcrumbs.php' ) );
-						include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-02-season-schedule.php' ) );
-						include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-03-elevation-info.php' ) );
-						include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-04-lifts.php' ) );
-						include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-05-pricing.php' ) );
+							} elseif ( $operating_status == 'CLOSED' ) {
+
+								echo '<span class="operating-status-closed"><strong> ' . $operating_status_english . '</strong></span></h2>';
+
+							}
+
+							// BreadCrumbs in every Post found -> PART 2/3 START
+							$wp_query->is_singular          = true;
+							WPSEO_Breadcrumbs::$instance    = NULL;
+
+							if ( function_exists( 'yoast_breadcrumb' ) ) {
+								yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
+							}
+							// BreadCrumbs in every Post found -> PART 2/3 END
+
+							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-01-breadcrumbs.php' ) );
+							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-02-season-schedule.php' ) );
+							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-03-elevation-info.php' ) );
+							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-04-lifts.php' ) );
+							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-05-pricing.php' ) );
 
 						echo '</div>';
 
@@ -179,7 +189,15 @@ function archive_ski_resorts_loop() {
 
 						echo '<div class="two-fourths">';
 
-							echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+							if ( $title_domain ) {
+
+								echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . ' - ' .  $title_domain . '</a>';
+
+							} else {
+
+								echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+
+							}
 
 							if ( $operating_status == 'OPEN' ) {
 

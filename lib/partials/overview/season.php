@@ -22,8 +22,9 @@ namespace CameraSki;
 
 		for ( $i= 0; $i < $count_season; $i++ ) {
 
-			$operating_schedule = get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_operating_schedule', true );
-		    $opening_date		= get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_opening_date', true );
+			$operating_schedule = '<time itemprop="openingHours" datetime="Mo-Su ' . get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_operating_schedule', true ) . '">' . get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_operating_schedule', true ) . '</time>';
+			//$operating_schedule = '<meta itemprop="openingHours" content="Mo-Su ' . get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_operating_schedule', true ) . '" />' . get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_operating_schedule', true );
+            $opening_date		= get_post_meta( get_the_ID(), 'season_schedule_' . $i . '_opening_date', true );
 
 			if ( $opening_date ) {
 				$opening_date		= date( 'F d', strtotime( $opening_date ) );

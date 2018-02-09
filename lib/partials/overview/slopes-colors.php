@@ -246,7 +246,7 @@ namespace CameraSki;
 
 		if ( $total_slopes ) {
 
-			echo '<li class="overview-total-slopes"><strong>Total: ' . $total_slopes . ' trail';
+			echo '<li class="overview-total-slopes" itemprop="additionalType" href="http://www.productontology.org/id/Piste" /><strong>Total: <span itemprop="numberOfItems">' . $total_slopes . '</span> trail';
 
 			if ( $total_slopes > '1' ) {
 				echo 's';
@@ -268,7 +268,7 @@ namespace CameraSki;
 
 		if ( $total_slopes ) {
 
-			echo '<li class="overview-total-slopes"><strong> Total: ' . $total_slopes . ' trail';
+			echo '<li class="overview-total-slopes" itemprop="additionalType" href="http://www.productontology.org/id/Piste" /><strong> Total: <span itemprop="numberOfItems">' . $total_slopes . '</span> trail';
 
 			if ( $total_slopes > '1' ) {
 				echo 's';
@@ -296,7 +296,7 @@ namespace CameraSki;
 
 		if ( $total_slopes ) {
 
-			echo '<li class="overview-total-slopes"><strong> Total: ' . $total_slopes . ' trail';
+			echo '<li class="overview-total-slopes" itemprop="additionalType" href="http://www.productontology.org/id/Piste" /><strong> Total: <span itemprop="numberOfItems">' . $total_slopes . '</span> trail';
 
 			if ( $total_slopes > '1' ) {
 				echo 's';
@@ -324,7 +324,7 @@ namespace CameraSki;
 
 		if ( $total_slopes ) {
 
-			echo '<li class="overview-total-slopes"><strong> Total: ' . $total_slopes . ' trail';
+			echo '<li class="overview-total-slopes" itemprop="additionalType" href="http://www.productontology.org/id/Piste" /><strong> Total: <span itemprop="numberOfItems">' . $total_slopes . '</span> trail';
 
 			if ( $total_slopes > '1' ) {
 				echo 's';

@@ -17,6 +17,10 @@ $mapsmarker_shortcode	= get_post_meta( get_the_ID(), 'mapsmarker_shortcode', tru
 <!--MAP-->
 <div id="overview-map">
 
-	<?php echo do_shortcode( $mapsmarker_shortcode ); ?>
+    <?php
+    if ( $mapsmarker_shortcode ) {
+	    echo do_shortcode( $mapsmarker_shortcode );
+    }
+    ?>
 
 </div>

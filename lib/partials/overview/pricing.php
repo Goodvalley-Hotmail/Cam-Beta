@@ -46,7 +46,7 @@ namespace CameraSki;
 				$junior			= get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_junior', true );
 
 				if ( $adult || $junior ) {
-					echo '<li><strong>1-Day Pass Adult/Junior: </strong> ' . $local_currency, $adult . ' / ' . $local_currency, $junior . '</li>';
+					echo '<li><strong>1-Day Pass Adult/Junior: </strong><span><meta itemprop="currenciesAccepted" content="EUR" /> ' . $local_currency . '</span>' . $adult . ' / <span><meta itemprop="currenciesAccepted" content="EUR" />' . $local_currency . '</span>' .  $junior . '</li>';
 				}
 
 				break;
@@ -57,7 +57,7 @@ namespace CameraSki;
 				$junior			= get_post_meta( get_the_ID(), 'pricing_' . $count_pricing . '_junior', true );
 
 				if ( $adult || $junior ) {
-					echo '<li class="end-of-prices-tab"><strong>Season Pass Adult/Junior: </strong> ' . $local_currency, $adult . ' / ' . $local_currency, $junior . '</li>';
+					echo '<li class="end-of-prices-tab"><strong>Season Pass Adult/Junior: </strong><span><meta itemprop="currenciesAccepted" content="EUR" /> ' . $local_currency . '</span>' .  $adult . ' / <span><meta itemprop="currenciesAccepted" content="EUR" />' . $local_currency . '</span>' .  $junior . '</li>';
 				}
 
 				break;

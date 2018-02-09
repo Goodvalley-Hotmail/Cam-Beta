@@ -30,7 +30,7 @@ namespace CameraSki;
 			// Sub-Field
 			if ( $max_elevation ) {
 
-				echo '<li class="overview-elevation"><strong>Max Elevation: </strong> ' . number_format( $max_elevation, 0 ) . ' ' . $elevation_unity . ' (';
+				echo '<li class="overview-elevation" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates"><strong itemprop="elevation">Max Elevation: </strong> ' . number_format( $max_elevation, 0 ) . ' ' . $elevation_unity . ' (';
 
 				if ( $elevation_unity == 'm' ) {
 					echo number_format( $max_elevation * 3.2808, 0 ) . ' ft)';
@@ -44,7 +44,7 @@ namespace CameraSki;
 
 			if ( $min_elevation ) {
 
-				echo '<li class="overview-elevation"><strong>Min Elevation: </strong> ' . number_format( $min_elevation, 0 ) . ' ' . $elevation_unity . ' (';
+				echo '<li class="overview-elevation" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates"><strong itemprop="elevation">Min Elevation: </strong> ' . number_format( $min_elevation, 0 ) . ' ' . $elevation_unity . ' (';
 
 				if ( $elevation_unity == 'm' ) {
 					echo number_format( $min_elevation * 3.2808, 0 ) . ' ft)';
@@ -58,7 +58,7 @@ namespace CameraSki;
 
 			if ( $elevation_difference ) {
 
-				echo '<li class="overview-elevation"><strong>Elev. Difference: </strong> ' . number_format( $elevation_difference, 0 ) . ' ' . $elevation_unity . ' (';
+				echo '<li class="overview-elevation" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates"><strong itemprop="elevation">Elev. Difference: </strong> ' . number_format( $elevation_difference, 0 ) . ' ' . $elevation_unity . ' (';
 
 				if ( $elevation_unity == 'm' ) {
 					echo number_format( $elevation_difference * 3.2808, 0 ) . ' ft)';

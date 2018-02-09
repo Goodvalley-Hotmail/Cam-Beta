@@ -173,7 +173,17 @@ function archive_ski_resorts_loop() {
 
 								echo '<div class="two-fourths-first">';
 
-									echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+									$title_domain = get_post_meta( get_the_ID(), 'title_domain', true );
+
+									if ( $title_domain ) {
+
+										echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . ' - ' .  $title_domain . '</a>';
+
+									} else {
+
+										echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+
+									}
 
 									if ( $operating_status == 'OPEN' ) {
 
@@ -212,7 +222,15 @@ function archive_ski_resorts_loop() {
 
 								echo '<div class="two-fourths">';
 
-									echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+									if ( $title_domain ) {
+
+										echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . ' - ' .  $title_domain . '</a>';
+
+									} else {
+
+										echo '<h2 class="entry-title" id="ski-resort-entry-title" itemprop="headline"><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+
+									}
 
 									if ( $operating_status == 'OPEN' ) {
 
