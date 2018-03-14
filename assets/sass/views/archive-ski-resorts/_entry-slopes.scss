@@ -19,7 +19,20 @@
             @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
 
+            @include media( $screen--1320 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--1320 );
+            }
+
+            @include media( $screen--1152 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
+            }
+
+            @include media( $screen--768 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--768 );
+            }
+
             @include media( $screen--680-max ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
                 text-align: left;
             }
 
@@ -39,7 +52,20 @@
             @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
 
+            @include media( $screen--1320 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--1320 );
+            }
+
+            @include media( $screen--1152 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
+            }
+
+            @include media( $screen--768 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--768 );
+            }
+
             @include media( $screen--680-max ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
                 text-align: left;
             }
 
@@ -90,6 +116,18 @@
 
             @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
             text-align: right;
+
+            @include media( $screen--1320 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--1320 );
+            }
+
+            @include media( $screen--1152 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size );
+            }
+
+            @include media( $screen--768 ) {
+                @include rem( font-size, $archive-ski-resorts-slopes-colors--font-size--768 );
+            }
 
             @include media( $screen--680-max ) {
                 text-align: left;

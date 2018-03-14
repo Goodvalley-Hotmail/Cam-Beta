@@ -1,0 +1,76 @@
+.taxonomy-locations-aside-wrap,
+.taxonomy-locations-content-wrap {
+
+}
+
+.taxonomy-locations-aside-wrap {
+    background: $archive-ski-resorts--entry-content--background-color;
+    border: 1px solid #1E73BE;
+    margin: 10px 0 0 10px;
+    //padding: 10px;
+
+    @include media( $screen--680-max ) {
+        margin: 10px 0 0 5px;
+    }
+
+    @include media( $screen--568 ) {
+        margin: 5px;
+    }
+
+}
+
+.taxonomy-locations-aside-content {
+
+    padding: 20px 0 10px 10px;
+
+}
+
+.taxonomy-locations-content-wrap {
+
+    margin: 10px 10px 0;
+
+    @include media( $screen--680-max ) {
+        margin: 10px 5px 0;
+    }
+
+    @include media( $screen--568 ) {
+        margin: 0;
+        padding: 5px 5px 0;
+    }
+
+}
+
+p#locations-type {
+    color: $locations-type--text-color;
+    margin: 0;
+    font-weight: bold;
+}
+
+p#locations-breadcrumbs {
+
+    @include rem( font-size, $breadcrumbs-locations--font-size );
+    font-weight: bold;
+    margin: 0 10px;
+
+    a {
+        color: $breadcrumbs-locations--text-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $breadcrumbs-locations--hover-text-color;
+    }
+
+    @include media( $screen--768 ) {
+        @include rem( font-size, $breadcrumbs-locations--font-size-768 );
+    }
+
+    @include media( $screen--680-max ) {
+        @include rem( font-size, $breadcrumbs-locations--font-size-680-max );
+    }
+
+    @include media( $screen--568 ) {
+        @include rem( font-size, $breadcrumbs-locations--font-size-568 );
+    }
+
+}

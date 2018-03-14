@@ -1,0 +1,98 @@
+/* TechCrunch-like Featured Content Blocks in Genesis */
+
+a img {
+    margin-bottom: 0;
+}
+
+.home-featured {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.home-featured .entry {
+    background-color: transparent;
+}
+
+.home-featured img {
+    vertical-align: top;
+}
+
+.home-featured .entry-title {
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+/* Left */
+
+.home-featured-left .entry {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+}
+
+.home-featured-left .entry .entry-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba( 0, 0, 0, 0.5 );
+    width: 100%;
+    padding: 10px;
+}
+
+.home-featured-left .entry .entry-header:hover {
+    background: rgba( 78, 36, 0, 0.5 );
+}
+
+.home-featured-left .entry-header .entry-meta {
+    margin-bottom: 0;
+}
+
+.home-featured-left .entry-title a {
+    color: #fff;
+}
+
+.home-featured-left .entry-meta {
+    color: #aabcaa;
+    font-style: italic;
+}
+
+.home-featured-left .entry-meta a {
+    border-bottom: none;
+    color: #aabcaa;
+}
+
+/* Right */
+
+.home-featured-right img {
+    margin-right: 10px;
+}
+
+.home-featured-right .entry {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Media Queries */
+
+@media only screen and ( max-width: 1139px ) {
+
+    .home-featured {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+@media only screen and ( max-width: 767px ) {
+
+    .home-featured-left {
+        margin-bottom: 30px;
+    }
+
+    .home-featured-left .entry .entry-header {
+        width: auto;
+    }
+
+}

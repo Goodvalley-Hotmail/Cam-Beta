@@ -27,7 +27,6 @@ function load_nonadmin_files() {
 		'components/cameraski/term-meta-locations.php',
 		'components/cameraski/cpt-entry-title-single.php',
 		'components/cameraski/yoast-breadcrumbs.php',
-		'components/cameraski/functions-cameraski.php',
 		'components/cameraski/retina-logo.php',
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',

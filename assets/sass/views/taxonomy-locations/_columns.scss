@@ -1,0 +1,27 @@
+.taxonomy-locations-aside-wrap {
+
+    width: 15%;
+
+    @include media( $screen--1152 ) {
+        width: 25%;
+    }
+
+    @include media( $screen--568 ) {
+        width: 100%;
+    }
+
+}
+
+.taxonomy-locations-content-wrap {
+
+    width: 85%;
+
+    @include media( $screen--1152 ) {
+        width: 75%;
+    }
+
+    @include media( $screen--568 ) {
+        width: 100%;
+    }
+
+}

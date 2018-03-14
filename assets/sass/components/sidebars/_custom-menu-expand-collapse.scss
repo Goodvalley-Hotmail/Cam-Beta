@@ -1,0 +1,27 @@
+/* ## Sidebar custom Menu Widget expand/collapse
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar .widget_nav_menu li > a {
+    display: block;
+    position: relative;
+}
+
+.sidebar .widget_nav_menu li.menu-item-has-children > a a:after {
+    content: "\f347";
+    font: normal 15px/1 'dashicons';
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.sidebar .widget_nav_menu li.menu-item-has-children > a.open a:after {
+    content: "\f343";
+}
+
+.sidebar .widget_nav_menu li > a a {
+    display: block;
+}
+
+.sidebar .widget_nav_menu li.menu-item-has-children li {
+    margin-top: 10px;
+}

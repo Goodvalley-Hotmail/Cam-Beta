@@ -1,9 +1,18 @@
 .flexbox-top,
 .flexbox-bottom,
 .flexbox-webcam,
-.flexbox-archive-ski-resorts {
+.flexbox-taxonomy-locations,
+.flexbox-taxonomy-locations-content {
     display: flex;
     overflow: hidden;
+}
+
+.flexbox-taxonomy-locations {
+
+    @include media( $screen--568 ) {
+        flex-wrap: wrap;
+    }
+
 }
 
 .flexbox-top {
@@ -30,7 +39,7 @@
 
 }
 
-.flexbox-archive-ski-resorts {
+.flexbox-taxonomy-locations-content {
 
     width: 100%;
 
@@ -63,6 +72,8 @@
 	//.three-fifths .four-fifths,
 	//.three-fifths .five-fifths {
 	//	flex: 1;
+    //display: flex;
+    //overflow: hidden;
 	//}
     //
 	//.three-fifths .four-fifths {

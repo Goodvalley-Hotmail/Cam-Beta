@@ -66,6 +66,9 @@ function archive_pagination_attr( $attributes ) {
 
 }
 
+// Force full width content
+//add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
 // Remove Breadcrumbs before Archive description.
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 //add_action( 'genesis_entry_header', 'genesis_do_breadcrumbs' );
@@ -89,6 +92,21 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 )
 // Reposition Archive pagination.
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 add_action( 'genesis_before_while', 'genesis_posts_nav' );
+//add_action( 'genesis_before_while', 'archive_ski_resorts_wrap_start' );
+//function archive_ski_resorts_wrap_start() {
+//
+//	echo '<div class="archive-ski-resorts-aside-wrap">';
+//
+//	echo '</div>';
+//	echo '<div class="archive-ski-resorts-content-wrap">';
+//
+//}
+//add_action( 'genesis_after_loop', 'archive_ski_resorts_wrap_end' );
+//function archive_ski_resorts_wrap_end() {
+//
+//	echo '</div>';
+//
+//}
 add_action( 'genesis_after_loop', 'genesis_posts_nav' );
 
 // Remove the Genesis Loop.
@@ -133,7 +151,7 @@ function archive_ski_resorts_loop() {
 
 					do_action( 'genesis_entry_content' );
 
-					echo '<div class="flexbox-archive-ski-resorts">';
+					echo '<div class="flexbox-taxonomy-locations">';
 
 						$included_options = get_post_meta( get_the_ID(), 'included_options', true );
 						include_once ( $_SERVER['DOCUMENT_ROOT'] . $included_options );

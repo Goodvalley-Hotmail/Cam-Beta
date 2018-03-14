@@ -1,7 +1,13 @@
 .ski-resorts-archive {
 
     .content {
+
         background: $body--background-color;
+
+        &:last-child {
+            padding-bottom: 10px;
+        }
+
     }
 
     a.alignleft,

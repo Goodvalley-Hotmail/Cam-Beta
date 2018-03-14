@@ -12,8 +12,14 @@
 }
 
 #breadcrumbs {
-    font-size: 1.2rem;
-    line-height: 1;
+
+    @include rem( font-size, $breadcrumbs-ski-resorts--font-size );
+    line-height: $breadcrumbs-ski-resorts--line-height;
+
+    @include media( $screen--568 ) {
+        @include rem( font-size, $breadcrumbs-ski-resorts--font-size-568 );
+        line-height: $breadcrumbs-ski-resorts--line-height-568;
+    }
 }
 
 .archive-season,

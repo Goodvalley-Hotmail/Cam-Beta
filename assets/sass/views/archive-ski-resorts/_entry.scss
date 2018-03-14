@@ -1,7 +1,11 @@
 .ski-resorts-archive {
 
     .entry {
-        padding: 10px 10px 0;
+        padding: 0 0 10px;
+    }
+
+    .entry:last-of-type {
+        padding: 0;
     }
 
     .ski-resort {

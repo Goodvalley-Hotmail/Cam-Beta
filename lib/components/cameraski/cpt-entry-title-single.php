@@ -27,11 +27,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 
@@ -39,11 +39,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-active"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 
@@ -55,11 +55,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 
@@ -67,11 +67,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-active"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-weather-forecast"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 
@@ -83,11 +83,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = '<span class="logo-overview">' . wp_get_attachment_image( $logo_overview, 'full', false, array( 'itemprop' => 'logo' ) ) . '</span>' . $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 
@@ -95,11 +95,11 @@ function add_logo_title_domain_tabs_to_cpt_title( $title ) {
 
 			if ( $title_domain ) {
 
-				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . ' - <span><span itemprop="memberOf">' . $title_domain . '</span><span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			} else {
 
-				$title = $title . '<span id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></span>';
+				$title = $title . '<span id="tabbed"><nav id="tabbed"><span id="tab-first" class="tab-ski-resort"><a href="' . $cameraski_ski_resort . $tab . '">Ski Resort Overview</a></span><span class="tab-ski-resort-webcams"><a href="' . $cameraski_ski_resort_webcams . $tab . '">WebCams</a></span><span class="tab-active"><a href="' . $cameraski_weather_forecast . $tab . '">Weather Forecast</a></span></nav></span>';
 
 			}
 		}

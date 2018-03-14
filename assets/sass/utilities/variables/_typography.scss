@@ -157,10 +157,12 @@ $archive-ski-resorts-entry-title--font-size: 24px;
 $archive-ski-resorts-entry-title-span--font-size: 14px;
 $archive-ski-resorts-webcams-entry-title-span--font-size: 20px;
 $archive-ski-resorts-slopes-colors--font-size: 12px;
+$archive-ski-resorts-slopes-colors--font-size--1320: 11px;
+$archive-ski-resorts-slopes-colors--font-size--768: 11px;
 $archive-ski-resorts-slopes-colors--font-size--415: 11px;
 
 //
-// Ski Resort
+// CPT Ski Resort
 //==========================================
 //$season--font-size: 12;
 //$today-title--font-size: 26;
@@ -185,6 +187,11 @@ $archive-ski-resorts-slopes-colors--font-size--415: 11px;
 //$lifts--font-size: 12;
 //
 //$font-icons--font-size: 38;
+
+$breadcrumbs-ski-resorts--font-size: 12px;
+$breadcrumbs-ski-resorts--font-size-568: 13px;
+$breadcrumbs-ski-resorts--line-height: 1.225;
+$breadcrumbs-ski-resorts--line-height-568: 1.625;
 
 $season--font-size: 12px;
 $today-title--font-size: 26px;
@@ -213,3 +220,11 @@ $other-slopes--line-height: 1.225;
 $lifts--font-size: 12px;
 
 $font-icons--font-size: 38px;
+
+//
+// Taxonomy Locations
+//==========================================
+$breadcrumbs-locations--font-size: 14px;
+$breadcrumbs-locations--font-size-768: 13px;
+$breadcrumbs-locations--font-size-680-max: 12px;
+$breadcrumbs-locations--font-size-568: 13px;

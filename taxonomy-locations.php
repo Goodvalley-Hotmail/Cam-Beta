@@ -11,7 +11,7 @@
 
 //namespace CameraSki;
 
-add_filter( 'body_class', 'archive_ski_resorts_body_class' );
+add_filter( 'body_class', 'taxonomy_locations_body_class' );
 /**
  * Adds a CSS class to the body element.
  *
@@ -21,7 +21,7 @@ add_filter( 'body_class', 'archive_ski_resorts_body_class' );
  *
  * @return array
  */
-function archive_ski_resorts_body_class( $classes ) {
+function taxonomy_locations_body_class( $classes ) {
 
 	$classes[] = 'ski-resorts-archive';
 
@@ -29,7 +29,7 @@ function archive_ski_resorts_body_class( $classes ) {
 
 }
 
-add_filter( 'genesis_attr_entry-content', 'archive_ski_resorts_class' );
+add_filter( 'genesis_attr_entry-content', 'taxonomy_locations_class' );
 /**
  * Adds a CSS class of ski-resort to every Ski Resort item in the archive Page.
  *
@@ -39,7 +39,7 @@ add_filter( 'genesis_attr_entry-content', 'archive_ski_resorts_class' );
  *
  * @return mixed
  */
-function archive_ski_resorts_class( $classes ) {
+function taxonomy_locations_class( $classes ) {
 
 	$classes['class'] .= ' ski-resort';
 	return $classes;
@@ -66,6 +66,10 @@ function archive_pagination_attr( $attributes ) {
 
 }
 
+// Force sidebar-content layout.
+//add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_sidebar_content' );
+//add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
 // Remove Breadcrumbs before Archive description.
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 //add_action( 'genesis_entry_header', 'genesis_do_breadcrumbs' );
@@ -89,13 +93,257 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 )
 // Reposition Archive pagination.
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 add_action( 'genesis_before_while', 'genesis_posts_nav' );
+add_action( 'genesis_before_while', 'taxonomy_locations_wrap_start' );
+function taxonomy_locations_wrap_start() {
+
+	?>
+	<div class="flexbox-taxonomy-locations">
+		<div class="taxonomy-locations-aside-wrap">
+			<div class="taxonomy-locations-aside-content">
+                <?php
+                //$location_type                  = get_term_meta( get_queried_object_id(), 'location_type', true );
+                $locations_prepend              = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_prepend', true );
+                $locations_breadcrumb_type_1    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_1', true );
+                $locations_breadcrumb_type_2    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_2', true );
+                $locations_breadcrumb_type_3    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_3', true );
+                $locations_breadcrumb_type_4    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_4', true );
+                $locations_breadcrumb_type_5    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_5', true );
+                $locations_breadcrumb_type_6    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_6', true );
+                $locations_breadcrumb_type_7    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_7', true );
+                $locations_breadcrumb_type_8    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_8', true );
+                $locations_breadcrumb_type_9    = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_9', true );
+                $locations_breadcrumb_type_10   = get_term_meta( get_queried_object_id(), 'locations_breadcrumb_type_10', true );
+
+                $count_locations_breadcrumbs_1  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_1', true );
+
+                if ( $count_locations_breadcrumbs_1 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_1 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_1; $i++ ) {
+
+		                $breadcrumb_1   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_1_' . $i . '_locations_breadcrumb', true );
+		                $url_1          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_1_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_1 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_1 . '" rel="bookmark">' . $breadcrumb_1 . '</a></p>';
+
+		                }
+
+                    }
+
+                }
+
+                $count_locations_breadcrumbs_2  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_2', true );
+
+                if ( $count_locations_breadcrumbs_2 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_2 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_2; $i++ ) {
+
+		                $breadcrumb_2   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_2_' . $i . '_locations_breadcrumb', true );
+		                $url_2          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_2_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_2 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_2 . '" rel="bookmark">' . $breadcrumb_2 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_3  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_3', true );
+
+                if ( $count_locations_breadcrumbs_3 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_3 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_3; $i++ ) {
+
+		                $breadcrumb_3   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_3_' . $i . '_locations_breadcrumb', true );
+		                $url_3          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_3_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_3 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_3 . '" rel="bookmark">' . $breadcrumb_3 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_4  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_4', true );
+
+                if ( $count_locations_breadcrumbs_4 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_4 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_4; $i++ ) {
+
+		                $breadcrumb_4   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_4_' . $i . '_locations_breadcrumb', true );
+		                $url_4          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_4_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_4 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_4 . '" rel="bookmark">' . $breadcrumb_4 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_5  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_5', true );
+
+                if ( $count_locations_breadcrumbs_5 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_5 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_5; $i++ ) {
+
+		                $breadcrumb_5   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_5_' . $i . '_locations_breadcrumb', true );
+		                $url_5          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_5_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_5 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_5 . '" rel="bookmark">' . $breadcrumb_5 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_6  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_6', true );
+
+                if ( $count_locations_breadcrumbs_6 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_6 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_6; $i++ ) {
+
+		                $breadcrumb_6   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_6_' . $i . '_locations_breadcrumb', true );
+		                $url_6          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_6_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_6 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_6 . '" rel="bookmark">' . $breadcrumb_6 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_7  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_7', true );
+
+                if ( $count_locations_breadcrumbs_7 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_7 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_7; $i++ ) {
+
+		                $breadcrumb_7   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_7_' . $i . '_locations_breadcrumb', true );
+		                $url_7          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_7_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_7 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_7 . '" rel="bookmark">' . $breadcrumb_7 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_8  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_8', true );
+
+                if ( $count_locations_breadcrumbs_8 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_8 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_8; $i++ ) {
+
+		                $breadcrumb_8   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_8_' . $i . '_locations_breadcrumb', true );
+		                $url_8          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_8_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_8 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_8 . '" rel="bookmark">' . $breadcrumb_8 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_9  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_9', true );
+
+                if ( $count_locations_breadcrumbs_9 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_9 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_9; $i++ ) {
+
+		                $breadcrumb_9   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_9_' . $i . '_locations_breadcrumb', true );
+		                $url_9          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_9_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_9 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_9 . '" rel="bookmark">' . $breadcrumb_9 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+
+                $count_locations_breadcrumbs_10  = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_10', true );
+
+                if ( $count_locations_breadcrumbs_10 ) {
+
+	                echo '<p id="locations-type"><strong>' . $locations_breadcrumb_type_10 . '</strong/p>';
+
+	                for ( $i = 0; $i < $count_locations_breadcrumbs_10; $i++ ) {
+
+		                $breadcrumb_10   = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_10_' . $i . '_locations_breadcrumb', true );
+		                $url_10          = get_term_meta( get_queried_object_id(), 'locations_breadcrumbs_10_' . $i . '_locations_url', true );
+
+		                if ( ! empty( $count_locations_breadcrumbs_10 ) ) {
+
+			                echo '<p id="locations-breadcrumbs"><a href="' . $locations_prepend . $url_10 . '" rel="bookmark">' . $breadcrumb_10 . '</a></p>';
+
+		                }
+
+	                }
+
+                }
+                ?>
+			</div>
+		</div>
+
+	    <div class="taxonomy-locations-content-wrap">
+	    <?php
+
+}
+add_action( 'genesis_after_loop', 'taxonomy_locations_wrap_end' );
+function taxonomy_locations_wrap_end() {
+
+	echo '</div></div>';
+
+}
 add_action( 'genesis_after_loop', 'genesis_posts_nav' );
 add_action( 'genesis_after_loop', 'change_custom_query_to_wp_query' );
 /**
- * We use a custom WP_Query (archive_ski_resorts_query()) to query Posts, but then in Pagination we're using the
+ * We use a custom WP_Query (taxonomy_locations_query()) to query Posts, but then in Pagination we're using the
  * global $wp_query variable, which contents a different query.
  * Then our Pagination acts weirdly.
- * We must use our custom query variable $archive_ski_resorts_query in our Pagination, or change the global
+ * We must use our custom query variable $taxonomy_locations_query in our Pagination, or change the global
  * $wp_query variable before our Pagination function call.
  * In our case, we use Pagination before and after our custom Loop, so we switch queries after the Loop, in the
  * genesis_after_loop Hook.
@@ -113,8 +361,8 @@ function change_custom_query_to_wp_query() {
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 // Add our custom Loop.
-add_action( 'genesis_loop', 'archive_ski_resorts_loop' );
-function archive_ski_resorts_loop() {
+add_action( 'genesis_loop', 'taxonomy_locations_loop' );
+function taxonomy_locations_loop() {
 
 	$taxonomy_term  = get_queried_object()->slug;
 	$post_types     = array( 'ski-resort'/*, 'ski-resort-webcams', 'weather-forecast'*/ );
@@ -122,7 +370,7 @@ function archive_ski_resorts_loop() {
 	foreach ( $post_types as $post_type ) {
 
 		$args = array(
-			'posts_per_page'=> 20,
+			'posts_per_page'=> 10,
 			'post_type'     => $post_type,
 			'paged'         => get_query_var( 'paged' ),
 			'order'         => 'ASC',
@@ -138,20 +386,20 @@ function archive_ski_resorts_loop() {
 
 		global $wp_query;
 
-		$archive_ski_resorts_query = new WP_Query( $args );
+		$taxonomy_locations_query = new WP_Query( $args );
 
 		$original_query = $wp_query;
-		$wp_query       = $archive_ski_resorts_query;
+		$wp_query       = $taxonomy_locations_query;
 
-		if ( $archive_ski_resorts_query->have_posts() ) :
+		if ( $taxonomy_locations_query->have_posts() ) :
 
 			do_action( 'genesis_before_while' );
 
 			// BreadCrumbs in every Post found -> PART 1/3 START
-			$old_singular_value = $archive_ski_resorts_query->is_singular;
+			$old_singular_value = $taxonomy_locations_query->is_singular;
 			// BreadCrumbs in every Post found -> PART 1/3 END
 
-			while ( $archive_ski_resorts_query->have_posts() ) : $archive_ski_resorts_query->the_post();
+			while ( $taxonomy_locations_query->have_posts() ) : $taxonomy_locations_query->the_post();
 
 				do_action( 'genesis_before_entry' );
 
@@ -166,7 +414,7 @@ function archive_ski_resorts_loop() {
 
 						if ( 'ski-resort' == get_post_type() ) {
 
-							echo '<div class="flexbox-archive-ski-resorts">';
+							echo '<div class="flexbox-taxonomy-locations-content">';
 
 								$included_options = get_post_meta( get_the_ID(), 'included_options', true );
 								include_once ( $_SERVER['DOCUMENT_ROOT'] . $included_options );
@@ -196,7 +444,7 @@ function archive_ski_resorts_loop() {
 									}
 
 									// BreadCrumbs in every Post found -> PART 2/3 START
-									$archive_ski_resorts_query->is_singular = true;
+									$taxonomy_locations_query->is_singular = true;
 									WPSEO_Breadcrumbs::$instance            = NULL;
 
 									if ( function_exists( 'yoast_breadcrumb' ) ) {
@@ -245,7 +493,7 @@ function archive_ski_resorts_loop() {
 									unset( $operating_status );
 
 									// BreadCrumbs in every Post found -> PART 2/3 START
-									$archive_ski_resorts_query->is_singular = true;
+									$taxonomy_locations_query->is_singular = true;
 									WPSEO_Breadcrumbs::$instance            = NULL;
 
 									if ( function_exists( 'yoast_breadcrumb' ) ) {
@@ -328,7 +576,7 @@ function archive_ski_resorts_loop() {
 		//$wp_query = $original_query;
 
 		// BreadCrumbs in every Post found -> PART 3/3 START
-		$archive_ski_resorts_query->is_singular = $old_singular_value;
+		$taxonomy_locations_query->is_singular = $old_singular_value;
 		// BreadCrumbs in every Post found -> PART 3/3 END
 
 		//wp_reset_query();
