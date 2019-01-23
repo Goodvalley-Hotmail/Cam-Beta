@@ -1,8 +1,12 @@
+.taxonomy-domain-groups-aside-wrap,
 .taxonomy-locations-aside-wrap,
+.taxonomy-domain-groups-content-wrap,
+.archive-ski-resort-content-wrap,
 .taxonomy-locations-content-wrap {
 
 }
 
+.taxonomy-domain-groups-aside-wrap,
 .taxonomy-locations-aside-wrap {
     background: $archive-ski-resorts--entry-content--background-color;
     border: 1px solid #1E73BE;
@@ -19,12 +23,15 @@
 
 }
 
+.taxonomy-domain-groups-aside-content,
 .taxonomy-locations-aside-content {
 
     padding: 20px 0 10px 10px;
 
 }
 
+.archive-ski-resort-content-wrap,
+.taxonomy-domain-groups-content-wrap,
 .taxonomy-locations-content-wrap {
 
     margin: 10px 10px 0;
@@ -40,12 +47,14 @@
 
 }
 
+p#domain-groups-type,
 p#locations-type {
     color: $locations-type--text-color;
     margin: 0;
     font-weight: bold;
 }
 
+p#domain-groups-breadcrumbs,
 p#locations-breadcrumbs {
 
     @include rem( font-size, $breadcrumbs-locations--font-size );

@@ -26,7 +26,8 @@ if ( $count_elevation_info ) {
 }
 
 // REPEATER - SNOW DEPTH
-$count_snow_depth = get_post_meta( get_the_ID(), 'snow_depth', true );
+$snow_depth         = get_post_meta( get_the_ID(), 'snow_depth', true );
+$count_snow_depth   = get_post_meta( get_the_ID(), 'snow_depth', true );
 
 if ( $count_snow_depth ) {
 
@@ -48,7 +49,8 @@ if ( $count_snow_depth ) {
 }
 
 // REPEATER - NAME DEPTH
-$count_name_depth = get_post_meta( get_the_ID(), 'name_depth', true );
+$name_depth         = get_post_meta( get_the_ID(), 'name_depth', true );
+$count_name_depth   = get_post_meta( get_the_ID(), 'name_depth', true );
 
 if ( $count_name_depth ) {
 
@@ -71,6 +73,7 @@ if ( $count_name_depth ) {
 }
 
 // REPEATER - LOCATION_DEPTH_1
+$location_depth_1       = get_post_meta( get_the_ID(), 'location_depth_1', true );
 $count_location_depth_1 = get_post_meta( get_the_ID(), 'location_depth_1', true );
 
 if ( $count_location_depth_1 ) {
@@ -94,6 +97,7 @@ if ( $count_location_depth_1 ) {
 }
 
 // REPEATER - LOCATION_DEPTH_2
+$location_depth_2       = get_post_meta( get_the_ID(), 'location_depth_2', true );
 $count_location_depth_2 = get_post_meta( get_the_ID(), 'location_depth_2', true );
 
 if ( $count_location_depth_2 ) {
@@ -117,6 +121,7 @@ if ( $count_location_depth_2 ) {
 }
 
 // REPEATER - LOCATION_DEPTH_3
+$location_depth_3       = get_post_meta( get_the_ID(), 'location_depth_3', true );
 $count_location_depth_3 = get_post_meta( get_the_ID(), 'location_depth_3', true );
 
 if ( $count_location_depth_3 ) {
@@ -140,6 +145,7 @@ if ( $count_location_depth_3 ) {
 }
 
 // REPEATER - LOCATION_DEPTH_4
+$location_depth_4       = get_post_meta( get_the_ID(), 'location_depth_4', true );
 $count_location_depth_4 = get_post_meta( get_the_ID(), 'location_depth_4', true );
 
 if ( $count_location_depth_4 ) {
@@ -163,6 +169,7 @@ if ( $count_location_depth_4 ) {
 }
 
 // REPEATER - LOCATION_DEPTH_5
+$location_depth_5       = get_post_meta( get_the_ID(), 'location_depth_5', true );
 $count_location_depth_5 = get_post_meta( get_the_ID(), 'location_depth_5', true );
 
 if ( $count_location_depth_5 ) {

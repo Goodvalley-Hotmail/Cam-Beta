@@ -13,7 +13,7 @@ namespace CameraSki;
 
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
-add_filter( 'theme_page_templates', __NAMESPACE__ . '\remove_genesis_page_templates' );
+//add_filter( 'theme_page_templates', __NAMESPACE__ . '\remove_genesis_page_templates' );
 /**
  * Removes Genesis Page Templates.
  *
@@ -108,6 +108,38 @@ function remove_lostpassword_text ( $text ) {
 	}
 
 	return $text;
+
+}
+
+add_filter( 'option_active_plugins', __NAMESPACE__ . '\disable_acf_on_frontend' );
+/**
+ * Disable ACF Pro on website frontend.
+ *
+ * Provides a performance boost if ACF frontend functions aren't being used.
+ *
+ * @since   1.0.0
+ * @link    https://www.billerickson.net/code/disable-acf-frontend/
+ *
+ */
+function disable_acf_on_frontend( $plugins ) {
+
+	if ( is_admin() ) {
+
+		return $plugins;
+
+	}
+
+	foreach ( $plugins as $index => $plugin ) {
+
+		if ( 'advanced-custom-fields-pro/acf.php' == $plugin ) {
+
+			unset( $plugins[ $index ] );
+
+		}
+
+	}
+
+	return $plugins;
 
 }
 

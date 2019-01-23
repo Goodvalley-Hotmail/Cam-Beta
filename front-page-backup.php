@@ -5,15 +5,12 @@
  * @package     CameraSki
  * @since       1.0.0
  * @author      Carles Goodvalley
- * @link        https://www.cameraski.com
+ * @link        https://cameraski.com
  * @license     GNU General Public License 2.0+
  */
 
 namespace CameraSki;
 
-//add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
-
-add_filter( 'body_class', __NAMESPACE__ . '\add_body_class' );
 /**
  * Adds a 'flexible-content' class to the body section.
  *
@@ -31,33 +28,41 @@ function add_body_class( $classes ) {
 
 }
 
-add_filter( 'genesis_attr_site-inner', __NAMESPACE__ . '\add_attributes_to_site_inner' );
-/**
- * Adds attributes for site-inner element.
- *
- * @since 1.0.0
- *
- * @param array $attributes Existing attributes.
- *
- * @return array Amended attributes.
- */
-function add_attributes_to_site_inner( $attributes ) {
+add_action( 'get_header', __NAMESPACE__ . '\frontpage_flexible_content_check' );
+function frontpage_flexible_content_check() {
 
-	$attributes['role']     = 'main';
-	$attributes['itemprop'] = 'mainContentOfPage';
+	$frontpage_flexible_content_sections = get_post_meta( get_the_ID(), 'frontpage_flexible_content', true );
 
-	return $attributes;
+	if ( $frontpage_flexible_content_sections ) {
+
+		add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
+		//remove_action( 'genesis_loop', 'genesis_do_loop' );
+
+		add_action( 'genesis_loop', __NAMESPACE__ . '\display_frontpage_flexible_content' );
+
+		add_filter( 'body_class', __NAMESPACE__ . '\add_body_class' );
+
+	}
 
 }
 
-add_action( 'content_area', __NAMESPACE__ . '\display_frontpage_flexible_content' );
+add_action( 'genesis_before_entry', __NAMESPACE__ . '\remove_front_page_title' );
 /**
- * Displays FrontPage Flexible Content ACF Fields Group.
+ * Removes entry title.
  *
  * @since   1.0.0
  *
  * @return void
  */
+function remove_front_page_title() {
+
+	remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+	remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+	remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+
+}
+
 function display_frontpage_flexible_content() {
 
 	$frontpage_flexible_content_sections = get_post_meta( get_the_ID(), 'frontpage_flexible_content', true );
@@ -99,6 +104,4 @@ function display_frontpage_flexible_content() {
 
 }
 
-get_header();
-do_action( 'content_area' );
-get_footer();
+genesis();

@@ -1,9 +1,11 @@
+#ski-domains-archive-pagination,
 #ski-resorts-archive-pagination {
     border-top: 5px solid #c3251d;
     margin: 10px 0 0;
     padding-left: 10px;
 }
 
+#ski-domains-archive-pagination a,
 #ski-resorts-archive-pagination a {
     @include rem( font-size, $archive-pagination--font-size );
     padding: 4px 6px;

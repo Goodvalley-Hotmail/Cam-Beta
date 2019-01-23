@@ -64,7 +64,7 @@ function register_taxonomies() {
 			),
 			'hierarchical'      => false,
 			'rewrite'           => array(
-				'slug'              => 'domain-groups',
+				'slug'              => 'ski-domains',
 			),
 			'show_in_nav_menus' => false,
 		),

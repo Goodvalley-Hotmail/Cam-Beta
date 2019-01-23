@@ -1,3 +1,4 @@
+.ski-domains-archive,
 .ski-resorts-archive {
 
     .first,
@@ -31,6 +32,7 @@
 
         /*min-width: 24.3%;*/
         min-width: 25%;
+        position: relative;
 
         @include media( $screen--1152 ) {
             float: left;

@@ -1,12 +1,18 @@
 .flexbox-top,
 .flexbox-bottom,
 .flexbox-webcam,
+.flexbox-archive-ski-resorts,
+.flexbox-taxonomy-domain-groups,
 .flexbox-taxonomy-locations,
+.flexbox-archive-ski-resorts-content,
+.flexbox-taxonomy-domain-groups-content,
 .flexbox-taxonomy-locations-content {
     display: flex;
     overflow: hidden;
 }
 
+.flexbox-archive-ski-resorts,
+.flexbox-taxonomy-domain-groups,
 .flexbox-taxonomy-locations {
 
     @include media( $screen--568 ) {
@@ -39,6 +45,8 @@
 
 }
 
+.flexbox-archive-ski-resorts-content,
+.flexbox-taxonomy-domain-groups-content,
 .flexbox-taxonomy-locations-content {
 
     width: 100%;
@@ -52,46 +60,46 @@
 @include media( $screen--800 ) {
 
     //.flexbox-top .two-fifths {
-	//	-webkit-flex-basis: 100%;
-	//	-ms-flex-basis: 100%;
-	//	flex-basis: 100%;
-	//	-webkit-order: 0;
-	//	-ms-flex-order: 0;
-	//	order: 0;
-	//}
+    //	-webkit-flex-basis: 100%;
+    //	-ms-flex-basis: 100%;
+    //	flex-basis: 100%;
+    //	-webkit-order: 0;
+    //	-ms-flex-order: 0;
+    //	order: 0;
+    //}
     //
-	//.flexbox-top .one-fifth {
-	//	-webkit-flex-basis: 100%;
-	//	-ms-flex-basis: 100%;
-	//	flex-basis: 100%;
-	//	-webkit-order: 1;
-	//	-ms-flex-order: 1;
-	//	order: 1;
-	//}
+    //.flexbox-top .one-fifth {
+    //	-webkit-flex-basis: 100%;
+    //	-ms-flex-basis: 100%;
+    //	flex-basis: 100%;
+    //	-webkit-order: 1;
+    //	-ms-flex-order: 1;
+    //	order: 1;
+    //}
     //
-	//.three-fifths .four-fifths,
-	//.three-fifths .five-fifths {
-	//	flex: 1;
+    //.three-fifths .four-fifths,
+    //.three-fifths .five-fifths {
+    //	flex: 1;
     //display: flex;
     //overflow: hidden;
-	//}
+    //}
     //
-	//.three-fifths .four-fifths {
-	//	-webkit-flex-basis: 100%;
-	//	-ms-flex-basis: 100%;
-	//	flex-basis: 100%;
-	//	-webkit-order: 0;
-	//	-ms-flex-order: 0;
-	//	order: 0;
-	//}
+    //.three-fifths .four-fifths {
+    //	-webkit-flex-basis: 100%;
+    //	-ms-flex-basis: 100%;
+    //	flex-basis: 100%;
+    //	-webkit-order: 0;
+    //	-ms-flex-order: 0;
+    //	order: 0;
+    //}
     //
-	//.three-fifths .five-fifths {
-	//	-webkit-flex-basis: 100%;
-	//	-ms-flex-basis: 100%;
-	//	flex-basis: 100%;
-	//	-webkit-order: 1;
-	//	-ms-flex-order: 1;
-	//	order: 1;
-	//}
+    //.three-fifths .five-fifths {
+    //	-webkit-flex-basis: 100%;
+    //	-ms-flex-basis: 100%;
+    //	flex-basis: 100%;
+    //	-webkit-order: 1;
+    //	-ms-flex-order: 1;
+    //	order: 1;
+    //}
 
 }

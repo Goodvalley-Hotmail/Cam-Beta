@@ -1,0 +1,77 @@
+.ski-domains-archive,
+.ski-resorts-archive {
+
+    div.archive-webcams-meteo-links {
+
+        clear: both;
+        display: inline-block;
+        float: right;
+
+        @include media( $screen--860 ) {
+            margin: 10px 0 0;
+        }
+
+        @include media( $screen--680-max ) {
+            float: left;
+            @include rem( font-size, $archive-ski-resorts-blue-links--font-size );
+            margin: 10px 0 0 10px;
+        }
+
+        span.archive-blue-link {
+
+            list-style-type: none;
+            text-align: right;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+
+            @include media( $screen--1152 ) {
+                bottom: 0;
+            }
+
+            @include media( $screen--860 ) {
+                float: right;
+                position: relative;
+            }
+
+            @include media( $screen--680-max ) {
+                text-align: left;
+            }
+
+        }
+
+        span.archive-webcams-link,
+        span.archive-meteo-link {
+
+            background-color: $see-all-prices--background-color;
+            border: solid 0 10px $see-all-prices--border-color;
+            border-radius: 2px;
+            color: $see-all-prices--text-color;
+            display: inline-block;
+            @include rem( font-size, $archive-ski-resorts-blue-links--font-size );
+            line-height: 1;
+            margin: 0 10px 2px 0;
+            padding: 5px;
+
+            & a {
+                color: $white;
+                text-decoration: none;
+            }
+
+            @include media( $screen--1152 ) {
+                margin: 0 10px 0 0;
+            }
+
+            @include media( $screen--932 ) {
+                @include rem( font-size, $archive-ski-resorts-blue-links--font-size--932 );
+            }
+
+            @include media( $screen--860 ) {
+                margin: 0 10px 2px 0;
+            }
+
+        }
+
+    }
+
+}

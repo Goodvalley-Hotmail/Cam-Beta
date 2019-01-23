@@ -46,7 +46,7 @@ function archive_ski_resorts_class( $classes ) {
 
 }
 
-add_filter( 'genesis_attr_archive-pagination', 'archive_pagination_attr' );
+add_filter( 'genesis_attr_archive-pagination', 'add_archive_pagination_attribute' );
 /**
  * Afegim una css id "ski-resorts-archive-pagination" a entry-content per al CPT ski-resort.
  *
@@ -56,7 +56,7 @@ add_filter( 'genesis_attr_archive-pagination', 'archive_pagination_attr' );
  *
  * @return mixed
  */
-function archive_pagination_attr( $attributes ) {
+function add_archive_pagination_attribute( $attributes ) {
 
 	if ( is_post_type_archive( 'ski-resort' ) ) {
 		$attributes['id'] = 'ski-resorts-archive-pagination';
@@ -92,22 +92,44 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 )
 // Reposition Archive pagination.
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 add_action( 'genesis_before_while', 'genesis_posts_nav' );
-//add_action( 'genesis_before_while', 'archive_ski_resorts_wrap_start' );
-//function archive_ski_resorts_wrap_start() {
-//
-//	echo '<div class="archive-ski-resorts-aside-wrap">';
-//
-//	echo '</div>';
-//	echo '<div class="archive-ski-resorts-content-wrap">';
-//
-//}
-//add_action( 'genesis_after_loop', 'archive_ski_resorts_wrap_end' );
-//function archive_ski_resorts_wrap_end() {
-//
-//	echo '</div>';
-//
-//}
+
+
+add_action( 'genesis_before_while', 'taxonomy_locations_wrap_start' );
+function taxonomy_locations_wrap_start() {
+
+	?>
+	<div class="flexbox-archive-ski-resorts">
+
+		<div class="archive-ski-resort-content-wrap">
+		    <?php
+
+}
+add_action( 'genesis_after_loop', 'taxonomy_locations_wrap_end' );
+function taxonomy_locations_wrap_end() {
+
+	echo '</div></div>';
+
+}
+
 add_action( 'genesis_after_loop', 'genesis_posts_nav' );
+add_action( 'genesis_after_loop', 'change_custom_query_to_wp_query' );
+/**
+ * We use a custom WP_Query (taxonomy_locations_query()) to query Posts, but then in Pagination we're using the
+ * global $wp_query variable, which contents a different query.
+ * Then our Pagination acts weirdly.
+ * We must use our custom query variable $taxonomy_locations_query in our Pagination, or change the global
+ * $wp_query variable before our Pagination function call.
+ * In our case, we use Pagination before and after our custom Loop, so we switch queries after the Loop, in the
+ * genesis_after_loop Hook.
+ *
+ * @since   1.0.0
+ *
+ * @return void
+ */
+function change_custom_query_to_wp_query() {
+	$wp_query = $original_query;
+	wp_reset_query();
+}
 
 // Remove the Genesis Loop.
 remove_action( 'genesis_loop', 'genesis_do_loop' );
@@ -124,7 +146,7 @@ function archive_ski_resorts_loop() {
 		'orderby'           => 'title',
 	);
 
-	//global $wp_query;
+	global $wp_query;
 
 	$wp_query = new WP_Query( $args );
 
@@ -151,7 +173,7 @@ function archive_ski_resorts_loop() {
 
 					do_action( 'genesis_entry_content' );
 
-					echo '<div class="flexbox-taxonomy-locations">';
+					echo '<div class="flexbox-archive-ski-resorts-content">';
 
 						$included_options = get_post_meta( get_the_ID(), 'included_options', true );
 						include_once ( $_SERVER['DOCUMENT_ROOT'] . $included_options );
@@ -182,11 +204,6 @@ function archive_ski_resorts_loop() {
 
 							// BreadCrumbs in every Post found -> PART 2/3 START
 							$wp_query->is_singular          = true;
-							WPSEO_Breadcrumbs::$instance    = NULL;
-
-							if ( function_exists( 'yoast_breadcrumb' ) ) {
-								yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
-							}
 							// BreadCrumbs in every Post found -> PART 2/3 END
 
 							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-01-breadcrumbs.php' ) );
@@ -231,11 +248,6 @@ function archive_ski_resorts_loop() {
 
 							// BreadCrumbs in every Post found -> PART 2/3 START
 							$wp_query->is_singular          = true;
-							WPSEO_Breadcrumbs::$instance    = NULL;
-
-							if ( function_exists( 'yoast_breadcrumb' ) ) {
-								yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
-							}
 							// BreadCrumbs in every Post found -> PART 2/3 END
 
 							include ( locate_template( 'lib/partials/archive-ski-resort/ski-resort-entry-section-center-01-breadcrumbs.php' ) );
@@ -277,7 +289,7 @@ function archive_ski_resorts_loop() {
 	$wp_query->is_singular = $old_singular_value;
 	// BreadCrumbs in every Post found -> PART 3/3 END
 
-	wp_reset_query();
+	//wp_reset_query();
 
 }
 

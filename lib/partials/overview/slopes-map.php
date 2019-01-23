@@ -12,7 +12,25 @@
 namespace CameraSki;
 
 // REPEATER - SLOPES MAPS
-$count_slopes_maps  = get_post_meta( get_the_ID(), 'ski_resort_maps', true );
+$count_ski_resort_maps = get_post_meta( get_the_ID(), 'ski_resort_maps', true );
+
+if ( $count_ski_resort_maps ) {
+
+	for ( $i = 0; $i < $count_ski_resort_maps; $i++ ) {
+
+		$ski_resort_map_full		= (int) get_post_meta( get_the_ID(), 'ski_resort_maps_' . $i . '_ski_resort_map_full', true );
+		$ski_resort_map_thumbnail	= (int) get_post_meta( get_the_ID(), 'ski_resort_maps_' . $i . '_ski_resort_map_thumbnail', true );
+
+		if ( $ski_resort_map_thumbnail ) {
+			echo '<p class="overview-slopes-map-mini"><a href="' . wp_get_attachment_url( $ski_resort_map_full, 'ski_resort_maps' ) . '">' . wp_get_attachment_image( $ski_resort_map_thumbnail, 'ski_resort_maps' ) . '</a></p>';
+		}
+
+	}
+
+}
+
+// REPEATER - SLOPES MAPS
+/*$count_slopes_maps  = get_post_meta( get_the_ID(), 'ski_resort_maps', true );
 
 if ( $count_slopes_maps ) {
 
@@ -42,4 +60,4 @@ if ( $count_slopes_maps ) {
 
 	}
 
-}
+}*/

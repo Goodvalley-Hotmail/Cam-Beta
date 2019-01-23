@@ -34,6 +34,8 @@ function attributes_site_inner( $attributes ) {
 // Force full width content
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
+include ( locate_template( 'lib/components/cameraski/cpt-entry-title-single.php' ) );
+
 // Reposition Breadcrumbs
 //remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 
@@ -237,10 +239,11 @@ if ( have_posts() ) :
 						</div>
 
 						<?php include ( locate_template( 'lib/partials/overview/slopes-colors.php' ) ); ?>
+						<?php include ( locate_template( 'lib/partials/overview/additional-slopes-colors.php' ) ); ?>
 
 						<div class="overview-clear"></div>
 
-							<?php include ( locate_template( 'lib/partials/overview/additional-slopes-colors.php' ) ); ?>
+							<?php //include ( locate_template( 'lib/partials/overview/additional-slopes-colors.php' ) ); ?>
 
 							<?php include ( locate_template( 'lib/partials/overview/elevation.php' ) ); ?>
 
